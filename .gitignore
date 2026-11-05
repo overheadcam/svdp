@@ -1,0 +1,19 @@
+# Secrets & server-only config (never commit)
+config.php
+
+# Member-uploaded files are data, not source
+public/uploads/*
+!public/uploads/.htaccess
+public/uploads/_render/
+
+# Build artifacts
+*.tar.gz
+*.tgz
+node_modules/
+
+# OS / editor cruft
+.DS_Store
+._*
+Thumbs.db
+*.swp
+*~

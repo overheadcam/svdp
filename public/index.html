@@ -1,0 +1,3247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>St. Austin Conference — Vincentian Resource Center</title>
+<link rel="icon" type="image/png" href="img/svdp_ctx_logo.png">
+<link rel="apple-touch-icon" href="img/svdp_ctx_logo.png">
+<style>
+  :root{
+    --navy:#004797; --navy-dark:#003670; --gold:#c8a24a; --gold-soft:#e7d3a1;
+    --bg:#f6f4ef; --card:#ffffff; --ink:#25303b; --muted:#697585;
+    --line:#e2ddd2; --good:#2f7d5b; --warn:#a4552b; --shadow:0 1px 3px rgba(20,30,45,.08),0 6px 18px rgba(20,30,45,.06);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.55; font-size:16px;
+  }
+  a{color:var(--navy)}
+  header.site{
+    background:linear-gradient(160deg,var(--navy),var(--navy-dark));
+    color:#fff; padding:26px 20px 20px; box-shadow:var(--shadow);
+  }
+  .wrap{max-width:1000px;margin:0 auto;padding:0 18px}
+  .announce-wrap{display:flex;align-items:center;gap:14px;padding:11px 18px}
+  .banner-img{max-height:48px;max-width:160px;border-radius:6px;flex:0 0 auto;object-fit:contain}
+  .banner-text{font-size:1.25rem;font-weight:600;white-space:pre-wrap;line-height:1.35}
+  .banner-link{display:flex;align-items:center;gap:14px;flex:1 1 auto;color:inherit;text-decoration:none}
+  a.banner-link{cursor:pointer}
+  a.banner-link:hover .banner-text{text-decoration:underline}
+  .banner-go{font-weight:700;opacity:.9}
+  .brand{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .site-logo{margin-left:auto;background:#fff;border-radius:10px;padding:7px 12px;display:flex;align-items:center;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+  .site-logo img{display:block;height:52px;width:auto;max-width:280px}
+  @media(max-width:640px){
+    .site-logo{margin:12px 0 0 0}
+    .site-logo img{height:42px}
+  }
+  .crest{width:73px;height:73px;border-radius:50%;background:#fff;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;color:var(--navy-dark);text-decoration:none;
+    flex:0 0 auto;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+  a.site-logo{text-decoration:none}
+  .servware-wrap{display:flex;flex-direction:column;align-items:flex-start;gap:2px}
+  .servware-label{font-size:.75rem;color:var(--muted);font-weight:600}
+  .servware-link{display:inline-flex;align-items:center;text-decoration:none;color:var(--navy);font-weight:600}
+  .servware-link img{height:32px;width:auto;display:block}
+  .crest img{width:100%;height:100%;object-fit:contain;display:block}
+  .crest.crest-fallback{background:var(--gold);font-weight:800;font-size:20px;box-shadow:inset 0 0 0 3px rgba(255,255,255,.25)}
+  header.site h1{margin:0;font-size:1.35rem;letter-spacing:.2px}
+  header.site .sub{margin:2px 0 0;color:var(--gold-soft);font-size:.85rem}
+  .motto{margin:14px 0 2px;font-style:italic;color:#dfe7f1;font-size:.95rem}
+  nav.tabs{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;box-shadow:0 2px 6px rgba(20,30,45,.04)}
+  nav.tabs .wrap{display:flex;gap:2px;flex-wrap:wrap}
+  nav.tabs button{
+    background:none;border:none;padding:13px 14px;font-size:.9rem;font-weight:600;color:var(--muted);
+    cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent;font-family:inherit;
+  }
+  @media(max-width:720px){
+    nav.tabs button{padding:10px 10px;font-size:.82rem}
+    nav.tabs .wrap{gap:0}
+  }
+  nav.tabs button:hover{color:var(--navy)}
+  nav.tabs button.active{color:var(--navy);border-bottom-color:var(--gold)}
+  main{padding:26px 0 60px}
+  section.view{display:none;animation:fade .25s ease}
+  section.view.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  h2.section-title{font-size:1.5rem;margin:.2em 0 .1em;color:var(--navy-dark)}
+  h3.group-head{font-size:1.15rem;color:var(--navy);margin:1.4em 0 .3em;padding-bottom:4px;border-bottom:2px solid var(--gold)}
+  .doc-index{background:#faf8f3;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0 0 20px}
+  .doc-index-title{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:8px}
+  .doc-index-list{margin:0;padding-left:22px;columns:2;column-gap:28px}
+  @media(max-width:620px){.doc-index-list{columns:1}}
+  .doc-index-list li{margin:3px 0;break-inside:avoid}
+  .doc-index-list a{color:var(--navy);text-decoration:none}
+  .doc-index-list a:hover{text-decoration:underline}
+  .doc-view{scroll-margin-top:78px}
+  .sv-card{border:1px solid var(--line);border-radius:10px;background:#fff;padding:12px 16px;margin:0 0 12px}
+  .sv-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .sv-head .row-actions{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+  .sv-intro{color:var(--ink);margin-top:6px;white-space:pre-wrap}
+  .sv-badge{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:2px 8px;border-radius:20px;color:#fff}
+  .sv-badge.sv-draft{background:var(--muted)} .sv-badge.sv-open{background:#1f6f4a} .sv-badge.sv-closed{background:#9a3b2f}
+  .sv-take,.sv-results,.sv-thanks{border:1px solid var(--line);border-radius:10px;background:#fff;padding:16px 20px}
+  .sv-take-title{color:var(--navy);margin:.4em 0}
+  .sv-note{color:var(--muted);font-style:italic;margin:6px 0}
+  .sv-q{padding:12px 0;border-top:1px dashed var(--line)}
+  .sv-q:first-of-type{border-top:none}
+  .sv-q-label{font-weight:600;margin-bottom:6px}
+  .sv-req{color:#9a3b2f}
+  .sv-opt{display:block;padding:3px 0;cursor:pointer}
+  .sv-opt input{margin-right:7px}
+  .sv-multi-note{font-size:.82rem;color:var(--muted);margin-top:4px;font-style:italic}
+  .sv-input{width:100%;font-family:inherit;font-size:.95rem;padding:8px 10px;border:1px solid var(--line);border-radius:8px}
+  .sv-take-actions{margin-top:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .sv-msg{font-size:.9rem;color:var(--muted)} .sv-msg.err{color:#9a3b2f;font-weight:600}
+  .sv-thanks h3{color:#1f6f4a}
+  .sv-rescount{margin:0 0 12px;display:flex;align-items:center;gap:12px}
+  .sv-resq{padding:12px 0;border-top:1px solid var(--line)}
+  .sv-bar-row{display:flex;align-items:center;gap:10px;margin:4px 0}
+  .sv-bar-lbl{flex:0 0 32%;font-size:.9rem;word-break:break-word}
+  .sv-bar{flex:1 1 auto;height:16px;background:#eee;border-radius:8px;overflow:hidden}
+  .sv-bar-fill{height:100%;background:var(--navy)}
+  .sv-bar-n{flex:0 0 auto;font-size:.82rem;color:var(--muted);min-width:72px;text-align:right}
+  .sv-numsum{margin:4px 0}
+  .sv-textlist{display:flex;flex-direction:column;gap:5px;margin-top:4px}
+  .sv-textans{background:#faf8f3;border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:.92rem}
+  .sv-chip{display:inline-block;background:#faf8f3;border:1px solid var(--line);border-radius:20px;padding:2px 10px;margin:2px;font-size:.85rem}
+  .svq-list{display:flex;flex-direction:column;gap:10px}
+  .svq{border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:#faf8f3}
+  .svq-top{display:flex;align-items:center;gap:8px}
+  .svq-num{flex:0 0 auto;font-weight:700;color:var(--navy);min-width:16px}
+  .svq-label{flex:1 1 auto;font-size:.92rem;padding:6px 8px;border:1px solid var(--line);border-radius:6px;min-width:60px}
+  .svq-ctrls{flex:0 0 auto;display:flex;gap:2px}
+  .svq-ctrls button{font-family:inherit;font-size:.8rem;padding:4px 7px;border:1px solid var(--line);border-radius:5px;background:#fff;cursor:pointer}
+  .svq-ctrls button:disabled{opacity:.35;cursor:default}
+  .svq-row2{display:flex;align-items:center;gap:14px;margin-top:6px;flex-wrap:wrap}
+  .svq-row2 select{font-family:inherit;font-size:.9rem;padding:5px 8px;border:1px solid var(--line);border-radius:6px}
+  .svq-reqlbl{font-size:.88rem;display:flex;align-items:center;gap:5px;text-transform:none;font-weight:400;letter-spacing:0;color:var(--ink)}
+  .svq-opts{width:100%;margin-top:6px;font-family:inherit;font-size:.9rem;padding:6px 8px;border:1px solid var(--line);border-radius:6px}
+  .lead{color:var(--muted);margin:.2em 0 1.4em;max-width:88ch}
+  .hv-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;flex-wrap:wrap;margin:.2em 0 1.2em}
+  .hv-head .lead{margin:0;max-width:52ch;flex:1 1 300px}
+  .hv-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;align-items:flex-end;flex:0 0 auto}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:18px 20px;margin:0 0 18px}
+  .card h3{margin:.1em 0 .5em;color:var(--navy-dark);font-size:1.12rem}
+  .catbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .cat-desc{color:var(--muted);font-size:.9rem;margin:.1em 0 .8em}
+  ul.links{list-style:none;margin:0;padding:0}
+  ul.links li{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-top:1px dashed var(--line)}
+  ul.links li:first-child{border-top:none}
+  .lk-main{flex:1 1 auto;min-width:0}
+  .lk-title{font-weight:600}
+  .lk-note{color:var(--muted);font-size:.85rem}
+  .lk-title a{text-decoration:none}
+  .lk-title a:hover{text-decoration:underline}
+  .pill{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.4px;text-transform:uppercase;
+    padding:3px 8px;border-radius:999px;background:var(--gold-soft);color:#6b5416;vertical-align:middle}
+  .pill.doc{background:#d8e6dd;color:#1f5c40}
+  .pill.phone{background:#e6dce9;color:#5a2f66}
+  .row-actions{display:flex;gap:6px;flex:0 0 auto}
+  button.btn{font-family:inherit;font-size:.85rem;font-weight:600;border-radius:8px;border:1px solid var(--line);
+    background:#fff;color:var(--navy);padding:7px 12px;cursor:pointer}
+  button.btn:hover{border-color:var(--navy);background:#f3f6fb}
+  button.btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
+  button.btn.primary:hover{background:var(--navy-dark)}
+  button.btn.gold{background:var(--gold);color:var(--navy-dark);border-color:var(--gold)}
+  button.btn.gold:hover{filter:brightness(1.05)}
+  button.btn.ghost{background:transparent;border-color:transparent;color:var(--muted);padding:6px 8px}
+  button.btn.ghost:hover{color:var(--warn);background:#faf1ec}
+  button.btn.sm{padding:4px 8px;font-size:.78rem}
+  button.btn:disabled{opacity:.3;cursor:default;border-color:var(--line);background:#fff}
+  .limits{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){.limits{grid-template-columns:1fr}}
+  .limit-box{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:linear-gradient(180deg,#fff,#fbf9f4)}
+  .limit-box .lbl{font-size:.78rem;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);font-weight:700}
+  .limit-box .amt{font-size:2rem;font-weight:800;color:var(--navy-dark);margin:.1em 0}
+  .limit-box .meta{font-size:.82rem;color:var(--muted)}
+  ul.limit-bullets{list-style:disc;margin:.5em 0 0;padding-left:20px;font-size:.85rem;color:var(--ink)}
+  ul.limit-bullets li{margin:3px 0}
+  .banner{background:#fbf3e6;border:1px solid var(--gold-soft);border-radius:10px;padding:10px 14px;color:#6b5416;font-size:.86rem;margin:0 0 16px}
+  .toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:flex-end;margin:0 0 18px}
+  .toolbar .grow{margin-right:auto;color:var(--muted);font-size:.82rem}
+  body.editing .edit-only{display:inline-flex}
+  .edit-only{display:none !important}
+  body.editing .edit-only{display:inline-flex !important}
+  .field{display:block;margin:0 0 10px}
+  .field label{display:block;font-size:.78rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}
+  .field input,.field textarea,.field select{width:100%;font-family:inherit;font-size:.95rem;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}
+  .field .static-val{padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:#faf8f3;color:var(--ink);font-size:.95rem;word-break:break-word}
+  .field textarea{min-height:70px;resize:vertical}
+  .colorrow{display:flex;align-items:center;gap:10px}
+  .field input.colorpick{width:58px;height:40px;padding:2px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer}
+  .colorhex{font-size:.9rem;color:var(--muted);font-variant-numeric:tabular-nums}
+  .checklist{border:1px solid var(--line);border-radius:8px;background:#fff;max-height:170px;overflow:auto;padding:4px 6px}
+  .checklist .chk{display:flex;align-items:flex-start;gap:8px;padding:5px 4px;font-size:.92rem;color:var(--ink);text-transform:none;letter-spacing:0;font-weight:400;cursor:pointer}
+  .checklist .chk input{width:auto;margin-top:3px}
+  .ag-ed-list{border:1px solid var(--line);border-radius:8px;background:#fff;padding:5px 6px}
+  .ag-ed-row{display:flex;align-items:center;gap:7px;padding:3px 2px}
+  .ag-ed-mk{flex:0 0 auto;min-width:15px;text-align:center;color:var(--navy);font-weight:700}
+  .ag-ed-mk.dim{color:var(--muted);font-weight:400}
+  .ag-ed-text{flex:1 1 auto;font-size:.92rem;padding:5px 8px;border:1px solid var(--line);border-radius:6px;min-width:60px}
+  .ag-ed-ctrls{flex:0 0 auto;display:flex;gap:2px}
+  .ag-ed-ctrls button{font-family:inherit;font-size:.8rem;line-height:1;padding:4px 6px;border:1px solid var(--line);border-radius:5px;background:#faf8f3;color:var(--ink);cursor:pointer}
+  .ag-ed-ctrls button:disabled{opacity:.35;cursor:default}
+  .ag-ed-ctrls button:hover:not(:disabled){background:#efe9dc}
+  .modal-bg{position:fixed;inset:0;background:rgba(20,30,45,.45);display:none;align-items:center;justify-content:center;z-index:50;padding:18px}
+  .modal-bg.open{display:flex}
+  .modal{background:#fff;border-radius:14px;max-width:520px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.3);max-height:90vh;overflow:auto}
+  .modal .mhead{padding:16px 20px;border-bottom:1px solid var(--line);font-weight:700;color:var(--navy-dark);font-size:1.05rem}
+  .analysis-modal{max-width:820px}
+  .dispatch-analysis h3{color:var(--navy-dark);font-size:1.05rem;margin:.2em 0 .4em}
+  .dstat{display:flex;align-items:baseline;gap:10px;margin:.2em 0 .6em}
+  .dstat-num{font-size:2rem;font-weight:800;color:var(--navy-dark)}
+  .dstat-lbl{color:var(--muted);font-size:.86rem}
+  .stackchart{display:flex;align-items:flex-end;gap:12px;min-height:170px;padding:6px 0 0;overflow-x:auto}
+  .stackcol{flex:1 1 0;min-width:44px;display:flex;flex-direction:column;align-items:center;gap:6px}
+  .stackbar{width:100%;max-width:56px;height:150px;display:flex;flex-direction:column-reverse;background:#f3f0e8;border-radius:4px 4px 0 0;overflow:hidden}
+  .stackbar .seg{width:100%;min-height:1px}
+  .stacklab{font-size:.72rem;color:var(--muted);text-align:center;line-height:1.25}
+  .stacklab b{color:var(--navy-dark);font-size:.85rem}
+  .chart-legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;font-size:.8rem;color:var(--muted)}
+  .chart-legend .leg{display:inline-flex;align-items:center;gap:5px}
+  .chart-legend .leg i{width:12px;height:12px;border-radius:3px;display:inline-block}
+  table.matrix th{font-size:.78rem;color:var(--muted);font-weight:700;padding:6px;text-align:right}
+  table.matrix th:first-child{text-align:left}
+  .modal .mbody{padding:18px 20px}
+  .modal .mfoot{padding:14px 20px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;gap:8px}
+  .doc-view{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:30px 34px;margin-top:14px}
+  .doc-view h1{font-size:1.5rem;color:var(--navy-dark)}
+  .doc-view h2{font-size:1.2rem;color:var(--navy);border-bottom:1px solid var(--line);padding-bottom:4px;margin-top:1.6em}
+  .doc-view h3{color:var(--navy-dark)}
+  .doc-view table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.92rem}
+  .doc-view th,.doc-view td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+  .doc-view th{background:#f3f0e8}
+  .prayer{background:#f4f1ea;border-left:4px solid var(--gold);padding:14px 18px;border-radius:0 10px 10px 0;font-style:italic;color:#4a4230;margin:14px 0}
+  .steps{counter-reset:s;list-style:none;padding:0;margin:0}
+  .steps li{counter-increment:s;position:relative;padding:10px 0 10px 44px;border-top:1px solid var(--line)}
+  .steps li:first-child{border-top:none}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:9px;width:30px;height:30px;border-radius:50%;
+    background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem}
+  .steps li b{color:var(--navy-dark)}
+  .ev{display:flex;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+  .ev:first-child{border-top:none}
+  .ev .date{flex:0 0 74px;text-align:center;background:#f3f0e8;border-radius:10px;padding:8px 4px}
+  .ev .date .mo{font-size:.7rem;font-weight:700;text-transform:uppercase;color:var(--warn);letter-spacing:.5px}
+  .ev .date .dy{font-size:1.4rem;font-weight:800;color:var(--navy-dark);line-height:1}
+  .ev .date .yr{font-size:.7rem;color:var(--muted)}
+  .ev .body{flex:1 1 auto}
+  .ev .body .t{font-weight:700;color:var(--navy-dark)}
+  .ev .body .m{font-size:.85rem;color:var(--muted)}
+  .scope-note{font-size:.85rem;color:var(--muted);margin:.4em 0 1.2em}
+  footer.site{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:.82rem;text-align:center}
+  .empty{color:var(--muted);font-style:italic;font-size:.9rem;padding:8px 0}
+  .cat-add{border:2px dashed var(--line);border-radius:12px;padding:14px;text-align:center;color:var(--muted);background:transparent}
+  #statusLine{font-size:.8rem;color:var(--muted)}
+  .mtg{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 16px;background:linear-gradient(180deg,#fff,#fcfbf7);box-shadow:var(--shadow)}
+  .mtg .mtop{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:flex-start}
+  .mtop-left{display:flex;gap:8px;align-items:flex-start;flex:1 1 auto;min-width:0}
+  .mtg-toggle{flex:0 0 auto;border:none;background:none;cursor:pointer;color:var(--navy);font-size:1.05rem;line-height:1;padding:4px 4px 0 0}
+  .mtg-toggle:hover{color:var(--gold)}
+  .mtg.collapsed .mtg-body{display:none}
+  .mtg.collapsed{background:#fbfaf7}
+  .mtg h3{margin:.15em 0 0;color:var(--navy-dark);font-size:1.15rem}
+  .mtype{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+  .mtype.conf{background:var(--navy);color:#fff}
+  .mtype.other{background:var(--gold-soft);color:#6b5416}
+  .mtype.draft{background:var(--warn);color:#fff}
+  .mtg.draft{border:1px dashed var(--warn);background:#fdf6f2}
+  .mmeta{color:var(--muted);font-size:.86rem;margin:.3em 0 .3em}
+  .mvirtual{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.9rem;margin:0 0 .5em}
+  .mvirtual a{font-weight:600;text-decoration:none}
+  .mvirtual a:hover{text-decoration:underline}
+  .mvirtual.past span{color:var(--muted);font-weight:600}
+  .mnotes{white-space:pre-wrap;font-size:.92rem;color:var(--ink);background:#faf8f3;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:.2em 0}
+  ul.mnotes-list{list-style:disc;margin:.2em 0;padding-left:24px;font-size:.92rem;color:var(--ink)}
+  ul.mnotes-list li{margin:3px 0}
+  .mnotes-tree{margin:.2em 0;font-size:.92rem;color:var(--ink)}
+  .mnote-row{display:flex;gap:8px;padding:2px 0;align-items:baseline}
+  .mnote-row.lvl1{margin-left:22px}
+  .mnote-row.lvl2{margin-left:44px}
+  .mnote-mk{color:var(--navy);min-width:14px;text-align:center;flex:0 0 auto}
+  .rnd{font-size:.6em}
+  .subhead{font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin:1em 0 .3em}
+  ol.agenda{list-style:none;margin:.2em 0;padding:0;counter-reset:ag}
+  ol.agenda li{counter-increment:ag;position:relative;padding:7px 0 7px 32px;border-top:1px dashed var(--line);display:flex;gap:8px;align-items:flex-start}
+  ol.agenda li:first-child{border-top:none}
+  ol.agenda li::before{content:counter(ag) ".";position:absolute;left:4px;top:7px;color:var(--navy);font-weight:700;font-size:.9rem}
+  ol.agenda .ag-txt{flex:1 1 auto;white-space:pre-wrap}
+  .agenda2{margin:.2em 0;padding:0}
+  .agenda2 .ag-item{display:flex;gap:8px;align-items:flex-start;padding:6px 0;border-top:1px dashed var(--line)}
+  .agenda2 .ag-item:first-child{border-top:none}
+  .agenda2 .ag-marker{flex:0 0 auto;min-width:22px;text-align:right;color:var(--navy);font-weight:700;font-size:.9rem}
+  .agenda2 .ag-item.sub .ag-marker{color:var(--muted);font-weight:600}
+  .agenda2 .ag-body{flex:1 1 auto;display:flex;flex-direction:column;gap:2px;min-width:0}
+  .agenda2 .ag-txt{white-space:pre-wrap}
+  .agenda2 .ag-subs{margin-top:1px}
+  .agenda2 .ag-subrow{display:flex;gap:7px;align-items:baseline;font-size:.9rem;color:var(--ink);padding:1px 0}
+  .agenda2 .ag-submk{color:var(--navy);min-width:13px;text-align:center;flex:0 0 auto}
+  ul.mat{list-style:none;margin:.2em 0;padding:0}
+  ul.mat li{display:flex;gap:8px;align-items:flex-start;padding:7px 0;border-top:1px dashed var(--line)}
+  ul.mat li:first-child{border-top:none}
+  .stat-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin:0 0 18px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:16px 18px;text-align:center}
+  .stat-num{font-size:2rem;font-weight:800;color:var(--navy-dark)}
+  .stat-lbl{font-size:.8rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.3px}
+  .barchart{display:flex;align-items:flex-end;gap:1px;height:140px;padding:6px 0;border-bottom:1px solid var(--line)}
+  .barchart .bar{flex:1 1 0;min-width:1px;display:flex;align-items:flex-end;height:100%}
+  .barchart .bar-fill{width:100%;background:var(--navy);border-radius:2px 2px 0 0;min-height:1px}
+  .barchart-x{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted);margin-top:4px}
+  .secrow{display:grid;grid-template-columns:150px 1fr 62px 62px;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}
+  .secrow:first-child{border-top:none}
+  .secname{font-weight:600;font-size:.9rem;color:var(--navy-dark)}
+  .secspark{display:flex;align-items:flex-end;gap:1px;height:34px}
+  .secspark .sbar{flex:1 1 0;min-width:1px;display:flex;align-items:flex-end;height:100%}
+  .secspark .sbar-fill{width:100%;background:var(--gold);border-radius:1px;min-height:1px}
+  .secnum{text-align:right;font-size:.72rem;color:var(--muted)}
+  .secnum b{display:block;font-size:1.05rem;color:var(--navy-dark)}
+  @media(max-width:600px){
+    .secrow{grid-template-columns:1fr 62px 62px}
+    .secname{grid-column:1 / -1}
+    .secspark{grid-column:1 / -1;height:28px}
+  }
+  table.acttab{width:100%;border-collapse:collapse}
+  table.acttab td{padding:8px 6px;border-top:1px solid var(--line);vertical-align:middle}
+  table.acttab tr:first-child td{border-top:none}
+  table.acttab td.rank{width:26px;text-align:right;color:var(--muted);font-weight:700}
+  table.acttab td.ip{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9rem;color:var(--navy-dark)}
+  table.acttab td.barcell{width:38%}
+  table.acttab td.num{text-align:right;font-weight:700;color:var(--navy-dark);width:54px}
+  table.acttab .hbar{height:12px;background:var(--gold);border-radius:6px;min-width:3px}
+  .case-row,.conf-row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line);flex-wrap:wrap}
+  .case-row:first-of-type,.conf-row:first-of-type{border-top:none}
+  .case-main,.conf-main{flex:1 1 260px;min-width:0}
+  .case-top{margin-bottom:2px}
+  .case-assign{font-weight:600;color:var(--navy-dark);margin:.15em 0}
+  .cs-dim{color:var(--muted);font-size:.85rem}
+  .cs-warn{color:var(--warn);font-weight:600}
+  .cs-badge{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:2px 7px;border-radius:999px}
+  .cs-badge.cs-navy{background:var(--navy);color:#fff}
+  .cs-badge.cs-good{background:#d8e6dd;color:#1f5c40}
+  .cs-badge.cs-gold{background:var(--gold-soft);color:#6b5416}
+  .cs-badge.cs-muted{background:#e9e6df;color:var(--muted)}
+  .av-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+  .av-chip{display:inline-flex;align-items:center;gap:4px;background:#f3f0e8;border-radius:999px;padding:3px 10px;font-size:.8rem;color:var(--navy-dark)}
+  .av-chip .av-x{border:none;background:none;color:var(--muted);cursor:pointer;font-size:1rem;line-height:1;padding:0}
+  .av-chip .av-x:hover{color:var(--warn)}
+  .doc-flash{animation:docHi 2.2s ease}
+  @keyframes docHi{0%{box-shadow:0 0 0 3px var(--gold)}100%{box-shadow:var(--shadow)}}
+  .doc-toolbar{display:flex;justify-content:flex-end;gap:8px;margin:18px 0 -6px;flex-wrap:wrap}
+  .doc-file-meta{color:var(--muted);font-size:.9rem}
+  .doc-toolbar .doc-rev{margin-right:auto;align-self:center}
+  .doc-refs{margin-top:14px;padding-top:10px;border-top:1px dashed var(--line);font-size:.82rem;color:var(--muted)}
+  .warn-pill{background:#f2d3c6;color:#8a3b1a}
+  .reviewed{color:var(--good);font-size:.78rem;font-weight:600;white-space:nowrap}
+  .limit-box .reviewed{display:block;margin-top:4px}
+  #saveFlash{position:fixed;left:50%;transform:translateX(-50%);bottom:64px;background:var(--navy-dark);color:#fff;
+    padding:9px 16px;border-radius:999px;font-size:.85rem;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .2s;z-index:60}
+  #saveFlash.show{opacity:1}
+  #saveFlash.err{background:var(--warn)}
+  @media print{
+    nav.tabs,.toolbar,.doc-toolbar,.row-actions,.edit-only,.catbar .row-actions,header.site .motto,#floatbar,#saveFlash{display:none !important}
+    body{background:#fff}
+    section.view{display:block !important}
+    .card,.doc-view{box-shadow:none;border-color:#ccc;break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <a class="crest" href="https://ssvdp.org" target="_blank" rel="noopener" title="SVdP Diocesan Council of Austin"><img src="img/svdp_ctx_logo.png" alt="Society of St. Vincent de Paul — Central Texas" onerror="this.parentNode.classList.add('crest-fallback');this.parentNode.textContent='SVdP';"></a>
+      <div>
+        <h1>Vincentian Resource Center</h1>
+        <div class="sub">St. Austin Conference &middot; Society of St. Vincent de Paul &middot; Austin, Texas</div>
+      </div>
+      <a class="site-logo" href="https://staustin.org" target="_blank" rel="noopener" title="St. Austin Catholic Church &amp; School"><img src="img/st-austin-logo.png" alt="St. Austin Catholic Church &amp; School" onerror="this.parentNode.style.display='none'"></a>
+    </div>
+    <p class="motto">&ldquo;Go to the poor: you will find God.&rdquo; &mdash; attributed to St. Vincent de Paul</p>
+  </div>
+</header>
+
+<div id="bannerHost"></div>
+
+<nav class="tabs">
+  <div class="wrap" id="tabbar"></div>
+</nav>
+
+<main class="wrap">
+
+  <!-- RESOURCE CENTER -->
+  <section class="view active" id="view-resources">
+    <h2 class="section-title">Home Visit Resources</h2>
+    <div class="hv-head">
+      <p class="lead">Everything you need to prepare for and carry out a home visit &mdash; documents, assistance programs, and current limits.</p>
+      <div class="hv-actions" id="hvTools">
+        <div class="servware-wrap" id="servwareWrap" style="display:none">
+        <span class="servware-label">Connect to:</span>
+        <a id="servwareBtn" class="servware-link" target="_blank" rel="noopener" title="Open ServWare"><img src="img/servware-logo.png" alt="Open ServWare" onerror="this.parentNode.textContent='Open ServWare ↗';"></a>
+      </div>
+        <button class="btn edit-only" onclick="editServware()">Set ServWare link</button>
+        <button class="btn gold edit-only" onclick="loadCuratedResources()">&#8635; Load latest resource set</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <h3>Current Assistance Limits</h3>
+      <div class="limits" id="limitsGrid"></div>
+    </div>
+
+    <div class="toolbar">
+      <span class="grow" id="statusLine">Loading&hellip;</span>
+    </div>
+
+    <div id="catContainer"></div>
+
+    <div class="cat-add edit-only" style="margin-bottom:24px">
+      <button class="btn gold" onclick="addCategory()">+ Add a resource category</button>
+    </div>
+  </section>
+
+  <!-- SPIRITUALITY -->
+  <section class="view" id="view-spirituality">
+    <h2 class="section-title">The Spirituality of the Home Visit</h2>
+    <p class="lead">Before the logistics, the heart. A home visit is not a transaction &mdash; it is a spiritual encounter in which both the Neighbor and the Vincentian are meant to grow closer to Christ.</p>
+
+    <div class="card">
+      <h3>Our Charism &mdash; Why We Go</h3>
+      <p>The Society of St. Vincent de Paul was founded in Paris in 1833 by Frederic Ozanam and a small group of fellow students who believed that faith must be put into action through direct, personal encounter with those who are poor. We take St. Vincent de Paul as our patron because of his tireless, hands-on service to the poor and sick of his own time.</p>
+      <p>We go <b>two by two</b>, as the disciples were sent &mdash; to listen, to accompany, and to serve, offering material help alongside genuine friendship, respect, and prayer.</p>
+      <div class="prayer">&ldquo;Lord, open our ears to hear this family as You hear them, and open our hearts to serve them as You would serve them. Let us bring Your peace into this home. Amen.&rdquo;</div>
+    </div>
+
+    <div class="card">
+      <h3>Be Intentional About the Visit</h3>
+      <p>Every visit deserves a moment of preparation of the heart, not just the checklist. Pause together on the doorstep. Remember whose home you are entering and whose work you are doing.</p>
+      <ul class="links">
+        <li><div class="lk-main"><div class="lk-title">A hand up, not just a hand out</div><div class="lk-note">Pair material aid with connection to resources that build lasting stability.</div></div></li>
+        <li><div class="lk-main"><div class="lk-title">Serve with dignity, not judgment</div><div class="lk-note">We are guests in the Neighbor&rsquo;s home and in their story.</div></div></li>
+        <li><div class="lk-main"><div class="lk-title">Confidentiality is sacred</div><div class="lk-note">What is shared in a Neighbor&rsquo;s home stays within the conference&rsquo;s case records.</div></div></li>
+        <li><div class="lk-main"><div class="lk-title">Generosity within stewardship</div><div class="lk-note">Our goal is to maximize the impact and number of Neighbors served &mdash; not to conserve funds.</div></div></li>
+        <li><div class="lk-main"><div class="lk-title">Honor silence</div><div class="lk-note">It is not something to fill. Let the Neighbor tell their own story.</div></div></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>The Visit, in 9 Steps</h3>
+      <ol class="steps">
+        <li><b>Pray before knocking.</b> Take a moment together on the doorstep.</li>
+        <li><b>Greet &amp; introduce yourselves.</b> Name your parish; show your SVdP ID.</li>
+        <li><b>Listen &mdash; don&rsquo;t interrogate.</b> Let the Neighbor set the pace.</li>
+        <li><b>Empathize &mdash; no promises yet.</b> Reflect back what you hear.</li>
+        <li><b>Determine our ability to assist.</b> Reference this month&rsquo;s limit.</li>
+        <li><b>Make joint agency calls if needed.</b> Include the Neighbor in the call.</li>
+        <li><b>Fill out the Leave-Behind card.</b> Document referrals and next steps.</li>
+        <li><b>Pray together, if welcomed.</b> Always an invitation, never an obligation.</li>
+        <li><b>Thank them &amp; explain next steps.</b> Reaffirm that you&rsquo;re glad they reached out.</li>
+      </ol>
+      <div class="prayer">&ldquo;Lord, we thank You for the gift of this visit and for the trust of this family. Watch over their home, provide for their needs, and give them peace. We ask this through Christ our Lord. Amen.&rdquo;</div>
+    </div>
+  </section>
+
+  <!-- EVENTS (Regional · National · International) -->
+  <section class="view" id="view-events">
+    <h2 class="section-title">Events</h2>
+    <p class="lead">Training, gatherings, and meetings across our Central Texas region, the Society nationally (SVdP USA), and the international Confederation.</p>
+    <p class="scope-note">Placeholder entries &mdash; log in and turn on Edit mode to add confirmed dates, or use the official calendar links below.</p>
+
+    <h3 class="group-head">Regional &mdash; Central Texas</h3>
+    <div class="card">
+      <div class="catbar"><h3>Upcoming (placeholders)</h3></div>
+      <div id="ev-regional"></div>
+    </div>
+    <div class="card">
+      <h3>Official Calendars to Check</h3>
+      <ul class="links" id="lk-regional"></ul>
+    </div>
+
+    <h3 class="group-head">National &mdash; SVdP USA</h3>
+    <div class="card">
+      <div class="catbar"><h3>Upcoming (placeholders)</h3></div>
+      <div id="ev-national"></div>
+    </div>
+    <div class="card">
+      <h3>Official Calendars to Check</h3>
+      <ul class="links" id="lk-national"></ul>
+    </div>
+
+    <h3 class="group-head">International &mdash; Confederation</h3>
+    <div class="card">
+      <div class="catbar"><h3>Upcoming (placeholders)</h3></div>
+      <div id="ev-international"></div>
+    </div>
+    <div class="card">
+      <h3>Official Calendars to Check</h3>
+      <ul class="links" id="lk-international"></ul>
+    </div>
+  </section>
+
+  <!-- MEETINGS -->
+  <section class="view" id="view-meetings">
+    <h2 class="section-title">Meeting Agendas &amp; Materials</h2>
+    <p class="lead">Agendas for upcoming meetings, plus reports and materials members can post or upload. Log in and turn on Edit mode to add a meeting, build its agenda, attach a report, or post a link to meeting materials.</p>
+    <div class="toolbar">
+      <span class="grow" id="mtgStatus"></span>
+      <button class="btn" onclick="setAllMeetings(true)">Collapse all</button>
+      <button class="btn" onclick="setAllMeetings(false)">Expand all</button>
+      <button class="btn edit-only" onclick="importAgendaDoc()">⬆ Import agenda (Word .docx)</button>
+      <button class="btn gold edit-only" onclick="addMeeting()">+ Add meeting</button>
+    </div>
+    <div id="meetingsContainer"></div>
+  </section>
+
+  <!-- DOCUMENTS -->
+  <section class="view" id="view-docs">
+    <h2 class="section-title">Printable Documents</h2>
+    <p class="lead">The full text of our core home-visit documents, formatted for reading and printing. Use the Print / Save as PDF button on any document below.</p>
+    <div id="docsContainer"></div>
+  </section>
+
+  <!-- SURVEYS -->
+  <section class="view" id="view-surveys">
+    <h2 class="section-title">Member Surveys</h2>
+    <p class="lead">Short surveys for the conference. Open surveys appear below — your responses are collected for the team to review. Log in and turn on Edit mode to create a survey or see results.</p>
+    <div class="toolbar edit-only"><span class="grow"></span><button class="btn gold" onclick="createSurvey()">+ Create survey</button></div>
+    <div id="surveysContainer"></div>
+  </section>
+
+  <!-- CASES (editors only) -->
+  <section class="view" id="view-cases">
+    <h2 class="section-title">Dispatch</h2>
+    <p class="lead">Take a neighbor's call, route it by ZIP (assign in-area or refer to a sister conference), and auto-assign an available pair of confreres. Editors only.</p>
+    <div id="casesBody"></div>
+  </section>
+
+  <!-- DISPATCHING (editors only) -->
+  <section class="view" id="view-dispatching">
+    <h2 class="section-title">Dispatching</h2>
+    <p class="lead">A running view of the monthly dispatcher reports. Upload each month's report (Word .docx) below and its figures are stitched into the trends. Visible to editors only.</p>
+    <div id="dispatchingBody"><div class="empty">Loading&hellip;</div></div>
+  </section>
+
+  <!-- SITE ANALYTICS (editors only) -->
+  <section class="view" id="view-activity">
+    <h2 class="section-title">Site Analytics</h2>
+    <p class="lead">How much the site is being used — total visits and which sections people open. Visible to editors only; visitors are never identified, only counted.</p>
+    <div id="activityBody"><div class="empty">Loading&hellip;</div></div>
+  </section>
+
+</main>
+
+<div id="floatbar" style="position:fixed;right:14px;bottom:14px;display:flex;gap:8px;z-index:30;flex-wrap:wrap;justify-content:flex-end;max-width:90vw">
+  <button class="btn" id="editToggle" onclick="toggleEdit()">✎ Edit</button>
+  <button class="btn edit-only" onclick="exportData()">⇩ Export backup</button>
+  <button class="btn edit-only" onclick="document.getElementById('importFile').click()">⇧ Import</button>
+  <button class="btn edit-only" onclick="resetData()">↺ Reset</button>
+  <button class="btn" id="logoutBtn" style="display:none" onclick="logout()">⎋ Log out</button>
+  <input type="file" id="importFile" accept="application/json" style="display:none" onchange="importData(event)">
+</div>
+
+<div id="saveFlash"></div>
+
+<footer class="site">
+  <div class="wrap">
+    St. Austin Conference &mdash; Society of St. Vincent de Paul<br>
+    Content is shared and stored on the conference server. <b>Export backup</b> saves a copy of the current content to your computer.
+  </div>
+</footer>
+
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <div class="mhead" id="modalTitle">Edit</div>
+    <div class="mbody" id="modalBody"></div>
+    <div class="mfoot">
+      <button class="btn ghost" onclick="closeModal()">Cancel</button>
+      <button class="btn primary" id="modalSave">Save</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============ Curated resource set (St. Austin Conference) ============
+   Built from the conference's Common Resources sheet plus reviewer feedback
+   (Mitzi Patiño Eastman & Huddie Murray, July 2026). Editors can load this
+   onto the live site any time via "Load latest resource set" on the Home
+   Visit Resources page (replaces only the resource categories). */
+const CURATED_CATEGORIES = [
+  { id:"cat-prep", name:"Home Visit Preparation & Execution", icon:"📋",
+    desc:"Checklists, scripts, and the core kit for planning and carrying out a visit.",
+    links:[
+      {id:"l-kit", title:"Home Visit Kit — Full Guide", url:"#doc-kit", note:"Plan, execute, and follow up.", tag:"doc", reviewed:"2026-07"},
+      {id:"l-pocket", title:"Vincentian Pocket Quick-Reference Card", url:"#doc-pocket", note:"The 9 steps, key contacts, and prayers.", tag:"doc", reviewed:"2026-07"},
+      {id:"l-leave", title:"Neighbor Leave-Behind Card", url:"#doc-leave", note:"Fill out in front of the Neighbor.", tag:"doc", reviewed:"2026-07"},
+      {id:"l-sw", title:"ServWare (case management & reporting)", url:"", note:"Where visits are logged and reporting is done — required by National SVdP. Use the Open ServWare button at the top of this page.", tag:"link", reviewed:"2026-07"}
+    ]},
+  { id:"cat-info", name:"Information & Referral — Start Here", icon:"📞",
+    desc:"The broad directories that cover almost everything. Start here when the need is unclear.",
+    links:[
+      {id:"l-211", title:"Texas 2-1-1 / ConnectCTX / Find Help", url:"https://connectatxpublic.findhelp.com", note:"Same United Way hub, three names. Dial 2-1-1 for a low-tech or visually impaired neighbor; send the website link to a tech-savvy one — they still get the same rose. ZIP-code lookup of community resources. Alt: unitedwayaustin.org/connectctx", tag:"link", reviewed:"2026-07"},
+      {id:"l-svdp-dir", title:"SVdP Society directory (austinsvdp.info)", url:"https://austinsvdp.info", note:"Search a neighbor's FULL address to find the Catholic church/conference serving their area. Give the SVdP phone number, not the parish number.", tag:"link", reviewed:"2026-07"},
+      {id:"l-anc", title:"Austin Neighborhood Centers (City of Austin)", url:"https://www.austintexas.gov/services/get-help-neighborhood-centers", note:"Free: food, baby formula, bus passes, notary, rent/utility help, job search, benefits applications, health screenings, car seats, fans, tax filing. Locations — St Johns 512-972-5159, Montopolis 512-972-6705, Blackland 512-972-5790, East Austin 512-972-6650, South Austin 512-972-6840, Rosewood-Zaragoza 512-972-6740.", tag:"link", reviewed:"2026-07"},
+      {id:"l-travis", title:"Travis County Health & Human Services", url:"https://www.traviscountytx.gov/health-human-services/apply-for-assistance", note:"512-854-4120 · food pantries, utility assistance, home repair, weatherization, case management, burial services. Online, in-person, and mail-in.", tag:"link", reviewed:"2026-07"}
+    ]},
+  { id:"cat-utility", name:"Utility Assistance", icon:"💡",
+    desc:"Programs that help Neighbors keep the lights, gas, and water on.",
+    links:[
+      {id:"l-ae", title:"Austin Energy — Plus 1 Emergency Financial Assistance", url:"tel:5124949400", note:"512-494-9400 · toll-free 888-340-6465 · Mon–Fri 7a–9p, Sat 9a–1p.", tag:"phone", reviewed:"2026-07"},
+      {id:"l-gas", title:"Texas Gas Service — Share the Warmth", url:"https://www.texasgasservice.com/save-money/assistance-programs/share-the-warmth", note:"Helps families in an immediate financial emergency pay their natural gas bill. Apply through Travis County HHS, 2-1-1, or Catholic Charities (you don't have to be a TGS customer).", tag:"link", reviewed:"2026-07"},
+      {id:"l-liheap", title:"LIHEAP / CEAP — Home Energy Assistance", url:"https://www.tdhca.texas.gov/help-for-texans", note:"Financial help with home energy costs. Dial 2-1-1 or 877-399-8939 to reach the local community-action agency that takes applications.", tag:"link", reviewed:"2026-07"},
+      {id:"l-travis-u", title:"Travis County HHS — utility & home repair", url:"https://www.traviscountytx.gov/health-human-services/apply-for-assistance", note:"512-854-4120 · utility assistance, home repair, weatherization.", tag:"link", reviewed:"2026-07"}
+    ]},
+  { id:"cat-food", name:"Food", icon:"🍞",
+    desc:"Pantries and food assistance. (St. Austin no longer runs its own pantry.)",
+    links:[
+      {id:"l-svdp-pantry", title:"SVdP Food Pantry — 901 W. Braker Ln", url:"https://ssvdp.org", note:"512-251-6995 · Saturdays 8–11am (arrive by 11am sharp — not a minute later). Meat, produce, dairy, bread, canned goods; diapers on request.", tag:"link", reviewed:"2026-07"},
+      {id:"l-vfc", title:"VFC (parish-supported)", url:"", note:"One of the two pantries St. Austin now supports. (Confirm current website & hours.)", tag:"link", reviewed:"2026-07"},
+      {id:"l-micah6", title:"Micah 6 (parish-supported)", url:"https://www.micah6austin.org", note:"University Presbyterian Church, 2203 San Antonio St · Thu 5:30–7pm, Sat 9:30–11am. St. Austin is a partner congregation.", tag:"link", reviewed:"2026-07"},
+      {id:"l-ctfb", title:"Central Texas Food Bank — Find Food Now", url:"https://www.centraltexasfoodbank.org/get-help", note:"512-282-2111 · enter a ZIP to see nearby pantries with hours & requirements. Age/disability-qualifying neighbors may qualify for deliveries.", tag:"link", reviewed:"2026-07"}
+    ]},
+  { id:"cat-housing", name:"Rent, Housing & Financial", icon:"🏠",
+    desc:"Rent help, eviction prevention, and financial-stability programs.",
+    links:[
+      {id:"l-ccfs", title:"Catholic Charities (CCCTX) — Financial Stability", url:"https://ccctx.org/financial-stability/", note:"512-651-6100 · short-term financial assistance (limited rent help), case management, financial education. Online application.", tag:"link", reviewed:"2026-07"},
+      {id:"l-legal", title:"Austin Tenants Council / TRLA (tenant & eviction)", url:"https://www.trla.org/atc", note:"512-474-1961 · landlord/tenant counseling, rights info, self-help forms, and referrals. Part of Texas RioGrande Legal Aid.", tag:"link", reviewed:"2026-07"},
+      {id:"l-travis-h", title:"Travis County HHS — housing & weatherization", url:"https://www.traviscountytx.gov/health-human-services/apply-for-assistance", note:"512-854-4120 · home repair, weatherization, case management.", tag:"link", reviewed:"2026-07"}
+    ]},
+  { id:"cat-baby", name:"Babies & Children", icon:"👶",
+    desc:"Pregnancy, parenting, diapers, and child supplies.",
+    links:[
+      {id:"l-parish-gp", title:"Parish Gabriel Project (start here)", url:"", note:"Start with the parish project, not the 877 number. Limited capacity.", tag:"phone", reviewed:"2026-07"},
+      {id:"l-gp", title:"Gabriel Project (statewide)", url:"tel:8779322732", note:"877-932-2732 · refers pregnant families or those with a child up to age 3 to the church serving their area; else CCCTX or JPII Life Center.", tag:"phone", reviewed:"2026-07"},
+      {id:"l-jpii", title:"John Paul II Life Center (Marathon Blvd)", url:"https://jpiilifecenter.org", note:"512-407-2900 · 4201 Marathon Blvd, Ste 110 · free pregnancy services, OB-GYN care, and parenting education.", tag:"link", reviewed:"2026-07"},
+      {id:"l-sgppp", title:"CCCTX — St. Gabriel's Pregnancy & Parenting Program", url:"https://ccctx.org/st-gabriels-pregnancy-parenting-program/", note:"512-651-6100 · 18-month program (pregnancy to child's 3rd birthday); classes required for baby items. Intake: SGPPPintake@ccctx.org.", tag:"link", reviewed:"2026-07"},
+      {id:"l-abc", title:"Any Baby Can", url:"https://anybabycan.org", note:"512-454-3743 · parenting education, in-home therapies, medical case management, and resource navigation. English & Spanish; free or affordable.", tag:"link", reviewed:"2026-07"},
+      {id:"l-vfc-diaper", title:"VFC — diapers & feminine care", url:"", note:"Often (not always) available Tue/Wed/Thu during Emergency Assistance hours.", tag:"link", reviewed:"2026-07"}
+    ]},
+  { id:"cat-work", name:"Work & Employment", icon:"💼",
+    desc:"Job search, training, and career services.",
+    links:[
+      {id:"l-twc", title:"Texas Workforce Commission", url:"https://www.twc.texas.gov", note:"Job search plus child-care assistance resources.", tag:"link", reviewed:"2026-07"},
+      {id:"l-acc", title:"ACC Career & Life Design Services", url:"https://students.austincc.edu/career-services/", note:"512-223-1470 · free job-search support, career assessments, and professional development — open to non-students, alumni, and the community.", tag:"link", reviewed:"2026-07"},
+      {id:"l-anc-work", title:"Austin Neighborhood Centers — job search", url:"https://www.austintexas.gov/services/get-help-neighborhood-centers", note:"Job search help and benefits applications; see the Information & Referral section for locations.", tag:"link", reviewed:"2026-07"}
+    ]},
+  { id:"cat-health", name:"Health & Insurance", icon:"🩺",
+    desc:"Health coverage, counseling, and medical access.",
+    links:[
+      {id:"l-map", title:"Medical Access Program (MAP card)", url:"https://www.centralhealth.net/map/", note:"512-978-8130 · health coverage for low-income Travis County residents who can't get insurance another way.", tag:"link", reviewed:"2026-07"},
+      {id:"l-fc", title:"Foundation Communities — Health Insurance Services", url:"https://prosperhealthcoverage.org", note:"512-381-4520 · help choosing a plan during open enrollment or after a life event.", tag:"link", reviewed:"2026-07"},
+      {id:"l-counsel", title:"CCCTX — Counseling Services", url:"https://ccctx.org/counseling-services/", note:"512-651-6100 · sliding-scale fees, English & Spanish, virtual or in-person, ages 5+.", tag:"link", reviewed:"2026-07"}
+    ]},
+  { id:"cat-other", name:"Immigration, Veterans & Other", icon:"🤝",
+    desc:"Catholic Charities programs and other specialized help.",
+    links:[
+      {id:"l-ccctx", title:"Catholic Charities of Central Texas (CCCTX)", url:"https://ccctx.org/", note:"512-651-6100 · umbrella for the programs below and more.", tag:"link", reviewed:"2026-07"},
+      {id:"l-imm", title:"CCCTX — Immigration Legal Services", url:"https://ccctx.org/immigration-legal-services/", note:"512-651-6125.", tag:"link", reviewed:"2026-07"},
+      {id:"l-vets", title:"CCCTX — St. Michael's Veterans Services", url:"https://ccctx.org/st-michaels-veteran-services/", note:"512-651-6100.", tag:"link", reviewed:"2026-07"}
+    ]}
+];
+
+/* ============ Default content (used until the first save) ============ */
+const DEFAULT_DATA = {
+  limits: [
+    {id:"lim1", label:"This Month's Assistance Guideline", amount:"$_____", meta:"Updated monthly by the Treasurer. Exceeding it requires approval from 3 fellow Vincentians before committing funds."},
+    {id:"lim2", label:"Austin Energy Plus 1 Allocation", amount:"$_____", meta:"Our conference's current PlusOne allocation remaining this cycle. Confirm before pledging utility help."}
+  ],
+  categories: CURATED_CATEGORIES,
+  servwareUrl: "",
+  events: {
+    regional: [
+      {id:"e1", date:"2026-09-12", title:"Placeholder: Ozanam Orientation (new member training)", meta:"Central Texas Diocesan Council · replace with real date"},
+      {id:"e2", date:"2026-10-03", title:"Placeholder: Regional Vincentian Gathering", meta:"Host conference TBD · replace with real date"}
+    ],
+    national: [
+      {id:"e3", date:"2026-08-26", title:"Placeholder: SVdP National Assembly", meta:"SVUSA · confirm dates & location"}
+    ],
+    international: [
+      {id:"e4", date:"2026-09-27", title:"Placeholder: International feast of St. Vincent de Paul observances", meta:"Confederation-wide · confirm local events"}
+    ]
+  },
+  calendars: {
+    regional: [
+      {id:"c1", title:"SVdP Diocesan Council of Austin", url:"", note:"Add your council's events/calendar page URL"},
+      {id:"c2", title:"Neighboring conference bulletins", url:"", note:"Parish bulletins across the region"}
+    ],
+    national: [
+      {id:"c3", title:"SVdP USA — national events", url:"https://www.svdpusa.org", note:"Official national site (verify current event pages)"},
+      {id:"c4", title:"SVdP USA formation & webinars", url:"https://www.svdpusa.org", note:"Ongoing training and formation"}
+    ],
+    international: [
+      {id:"c5", title:"SSVP General Council (Confederation), Paris", url:"https://www.ssvpglobal.org", note:"International news and events (verify)"},
+      {id:"c6", title:"Ozanam Network / international gatherings", url:"", note:"Add specific event links as announced"}
+    ]
+  },
+  meetings: [
+    {id:"m1", type:"conference", title:"Monthly Conference Meeting", date:"2026-08-05", time:"7:00 PM", location:"St. Austin Parish Hall",
+      agenda:[
+        {id:"ag1", text:"Opening prayer"},
+        {id:"ag2", text:"Reading of the minutes"},
+        {id:"ag3", text:"Treasurer's report"},
+        {id:"ag4", text:"Home-visit case reviews (confidential)"},
+        {id:"ag5", text:"New business & closing prayer"}
+      ],
+      materials:[]}
+  ]
+};
+
+/* Built-in documents used to seed the editable document list on first load.
+   Editors can add or remove documents; those live in data.documents. */
+const DEFAULT_DOCS = [
+  { id:"doc-kit", title:"Home Visit Kit — Full Guide", reviewed:"2026-07", html:`
+    <h1>Home Visit Kit — A Guide for Vincentians</h1>
+    <div class="prayer">"Go to the poor: you will find God." — attributed to St. Vincent de Paul</div>
+    <p><b>Plan the Visit &middot; Execute the Visit &middot; Follow Up</b></p>
+    <h2>Our Charism</h2>
+    <p>Founded in Paris in 1833 by Frederic Ozanam, the Society believes faith must be put into action through direct, personal encounter with those who are poor. A home visit is a spiritual encounter, not a transaction. We go two by two, to listen, accompany, and serve.</p>
+    <h3>Guiding Principles</h3>
+    <ul>
+      <li>Always visit in pairs. If truly unavoidable, notify your President or VP before visiting alone.</li>
+      <li>Confidentiality is sacred — what is shared stays within the conference's case records.</li>
+      <li>Serve with dignity, not judgment. We are guests in the Neighbor's home and story.</li>
+      <li>Maximize the impact and number of Neighbors served — not to conserve funds. Be generous within good stewardship.</li>
+      <li>A hand up, not just a hand out.</li>
+    </ul>
+    <h2>Part 1 — Plan the Visit</h2>
+    <table><tr><th>Before You Go</th></tr>
+      <tr><td>Log into ServWare; review the request: name, address, phone, household size, reason, prior history.</td></tr>
+      <tr><td>Confirm your visit partner; agree on a meeting time and place.</td></tr>
+      <tr><td>Check this month's assistance guideline limit. Exceeding it requires approval from 3 fellow Vincentians.</td></tr>
+      <tr><td>Pack your Vincentian Visit Bag.</td></tr>
+      <tr><td>Review the Resource Inventory for agencies beyond our direct capacity.</td></tr>
+      <tr><td>Consider safety: daylight hours, note the address/area, share your plan.</td></tr>
+      <tr><td>Silence your phone, bring your SVdP ID/badge and this kit.</td></tr>
+    </table>
+    <h3>Vincentian Visit Bag Checklist</h3>
+    <table>
+      <tr><th>Item</th><th>Purpose</th></tr>
+      <tr><td>SVdP photo ID / badge</td><td>Identifies you at the door</td></tr>
+      <tr><td>Leave-Behind cards + pen</td><td>Document agencies and next steps</td></tr>
+      <tr><td>Current assistance guideline card</td><td>This month's limits and approval threshold</td></tr>
+      <tr><td>Resource inventory quick-reference</td><td>Food, legal, rent, utility programs</td></tr>
+      <tr><td>Agency phone number card</td><td>Austin Energy Plus 1, Texas 2-1-1, partners</td></tr>
+      <tr><td>Pre-approved bus passes / gift cards (if authorized)</td><td>Immediate same-visit assistance</td></tr>
+      <tr><td>ServWare mobile access / note template</td><td>Capture notes accurately</td></tr>
+      <tr><td>Prayer card / Scripture</td><td>For a closing prayer, if welcomed</td></tr>
+      <tr><td>Conference brochure / card</td><td>So the Neighbor can reach us again</td></tr>
+      <tr><td>Tissues, hand sanitizer</td><td>Practical comfort</td></tr>
+    </table>
+    <h2>Part 2 — Execute the Visit</h2>
+    <p><b>1. Before Knocking — Pause and Pray.</b></p>
+    <div class="prayer">"Lord, open our ears to hear this family as You hear them, and open our hearts to serve them as You would serve them. Let us bring Your peace into this home. Amen."</div>
+    <p><b>2. Greet the Neighbor</b> — introduce yourselves and your parish; confirm it's a good time; show your ID; let them set the pace.</p>
+    <p><b>3. Listen and Discover</b> — household, income, benefits (SNAP/TANF/SSI/SSDI/Medicaid), housing &amp; eviction risk, health, bills, the immediate crisis, past assistance.</p>
+    <p><b>4. Empathize and Accompany</b> — sit at their level, reflect back, honor silence, keep everything confidential. Avoid promising a dollar amount, rushing, or sharing other Neighbors' details.</p>
+    <p><b>5. Determine Our Ability to Assist</b> — reference this month's limit; if exceeded, explain the 3-member approval and the follow-up timeline.</p>
+    <p><b>6. Make Joint Calls</b> — call agencies together, with the Neighbor present.</p>
+    <p><b>7. Document Resources</b> on a Leave-Behind Card, in front of the Neighbor.</p>
+    <p><b>8. Pray Together</b> — ask permission first; keep it short and welcoming.</p>
+    <div class="prayer">"Lord, we thank You for the gift of this visit and for the trust of this family. Watch over their home, provide for their needs, and give them peace. We ask this through Christ our Lord. Amen."</div>
+    <p><b>9. Leave</b> — thank them, reaffirm you're glad they reached out, explain the follow-up timeline.</p>
+    <h2>Part 3 — Follow Up</h2>
+    <table><tr><th>After the Visit</th></tr>
+      <tr><td>Document the visit in ServWare within 24–48 hours.</td></tr>
+      <tr><td>Record financial assistance decided or recommended.</td></tr>
+      <tr><td>If over the monthly limit, submit for review and document the 3 approving Vincentians.</td></tr>
+      <tr><td>Assign financial follow-up tasks (owner + due date).</td></tr>
+      <tr><td>Track agency referrals; follow up with the Neighbor per conference practice.</td></tr>
+    </table>
+    <h2>Appendix — Confidentiality, Safety, FAQ</h2>
+    <p><b>Confidentiality:</b> everything shared stays within the conference. Prayer is always an invitation.</p>
+    <p><b>Safety:</b> visit in pairs; prefer daylight; trust your instincts — it's always acceptable to reschedule.</p>
+    <p><b>If the Neighbor isn't home:</b> leave a card, log the missed visit, follow re-contact procedure.<br>
+    <b>If it feels unsafe:</b> leave calmly and notify leadership.<br>
+    <b>If we can't help with the specific need:</b> be honest, and focus on outside resources that can.</p>
+  `},
+  { id:"doc-pocket", title:"Vincentian Pocket Quick-Reference Card", reviewed:"2026-07", html:`
+    <h1>Vincentian Quick-Reference Card</h1>
+    <p><b>St. Austin Conference — SVdP</b></p>
+    <h3>Prayer Before Knocking</h3>
+    <div class="prayer">"Lord, open our ears and hearts to this family. Let us bring Your peace into this home. Amen."</div>
+    <h3>The Visit, in 9 Steps</h3>
+    <ol>
+      <li>Pray before knocking</li><li>Greet &amp; introduce yourselves</li><li>Listen — don't interrogate</li>
+      <li>Empathize — no promises yet</li><li>Determine our ability to assist</li><li>Make joint agency calls if needed</li>
+      <li>Fill out the Leave-Behind card</li><li>Pray together, if welcomed</li><li>Thank them &amp; explain next steps</li>
+    </ol>
+    <h3>This Month's Assistance Limit</h3>
+    <p>$_________ (check ServWare / bulletin — updated monthly). <b>Exceeding this limit requires approval from 3 fellow Vincentians before committing funds.</b></p>
+    <h3>Key Contacts</h3>
+    <table>
+      <tr><th>Agency</th><th>Number</th></tr>
+      <tr><td>Austin Energy — Plus 1</td><td>512-494-9400 (toll-free 888-340-6465)</td></tr>
+      <tr><td>Texas 2-1-1</td><td>Dial 2-1-1</td></tr>
+      <tr><td>Conference Intake / President</td><td>__________________</td></tr>
+      <tr><td>Resource Chair</td><td>__________________</td></tr>
+    </table>
+    <h3>Remember</h3>
+    <ul><li>Always visit in pairs.</li><li>Confidentiality, always.</li><li>Dignity first — a hand up, not just a hand out.</li><li>Log every visit in ServWare within 24–48 hours.</li></ul>
+    <div class="prayer">"Lord, we thank You for this visit and this family's trust. Watch over their home and give them peace. Amen."</div>
+  `},
+  { id:"doc-leave", title:"Neighbor Leave-Behind Card", reviewed:"2026-07", html:`
+    <h1>Thank You for Welcoming Us</h1>
+    <p><b>Society of St. Vincent de Paul — St. Austin Conference, Austin, Texas</b></p>
+    <p>It was a privilege to visit with you today. Below are the resources we discussed. Please don't hesitate to reach out to us again — you are not alone.</p>
+    <p>Date of visit: ______________  &nbsp; Vincentians: ______________________________</p>
+    <h3>Resources for You</h3>
+    <table>
+      <tr><th>Resource</th><th>Contact / Notes</th></tr>
+      <tr><td>Austin Energy — Plus 1 Utility Assistance</td><td>512-494-9400 (toll-free 888-340-6465)</td></tr>
+      <tr><td>Texas 2-1-1 — Health &amp; Human Services</td><td>Dial 2-1-1</td></tr>
+      <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+      <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+    </table>
+    <p>Our Conference — Phone: ________________  Email: ____________________</p>
+    <div class="prayer">"May the Lord watch over this home and everyone in it. May you know His peace, His provision, and His presence in the days ahead. Amen."</div>
+    <p><i>You are not alone. Please reach out to us again if you need to.</i></p>
+  `}
+];
+
+/* ============ App state ============ */
+const API = "api.php";
+let data = structuredClone(DEFAULT_DATA);
+let editing = false;
+const meetingCollapsed = {};   // per-view collapse state, keyed by meeting id (not persisted)
+const state = { version: 0, canEdit: false, updatedAt: null, saving: false };
+
+function uid(){ return "x"+Math.random().toString(36).slice(2,9); }
+function esc(s){ return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+
+/* ============ API layer ============ */
+async function apiGet(){
+  const res = await fetch(API+"?action=get",{headers:{"Accept":"application/json"}});
+  return res.json();
+}
+async function apiSave(){
+  const res = await fetch(API+"?action=save",{
+    method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({data, version: state.version})
+  });
+  let body = {};
+  try{ body = await res.json(); }catch(e){}
+  return { status: res.status, body };
+}
+async function apiLogin(password){
+  const res = await fetch(API+"?action=login",{
+    method:"POST", headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({password})
+  });
+  return res.ok;
+}
+async function apiLogout(){
+  await fetch(API+"?action=logout",{method:"POST"});
+}
+
+async function loadFromServer(){
+  try{
+    const r = await apiGet();
+    if(r.data && typeof r.data === "object"){ data = r.data; }
+    else { data = structuredClone(DEFAULT_DATA); }   // nothing saved yet
+    state.version = r.version || 0;
+    state.updatedAt = r.updated_at || null;
+    state.canEdit = !!r.can_edit;
+  }catch(e){
+    flash("Could not reach the server — showing default content.", true);
+    data = structuredClone(DEFAULT_DATA);
+  }
+  normalizeData();
+  applyAuthUI();
+  renderAll();
+  updateStatus();
+}
+
+/* Make sure every expected section exists, even on content saved before a
+   feature (like Meetings) was added — prevents undefined errors on edit. */
+function normalizeData(){
+  data.limits = data.limits || [];
+  data.categories = data.categories || [];
+  data.events = data.events || {};
+  data.calendars = data.calendars || {};
+  ["regional","national","international"].forEach(s=>{
+    data.events[s] = data.events[s] || [];
+    data.calendars[s] = data.calendars[s] || [];
+  });
+  data.meetings = data.meetings || [];
+  data.meetings.forEach(m=>{
+    if(!m.type) m.type = "other";
+    m.agenda = m.agenda || [];
+    m.materials = m.materials || [];
+  });
+  if(typeof data.servwareUrl !== "string") data.servwareUrl = "";
+  if(!Array.isArray(data.dispatchReports)) data.dispatchReports = [];
+  if(typeof data.dispatch !== "object" || !data.dispatch) data.dispatch = {};
+  const dsp = data.dispatch;
+  if(!Array.isArray(dsp.serviceZips)) dsp.serviceZips = ["78703","78705","78722","78731","78751","78756"];
+  if(!Array.isArray(dsp.sisterConferences)) dsp.sisterConferences = [];
+  if(!Array.isArray(dsp.confreres)) dsp.confreres = [];
+  if(!Array.isArray(dsp.availability)) dsp.availability = [];
+  if(!Array.isArray(dsp.cases)) dsp.cases = [];
+  // Documents: seed from the built-in defaults the first time (content saved
+  // before documents were editable simply gets the standard set).
+  if(!Array.isArray(data.documents)) data.documents = structuredClone(DEFAULT_DOCS);
+  if(typeof data.banner !== "object" || !data.banner) data.banner = {};
+  const bn = data.banner;
+  if(typeof bn.enabled !== "boolean") bn.enabled = false;
+  if(typeof bn.text !== "string") bn.text = "";
+  if(typeof bn.bg !== "string") bn.bg = "#1f6f4a";
+  if(typeof bn.fg !== "string") bn.fg = "#ffffff";
+  if(typeof bn.image !== "string") bn.image = "";
+  if(typeof bn.link !== "string") bn.link = "";
+  if(!Array.isArray(data.surveys)) data.surveys = [];
+}
+
+/* persist current `data` to the server */
+async function persist(){
+  if(state.saving) return;
+  state.saving = true;
+  try{
+    const {status, body} = await apiSave();
+    if(status === 200){
+      state.version = body.version;
+      state.updatedAt = body.updated_at;
+      flash("Saved.");
+    } else if(status === 401){
+      state.canEdit = false; editing = false; applyAuthUI(); applyEditUI();
+      flash("Your edit session expired — please log in again.", true);
+      openLogin();
+    } else if(status === 409){
+      // Someone else saved first. Load their version so nothing is lost.
+      if(body.data){ data = body.data; }
+      state.version = body.version || state.version;
+      state.updatedAt = body.updated_at || state.updatedAt;
+      renderAll();
+      alert(body.message || "Another editor saved changes since you loaded the page. Their latest version is now shown. Please re-apply your change and save again.");
+    } else {
+      flash("Save failed: "+((body&&body.error)||status), true);
+    }
+  }catch(e){
+    flash("Could not reach the server to save.", true);
+  }finally{
+    state.saving = false;
+    updateStatus();
+  }
+}
+
+/* ============ Tabs ============ */
+const TABS = [
+  {id:"resources", label:"Home Visits"},
+  {id:"meetings", label:"Meetings"},
+  {id:"spirituality", label:"Spirituality"},
+  {id:"events", label:"Events"},
+  {id:"docs", label:"Documents"},
+  {id:"surveys", label:"📋 Surveys"},
+  {id:"cases", label:"🗂 Dispatch", editOnly:true},
+  {id:"dispatching", label:"🚕 Dispatching"},
+  {id:"activity", label:"📊 Site Analytics", editOnly:true}
+];
+function buildTabs(){
+  const bar = document.getElementById("tabbar");
+  bar.innerHTML = "";
+  TABS.forEach((t,i)=>{
+    const b = document.createElement("button");
+    b.textContent = t.label;
+    b.onclick = ()=>showTab(t.id);
+    b.dataset.tab = t.id;
+    if(i===0) b.classList.add("active");
+    if(t.editOnly) b.classList.add("edit-only");
+    bar.appendChild(b);
+  });
+}
+function setActiveTab(id){
+  if(!TABS.some(t=>t.id===id)) id = "resources";
+  document.querySelectorAll("section.view").forEach(s=>s.classList.remove("active"));
+  const v = document.getElementById("view-"+id);
+  if(v) v.classList.add("active");
+  document.querySelectorAll("#tabbar button").forEach(b=>b.classList.toggle("active", b.dataset.tab===id));
+}
+/* Record a usage hit (fire-and-forget). We don't count the editor's own
+   admin browsing, nor views of the Activity tab itself. */
+function logUsage(section){
+  if(editing) return;
+  if(!section || section==="activity" || section==="cases") return;
+  try{ fetch(API+"?action=log_usage",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({section})}).catch(()=>{}); }catch(e){}
+}
+/* Navigate to a tab. Pushes a browser history entry so the Back button
+   moves between tabs instead of leaving the site. */
+function showTab(id, opts){
+  opts = opts || {};
+  setActiveTab(id);
+  logUsage(id);
+  if(id==="activity") loadActivity();
+  if(id==="dispatching") loadDispatching();
+  if(opts.scroll !== false) window.scrollTo({top:0,behavior:"smooth"});
+  if(opts.push !== false) history.pushState({tab:id}, "", "#"+id);
+}
+/* Open a specific printable document by id, scroll to it, and record it
+   in history so Back returns to where the user came from. */
+function openDoc(docId){
+  setActiveTab("docs");
+  history.pushState({tab:"docs", doc:docId}, "", "#"+docId);
+  scrollToDoc(docId);
+}
+function scrollToDoc(docId){
+  const el = document.getElementById(docId);
+  if(el){
+    el.scrollIntoView({behavior:"smooth", block:"start"});
+    el.classList.remove("doc-flash"); void el.offsetWidth; el.classList.add("doc-flash");
+  } else {
+    window.scrollTo({top:0, behavior:"smooth"});
+  }
+}
+function parseHash(){
+  const h = (location.hash || "").replace(/^#/, "");
+  if(!h) return {tab:"resources"};
+  if(h.indexOf("doc-") === 0) return {tab:"docs", doc:h};
+  if(TABS.some(t=>t.id===h)) return {tab:h};
+  return {tab:"resources"};
+}
+window.addEventListener("popstate", (e)=>{
+  const st = e.state || parseHash();
+  setActiveTab(st.tab || "resources");
+  if(st.tab==="activity") loadActivity();
+  if(st.tab==="dispatching") loadDispatching();
+  if(st.doc){ scrollToDoc(st.doc); } else { window.scrollTo({top:0}); }
+});
+
+/* ============ Activity (usage analytics) ============ */
+function sectionLabel(s){
+  if(s==="visit") return "Site visits (page loads)";
+  const t = TABS.find(x=>x.id===s);
+  return t ? t.label.replace(/^📊 /,"") : s;
+}
+async function loadActivity(){
+  const el = document.getElementById("activityBody");
+  if(!el) return;
+  if(!state.canEdit){ el.innerHTML = `<div class="empty">Turn on Edit mode to view website activity.</div>`; return; }
+  el.innerHTML = `<div class="empty">Loading activity…</div>`;
+  let j;
+  try{
+    const r = await fetch(API+"?action=usage_stats");
+    j = await r.json();
+    if(!r.ok || !j.ok) throw new Error(j&&j.error||r.status);
+  }catch(e){
+    el.innerHTML = `<div class="empty">Couldn't load activity stats. ${state.canEdit?"":"(Log in first.)"}</div>`;
+    return;
+  }
+  el.innerHTML = activityHtml(j);
+}
+function activityHtml(j){
+  const WIN = j.window || 180;
+  const t = j.totals || {};
+  const allTime = +(t.all_time||0), last180 = +(t.last180||0), last30 = +(t.last30||0), last7 = +(t.last7||0);
+  // day keys spanning the window (so gaps render as zero)
+  const today = new Date();
+  const keys = [];
+  for(let i=WIN-1;i>=0;i--){
+    const dt = new Date(today); dt.setDate(today.getDate()-i);
+    keys.push(dt.getFullYear()+"-"+String(dt.getMonth()+1).padStart(2,"0")+"-"+String(dt.getDate()).padStart(2,"0"));
+  }
+  // index rows: section -> {day: hits}
+  const bySec = {}; (j.rows||[]).forEach(r=>{ (bySec[r.section] = bySec[r.section]||{})[r.day] = +r.hits; });
+  const seriesFor = sec => keys.map(k=>({key:k, hits:(bySec[sec] && bySec[sec][k]) || 0}));
+
+  // main visits chart
+  const visitSeries = seriesFor("visit");
+  const maxVisit = Math.max(1, ...visitSeries.map(d=>d.hits));
+  const visitBars = visitSeries.map(d=>`<div class="bar" title="${d.key}: ${d.hits} visit${d.hits===1?"":"s"}"><div class="bar-fill" style="height:${Math.round(d.hits/maxVisit*100)}%"></div></div>`).join("");
+
+  // per-section daily sparklines
+  const secs = (j.perSectionAllTime||[]).map(s=>({section:s.section, hits:+s.hits})).filter(s=>s.section!=="visit");
+  const secBlocks = secs.length
+    ? secs.map(s=>{
+        const series = seriesFor(s.section);
+        const mx = Math.max(1, ...series.map(d=>d.hits));
+        const spark = series.map(d=>`<div class="sbar" title="${d.key}: ${d.hits}"><div class="sbar-fill" style="height:${Math.round(d.hits/mx*100)}%"></div></div>`).join("");
+        const win = series.reduce((a,b)=>a+b.hits,0);
+        return `<div class="secrow">
+          <div class="secname">${esc(sectionLabel(s.section))}</div>
+          <div class="secspark">${spark}</div>
+          <div class="secnum"><b>${s.hits}</b><span>all time</span></div>
+          <div class="secnum"><b>${win}</b><span>180 days</span></div>
+        </div>`;
+      }).join("")
+    : `<div class="empty">No section views recorded yet.</div>`;
+
+  return `
+    <div class="stat-cards">
+      <div class="stat"><div class="stat-num">${allTime}</div><div class="stat-lbl">Total site visits</div></div>
+      <div class="stat"><div class="stat-num">${last180}</div><div class="stat-lbl">Visits · last 180 days</div></div>
+      <div class="stat"><div class="stat-num">${last30}</div><div class="stat-lbl">Visits · last 30 days</div></div>
+      <div class="stat"><div class="stat-num">${last7}</div><div class="stat-lbl">Visits · last 7 days</div></div>
+    </div>
+    <div class="card">
+      <h3>Daily visits (last 180 days)</h3>
+      <div class="barchart">${visitBars}</div>
+      <div class="barchart-x"><span>180 days ago</span><span>today</span></div>
+    </div>
+    <div class="card">
+      <h3>By section — daily trend (last 180 days)</h3>
+      ${secBlocks}
+    </div>
+    <div class="card">
+      <h3>Top visitors by IP address (last 7 days)</h3>
+      ${topIpsHtml(j.topIps)}
+    </div>
+    <div class="toolbar"><span class="grow" style="color:var(--muted);font-size:.82rem">Counts every visit and section open. Editors' own browsing in Edit mode is not counted.</span>
+      <button class="btn" onclick="loadActivity()">↻ Refresh</button></div>`;
+}
+function topIpsHtml(list){
+  const ips = (list||[]).map(r=>({ip:r.ip, hits:+r.hits}));
+  if(!ips.length) return `<div class="empty">No IP data yet — this starts collecting from the next deploy.</div>`;
+  const max = Math.max(1, ...ips.map(i=>i.hits));
+  return `<table class="acttab"><tbody>` + ips.map((i,idx)=>`
+    <tr>
+      <td class="rank">${idx+1}</td>
+      <td class="ip">${esc(i.ip)}</td>
+      <td class="barcell"><div class="hbar" style="width:${Math.round(i.hits/max*100)}%"></div></td>
+      <td class="num">${i.hits}</td>
+    </tr>`).join("") + `</tbody></table>`;
+}
+
+/* ============ Renderers ============ */
+/* Render a limit's optional bulleted list (one item per line). */
+function limitBulletsHtml(b){
+  const lines = (b||"").split(/\n+/).map(s=>s.trim()).filter(Boolean);
+  if(!lines.length) return "";
+  return `<ul class="limit-bullets">` + lines.map(l=>`<li>${esc(l)}</li>`).join("") + `</ul>`;
+}
+function renderLimits(){
+  const g = document.getElementById("limitsGrid");
+  g.innerHTML = "";
+  data.limits.forEach(l=>{
+    const d = document.createElement("div");
+    d.className = "limit-box";
+    d.innerHTML = `
+      <div class="lbl">${esc(l.label)}</div>
+      <div class="amt">${esc(l.amount)}</div>
+      <div class="meta">${esc(l.meta)}</div>
+      ${limitBulletsHtml(l.bullets)}
+      ${l.reviewed?`<div class="reviewed">Updated ${esc(fmtReviewed(l.reviewed))}</div>`:""}
+      <div class="row-actions edit-only" style="margin-top:10px">
+        <button class="btn sm" onclick="editLimit('${l.id}')">Edit</button>
+      </div>`;
+    g.appendChild(d);
+  });
+}
+function tagHtml(tag){
+  if(tag==="doc") return '<span class="pill doc">Doc</span>';
+  if(tag==="phone") return '<span class="pill phone">Phone</span>';
+  if(tag==="link") return '<span class="pill">Link</span>';
+  return "";
+}
+/* Resolve a link that points into the Documents tab to a specific doc id.
+   Supports "#doc-kit" style targets and legacy "#docs" links (matched to a
+   document by title, so older saved content still deep-links correctly). */
+function docTargetFor(l){
+  if(!l.url || !l.url.startsWith("#")) return null;
+  const docs = data.documents || DEFAULT_DOCS;
+  if(l.url.indexOf("#doc-") === 0){
+    const id = l.url.slice(1);
+    return docs.some(d=>d.id===id) ? id : "docs-top";
+  }
+  const m = docs.find(d => d.title.toLowerCase() === (l.title||"").toLowerCase());
+  return m ? m.id : "docs-top";
+}
+function linkTitleHtml(l){
+  const t = esc(l.title);
+  const dt = docTargetFor(l);
+  if(dt === "docs-top") return `<a href="#docs" onclick="showTab('docs');return false;">${t}</a>`;
+  if(dt) return `<a href="#${esc(dt)}" onclick="openDoc('${esc(dt)}');return false;">${t}</a>`;
+  if(l.url) return `<a href="${esc(l.url)}" target="_blank" rel="noopener">${t}</a>`;
+  return t;
+}
+function renderCategories(){
+  const c = document.getElementById("catContainer");
+  c.innerHTML = "";
+  data.categories.forEach((cat, ci)=>{
+    const card = document.createElement("div");
+    card.className = "card";
+    const nLinks = cat.links.length;
+    let linksHtml = nLinks===0
+      ? `<div class="empty">No links yet.</div>`
+      : "<ul class='links'>" + cat.links.map((l,i)=>`
+        <li>
+          <div class="lk-main">
+            <div class="lk-title">${linkTitleHtml(l)} ${tagHtml(l.tag)}${docMissingBadge(l)}</div>
+            ${(l.note||l.reviewed)?`<div class="lk-note">${esc(l.note||"")}${l.reviewed?` <span class="reviewed">· updated ${esc(fmtReviewed(l.reviewed))}</span>`:""}</div>`:""}
+          </div>
+          <div class="row-actions edit-only">
+            <button class="btn ghost sm" title="Move up" onclick="moveLink('${cat.id}','${l.id}',-1)" ${i===0?"disabled":""}>▲</button>
+            <button class="btn ghost sm" title="Move down" onclick="moveLink('${cat.id}','${l.id}',1)" ${i===nLinks-1?"disabled":""}>▼</button>
+            <button class="btn sm" onclick="editLink('${cat.id}','${l.id}')">Edit</button>
+            <button class="btn ghost sm" onclick="deleteLink('${cat.id}','${l.id}')">✕</button>
+          </div>
+        </li>`).join("") + "</ul>";
+    card.innerHTML = `
+      <div class="catbar">
+        <h3>${cat.icon?esc(cat.icon)+" ":""}${esc(cat.name)}</h3>
+        <div class="row-actions edit-only">
+          <button class="btn ghost sm" title="Move section up" onclick="moveCategory('${cat.id}',-1)" ${ci===0?"disabled":""}>▲</button>
+          <button class="btn ghost sm" title="Move section down" onclick="moveCategory('${cat.id}',1)" ${ci===data.categories.length-1?"disabled":""}>▼</button>
+          <button class="btn sm" onclick="addLink('${cat.id}')">+ Link</button>
+          <button class="btn sm" onclick="editCategory('${cat.id}')">Edit</button>
+          <button class="btn ghost sm" onclick="deleteCategory('${cat.id}')">Delete</button>
+        </div>
+      </div>
+      ${cat.desc?`<div class="cat-desc">${esc(cat.desc)}</div>`:""}
+      ${linksHtml}`;
+    c.appendChild(card);
+  });
+}
+/* Reorder helpers for the Home Visit Resources page. */
+function moveLink(catId, id, dir){
+  const cat = data.categories.find(c=>c.id===catId); if(!cat) return;
+  const i = cat.links.findIndex(x=>x.id===id); if(i<0) return;
+  const j = i + dir; if(j<0 || j>=cat.links.length) return;
+  const t = cat.links[i]; cat.links[i] = cat.links[j]; cat.links[j] = t;
+  renderAll(); persist();
+}
+function moveCategory(id, dir){
+  const i = data.categories.findIndex(c=>c.id===id); if(i<0) return;
+  const j = i + dir; if(j<0 || j>=data.categories.length) return;
+  const t = data.categories[i]; data.categories[i] = data.categories[j]; data.categories[j] = t;
+  renderAll(); persist();
+}
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function fmtDate(iso){
+  const d = new Date((iso||"")+"T00:00:00");
+  if(isNaN(d)) return {mo:"—",dy:"—",yr:""};
+  return {mo:MONTHS[d.getMonth()], dy:d.getDate(), yr:d.getFullYear()};
+}
+function validDate(iso){ return iso && !isNaN(new Date(iso+"T00:00:00")); }
+/* Human-friendly start–finish range. Collapses shared month/year. */
+function fmtRange(start, end){
+  const s = fmtDate(start);
+  if(!validDate(end) || end===start) return `${s.mo} ${s.dy}, ${s.yr}`;
+  const e = fmtDate(end);
+  if(s.yr===e.yr && s.mo===e.mo) return `${s.mo} ${s.dy}–${e.dy}, ${s.yr}`;
+  if(s.yr===e.yr)                return `${s.mo} ${s.dy} – ${e.mo} ${e.dy}, ${s.yr}`;
+  return `${s.mo} ${s.dy}, ${s.yr} – ${e.mo} ${e.dy}, ${e.yr}`;
+}
+function renderEvents(scope){
+  const wrap = document.getElementById("ev-"+scope);
+  const list = (data.events[scope]||[]).slice().sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+  wrap.innerHTML = list.length===0
+    ? `<div class="empty">No events yet. Log in and turn on Edit mode to add one.</div>`
+    : list.map(e=>{
+      const f = fmtDate(e.date);
+      const title = e.url
+        ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>`
+        : esc(e.title);
+      const multi = validDate(e.end) && e.end!==e.date;
+      const metaBits = [ multi ? fmtRange(e.date, e.end) : "", e.meta||"" ].filter(Boolean).map(esc).join(" · ");
+      const rev = e.reviewed?` <span class="reviewed">· updated ${esc(fmtReviewed(e.reviewed))}</span>`:"";
+      return `<div class="ev">
+        <div class="date"><div class="mo">${f.mo}</div><div class="dy">${f.dy}</div><div class="yr">${f.yr}</div></div>
+        <div class="body"><div class="t">${title}</div>${(metaBits||rev)?`<div class="m">${metaBits}${rev}</div>`:""}</div>
+        <div class="row-actions edit-only">
+          <button class="btn sm" onclick="editEvent('${scope}','${e.id}')">Edit</button>
+          <button class="btn ghost sm" onclick="deleteEvent('${scope}','${e.id}')">✕</button>
+        </div>
+      </div>`;
+    }).join("");
+  if(editing){
+    wrap.innerHTML += `<div style="margin-top:10px"><button class="btn gold sm edit-only" onclick="addEvent('${scope}')">+ Add event</button></div>`;
+  }
+  const cwrap = document.getElementById("lk-"+scope);
+  const cals = data.calendars[scope]||[];
+  cwrap.innerHTML = cals.map(c=>`
+    <li>
+      <div class="lk-main">
+        <div class="lk-title">${c.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a>`:esc(c.title)}</div>
+        ${(c.note||c.reviewed)?`<div class="lk-note">${esc(c.note||"")}${c.reviewed?` <span class="reviewed">· updated ${esc(fmtReviewed(c.reviewed))}</span>`:""}</div>`:""}
+      </div>
+      <div class="row-actions edit-only">
+        <button class="btn sm" onclick="editCal('${scope}','${c.id}')">Edit</button>
+        <button class="btn ghost sm" onclick="deleteCal('${scope}','${c.id}')">✕</button>
+      </div>
+    </li>`).join("") + (editing?`<li style="border:none"><button class="btn gold sm edit-only" onclick="addCal('${scope}')">+ Add calendar link</button></li>`:"");
+}
+/* Which document (if any) does a Resource Center link point to?
+   Returns a doc id, "__missing:<id>" if it points to a deleted doc, or null. */
+function linkDocId(l){
+  const docs = data.documents || [];
+  if(!l || !l.url) return null;
+  if(l.url.indexOf("#doc-") === 0){
+    const id = l.url.slice(1);
+    return docs.some(d=>d.id===id) ? id : ("__missing:"+id);
+  }
+  if(l.url.startsWith("#")){ // legacy "#docs" matched by title
+    const m = docs.find(d=>d.title.toLowerCase() === (l.title||"").toLowerCase());
+    return m ? m.id : null;
+  }
+  const m = docs.find(d=>d.kind==="file" && d.url === l.url); // direct file link
+  return m ? m.id : null;
+}
+/* All Resource Center links that point to a given document. */
+function linksForDoc(docId){
+  const out = [];
+  (data.categories||[]).forEach(cat=>{
+    (cat.links||[]).forEach(l=>{ if(linkDocId(l)===docId) out.push({cat:cat.name, link:l.title}); });
+  });
+  return out;
+}
+/* Warning badge shown (in edit mode) on a link whose document was removed. */
+function docMissingBadge(l){
+  const did = linkDocId(l);
+  if(typeof did==="string" && did.indexOf("__missing:")===0)
+    return ' <span class="pill warn-pill edit-only">⚠ missing document</span>';
+  return "";
+}
+function renderDocs(){
+  const docs = data.documents || [];
+  const addBtn = `<div class="cat-add edit-only" style="margin:0 0 18px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+      <button class="btn gold" onclick="addDocument()">+ Add a typed document</button>
+      <button class="btn gold" onclick="uploadDocument()">⬆ Upload a document (PDF/Word)</button>
+    </div>`;
+  const index = docs.length
+    ? `<div class="doc-index">
+        <div class="doc-index-title">Documents in this section</div>
+        <ol class="doc-index-list">${docs.map(d=>`<li><a href="#${esc(d.id)}" onclick="openDoc('${d.id}');return false;">${esc(d.title||"(untitled)")}</a></li>`).join("")}</ol>
+      </div>`
+    : "";
+  const body = docs.length===0
+    ? `<div class="empty">No documents yet.${state.canEdit?' Turn on Edit mode to add or upload one.':''}</div>`
+    : docs.map(d=>{
+        const refs = linksForDoc(d.id);
+        const refLine = `<div class="doc-refs edit-only">${
+          refs.length
+            ? "🔗 Linked from the Resource Center: " + refs.map(r=>esc(r.cat)+" › "+esc(r.link||"(untitled)")).join("; ")
+            : "🔗 Not linked from the Resource Center yet."
+        }</div>`;
+        if(d.kind==="file"){
+          const ext = (d.filename||d.url||"").split(".").pop().toUpperCase();
+          return `
+            <div class="doc-toolbar">
+              ${d.reviewed?`<span class="reviewed doc-rev">Updated ${esc(fmtReviewed(d.reviewed))}</span>`:`<span class="doc-rev"></span>`}
+              <a class="btn sm" href="${esc(d.url)}" target="_blank" rel="noopener">⇩ Open / Print / Download</a>
+              <button class="btn sm edit-only" onclick="editDocReviewed('${d.id}')">Set date</button>
+              <button class="btn sm edit-only" onclick="editDocument('${d.id}')">Rename</button>
+              <button class="btn ghost sm edit-only" onclick="removeDocument('${d.id}')">✕ Remove</button>
+            </div>
+            <div class="doc-view doc-file" id="${d.id}">
+              <h1>${esc(d.title)}</h1>
+              <p class="doc-file-meta">📎 ${esc(d.filename||"")} <span class="pill">${esc(ext)}</span></p>
+              <p><a href="${esc(d.url)}" target="_blank" rel="noopener">Open this document in a new tab</a> to view, print, or save it.</p>
+              ${refLine}
+            </div>`;
+        }
+        return `
+          <div class="doc-toolbar">
+            ${d.reviewed?`<span class="reviewed doc-rev">Updated ${esc(fmtReviewed(d.reviewed))}</span>`:`<span class="doc-rev"></span>`}
+            <button class="btn sm" onclick="printDoc('${d.id}')">🖨 Print / Save this as PDF</button>
+            <button class="btn sm edit-only" onclick="editDocReviewed('${d.id}')">Set date</button>
+            ${d.custom?`<button class="btn sm edit-only" onclick="editDocument('${d.id}')">Edit</button>`:""}
+            <button class="btn ghost sm edit-only" onclick="removeDocument('${d.id}')">✕ Remove</button>
+          </div>
+          <div class="doc-view" id="${d.id}">${d.html}${refLine}</div>`;
+      }).join("");
+  document.getElementById("docsContainer").innerHTML = addBtn + index + body;
+}
+/* Print (or Save as PDF) a single document in its own window. */
+function printDoc(docId){
+  const doc = (data.documents||[]).find(d=>d.id===docId);
+  if(!doc) return;
+  const w = window.open("", "_blank");
+  if(!w){
+    alert("Your browser blocked the print window. Please allow pop-ups for this site, or use the “Print / Save as PDF” button at the top to print all documents.");
+    return;
+  }
+  const css = `
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#25303b;line-height:1.5;max-width:750px;margin:24px auto;padding:0 20px}
+    h1{font-size:1.5rem;color:#003670}
+    h2{font-size:1.2rem;color:#004797;border-bottom:1px solid #ccc;padding-bottom:4px;margin-top:1.4em}
+    h3{color:#003670}
+    table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.92rem}
+    th,td{border:1px solid #ccc;padding:7px 10px;text-align:left;vertical-align:top}
+    th{background:#f3f0e8}
+    .prayer{background:#f4f1ea;border-left:4px solid #c8a24a;padding:12px 16px;border-radius:0 8px 8px 0;font-style:italic;color:#4a4230;margin:12px 0}
+    ol,ul{margin:.4em 0}
+    @media print{ body{margin:0} }
+  `;
+  w.document.open();
+  w.document.write(`<!DOCTYPE html><html><head><meta charset="utf-8"><title>${esc(doc.title)}</title><style>${css}</style></head><body>${doc.html}</body></html>`);
+  w.document.close();
+  w.focus();
+  // Give the new window a moment to lay out, then open the print dialog.
+  setTimeout(()=>{ try{ w.print(); }catch(e){} }, 300);
+}
+/* Convert freeform text into safe HTML: blank lines become paragraphs,
+   single newlines become line breaks. All text is escaped first. */
+function textToDocHtml(title, text){
+  const safeTitle = `<h1>${esc(title||"Untitled document")}</h1>`;
+  const paras = (text||"").replace(/\r/g,"").split(/\n{2,}/).map(p=>
+    "<p>"+esc(p).replace(/\n/g,"<br>")+"</p>"
+  ).join("");
+  return safeTitle + paras;
+}
+function editDocReviewed(id){
+  const d = (data.documents||[]).find(x=>x.id===id); if(!d) return;
+  openModal("Document last reviewed", [
+    {key:"reviewed",label:"Last reviewed",value:d.reviewed||todayISO(),ph:"YYYY-MM-DD"}
+  ], o=>{ d.reviewed = o.reviewed; });
+}
+function addDocument(){
+  openModal("Add a printable document", [
+    {key:"title",label:"Document title",value:"",ph:"e.g. Volunteer Orientation Checklist"},
+    {key:"body",label:"Document text (freeform)",type:"textarea",value:""}
+  ], o=>{
+    if(!o.title && !o.body) return false;
+    data.documents.push({id:uid(), title:o.title||"Untitled document", custom:true,
+      body:o.body, html:textToDocHtml(o.title, o.body), reviewed:todayISO()});
+  });
+}
+function editDocument(id){
+  const d = (data.documents||[]).find(x=>x.id===id); if(!d) return;
+  if(!d.custom){ alert("The three standard SVdP documents can't be edited here — you can remove one and add your own version instead."); return; }
+  if(d.kind==="file"){
+    openModal("Rename document", [
+      {key:"title",label:"Document title",value:d.title}
+    ], o=>{ d.title = o.title || d.filename || "Untitled document"; d.reviewed = todayISO(); });
+    return;
+  }
+  openModal("Edit document", [
+    {key:"title",label:"Document title",value:d.title},
+    {key:"body",label:"Document text (freeform)",type:"textarea",value:d.body||""}
+  ], o=>{
+    d.title = o.title||"Untitled document";
+    d.body = o.body;
+    d.html = textToDocHtml(o.title, o.body);
+    d.reviewed = todayISO();
+  });
+}
+/* Upload a PDF/Word/etc. as a printable document. */
+/* ---- Shared upload flow ---- */
+const MAX_UPLOAD_MB = 100;
+const MAX_UPLOAD = MAX_UPLOAD_MB * 1024 * 1024;
+async function apiUpload(file){
+  const fd = new FormData(); fd.append("file", file);
+  const res = await fetch(API+"?action=upload", {method:"POST", body:fd});
+  let body = {}; try{ body = await res.json(); }catch(e){}
+  return { status: res.status, body };
+}
+/* Pick a file, confirm it in a dialog whose action button says "Upload",
+   then send it to the server and hand the result to onDone. */
+function pickAndUpload(accept, onDone){
+  if(!state.canEdit){ openLogin(); return; }
+  const inp = document.createElement("input");
+  inp.type = "file";
+  inp.accept = accept;
+  inp.onchange = ()=>{
+    const file = inp.files[0]; if(!file) return;
+    if(file.size > MAX_UPLOAD){ alert("That file is "+(file.size/1024/1024).toFixed(1)+" MB, which is over the "+MAX_UPLOAD_MB+" MB limit. Please upload a smaller file, or post a link instead."); return; }
+    openModal("Upload file", [
+      {key:"info", label:"File to upload", type:"static", value:file.name+"  ("+(file.size/1024/1024).toFixed(1)+" MB)"}
+    ], async ()=>{
+      flash("Uploading…");
+      let r;
+      try{ r = await apiUpload(file); }
+      catch(e){ flash("Upload failed — server unreachable.", true); return false; }
+      if(r.status===401){ state.canEdit=false; applyAuthUI(); flash("Please log in to upload.", true); openLogin(); return; }
+      if(r.status!==200 || !r.body.ok){ flash("Upload failed: "+((r.body&&r.body.error)||r.status), true); return false; }
+      onDone(r.body);
+      flash("File uploaded.");
+    }, {persist:false, saveLabel:"Upload"});
+  };
+  inp.click();
+}
+function uploadDocument(){
+  pickAndUpload(".pdf,.doc,.docx,.txt,.rtf,.odt,.ppt,.pptx,.xls,.xlsx", (r)=>{
+    const base = (r.filename||"document").replace(/\.[^.]+$/,"");
+    data.documents.push({id:uid(), title:base, custom:true, kind:"file", url:r.url, filename:r.filename||"document", reviewed:todayISO()});
+    renderAll(); persist();
+  });
+}
+function removeDocument(id){
+  const d = (data.documents||[]).find(x=>x.id===id); if(!d) return;
+  const refs = linksForDoc(id);
+  let msg = 'Remove the document "'+ (d.title||"") +'" from the Documents tab?';
+  if(refs.length){
+    msg += "\n\nThis document is linked from "+refs.length+" place"+(refs.length>1?"s":"")+" in the Resource Center:\n- "
+      + refs.map(r=>r.cat+" › "+(r.link||"(untitled)")).join("\n- ")
+      + "\n\nThose links will show a “missing document” warning until you re-point or remove them.";
+  }
+  if(!confirm(msg)) return;
+  data.documents = data.documents.filter(x=>x.id!==id); renderAll(); persist();
+}
+function renderAll(){
+  renderBanner();
+  renderLimits(); renderCategories(); renderMeetings(); renderServware();
+  ["regional","national","international"].forEach(renderEvents);
+  renderDocs(); renderCases(); renderSurveys();
+}
+/* ============ Seasonal announcement banner ============ */
+function renderBanner(){
+  const host = document.getElementById("bannerHost"); if(!host) return;
+  const b = data.banner || {};
+  const show = b.enabled && ((b.text||"").trim() || b.image);
+  const editBtn = `<button class="btn ghost sm edit-only" onclick="editBanner()" style="margin-left:auto">${show?"Edit banner":"＋ Add announcement banner"}</button>`;
+  if(!show){
+    host.innerHTML = state.canEdit ? `<div class="wrap" style="display:flex;padding:6px 0">${editBtn}</div>` : "";
+    return;
+  }
+  const img = b.image ? `<img class="banner-img" src="${esc(b.image)}" alt="">` : "";
+  const txt = (b.text||"").trim() ? `<div class="banner-text">${esc(b.text)}${b.link?' <span class="banner-go">↗</span>':''}</div>` : "";
+  const inner = `${img}${txt}`;
+  const content = b.link
+    ? `<a class="banner-link" href="${esc(b.link)}" target="_blank" rel="noopener">${inner}</a>`
+    : `<div class="banner-link">${inner}</div>`;
+  host.innerHTML = `<div class="announce" style="background:${esc(b.bg||"#1f6f4a")};color:${esc(b.fg||"#fff")}">
+    <div class="wrap announce-wrap">${content}${editBtn}</div>
+  </div>`;
+}
+function editBanner(){
+  const b = data.banner || (data.banner={});
+  openModal("Announcement banner", [
+    {key:"enabled",label:"Show the banner",type:"select",value:b.enabled?"yes":"no",options:[{v:"yes",t:"Yes — show it"},{v:"no",t:"No — hide it"}]},
+    {key:"text",label:"Message",type:"textarea",value:b.text||"",ph:"e.g. Christmas Basket nominations due Dec 1 — see Huddie"},
+    {key:"bg",label:"Background color",type:"color",value:b.bg||"#1f6f4a"},
+    {key:"fg",label:"Font color",type:"color",value:b.fg||"#ffffff"},
+    {key:"image",label:"Graphic (optional)",type:"static",raw:true,value: b.image?`<img src="${esc(b.image)}" style="max-height:48px;border-radius:6px;vertical-align:middle;margin-right:8px"><button class="btn sm" onclick="uploadBannerImage()">⬆ Replace graphic</button> <button class="btn ghost sm" onclick="clearBannerImage()">Remove</button>`:`<button class="btn sm" onclick="uploadBannerImage()">⬆ Upload a graphic</button> <span class="cs-dim">PNG or JPG</span>`},
+    {key:"link",label:"Link to open when the banner is clicked (optional)",value:b.link||"",ph:"https://…  or upload a document below"},
+    {key:"linkfile",label:"Or link an uploaded document",type:"static",raw:true,value: (b.link && /^(\.\/)?uploads\//.test(b.link))?`<span class="cs-dim">📎 Linked file set.</span> <button class="btn ghost sm" onclick="clearBannerLink()">Remove linked file</button>`:`<button class="btn sm" onclick="uploadBannerLink()">⬆ Upload a document to link</button>`}
+  ], o=>{
+    b.enabled = (o.enabled==="yes");
+    b.text = o.text; b.bg = (o.bg||"").trim()||"#1f6f4a"; b.fg = (o.fg||"").trim()||"#ffffff";
+    b.link = (o.link||"").trim();
+  });
+}
+function uploadBannerImage(){
+  pickAndUpload(".png,.jpg,.jpeg,.gif,.webp,.svg", (r)=>{
+    (data.banner = data.banner||{}).image = r.url;
+    persist(); editBanner();   // reopen so they see the uploaded graphic
+  });
+}
+function clearBannerImage(){
+  (data.banner = data.banner||{}).image = ""; persist(); editBanner();
+}
+function uploadBannerLink(){
+  pickAndUpload(".pdf,.doc,.docx,.txt,.rtf,.odt,.ppt,.pptx,.xls,.xlsx,.png,.jpg,.jpeg,.gif", (r)=>{
+    (data.banner = data.banner||{}).link = r.url;
+    persist(); editBanner();   // reopen so they see the linked file
+  });
+}
+function clearBannerLink(){
+  (data.banner = data.banner||{}).link = ""; persist(); editBanner();
+}
+
+/* ============ Member surveys ============ */
+const SURVEY_TYPES = [
+  {v:"yesno",    t:"Yes / No"},
+  {v:"choice",   t:"Multiple choice (pick one)"},
+  {v:"checkbox", t:"Checkboxes (select multiple)"},
+  {v:"text",     t:"Short text answer"},
+  {v:"number",   t:"Number"}
+];
+function surveyTypeLabel(t){ const m=SURVEY_TYPES.find(x=>x.v===t); return m?m.t:t; }
+function surveyStatusBadge(s){
+  const map={draft:["Draft","sv-draft"], open:["Open","sv-open"], closed:["Closed","sv-closed"]};
+  const b=map[s]||map.draft; return `<span class="sv-badge ${b[1]}">${b[0]}</span>`;
+}
+function renderSurveys(){
+  const host=document.getElementById("surveysContainer"); if(!host) return;
+  // A take/results view manages the container itself; don't overwrite it.
+  if(state.surveyView && state.surveyView.mode) return;
+  const all=data.surveys||[];
+  if(state.canEdit){
+    host.innerHTML = all.length
+      ? all.map(surveyCardEditor).join("")
+      : `<div class="empty">No surveys yet. Click &ldquo;+ Create survey&rdquo; to make one.</div>`;
+  } else {
+    const open=all.filter(s=>s.status==="open");
+    host.innerHTML = open.length
+      ? open.map(surveyCardPublic).join("")
+      : `<div class="empty">No surveys are open right now. Please check back later.</div>`;
+  }
+}
+function surveyCardEditor(s){
+  const n=(s.questions||[]).length;
+  return `<div class="sv-card">
+    <div class="sv-head">
+      <div>${surveyStatusBadge(s.status)} <strong>${esc(s.title||"(untitled survey)")}</strong> <span class="cs-dim">· ${n} question${n===1?"":"s"}</span></div>
+      <div class="row-actions">
+        <button class="btn sm" onclick="editSurvey('${s.id}')">Edit</button>
+        <button class="btn sm" onclick="toggleSurveyStatus('${s.id}')">${s.status==="open"?"Close":"Open"}</button>
+        <button class="btn sm" onclick="viewResults('${s.id}')">Results</button>
+        <button class="btn ghost sm" onclick="takeSurvey('${s.id}',true)">Preview</button>
+        <button class="btn ghost sm" onclick="deleteSurvey('${s.id}')">✕</button>
+      </div>
+    </div>
+    ${s.intro?`<div class="sv-intro">${esc(s.intro)}</div>`:""}
+  </div>`;
+}
+function surveyCardPublic(s){
+  return `<div class="sv-card">
+    <div class="sv-head"><div><strong>${esc(s.title||"Survey")}</strong></div>
+      <button class="btn gold sm" onclick="takeSurvey('${s.id}')">Take survey →</button></div>
+    ${s.intro?`<div class="sv-intro">${esc(s.intro)}</div>`:""}
+  </div>`;
+}
+function toggleSurveyStatus(id){
+  const s=(data.surveys||[]).find(x=>x.id===id); if(!s) return;
+  s.status = (s.status==="open") ? "closed" : "open";
+  renderAll(); persist();
+  flash(s.status==="open"?"Survey is now open for responses.":"Survey closed.");
+}
+function deleteSurvey(id){
+  if(!confirm("Delete this survey? Any stored responses stay in the database but become orphaned.")) return;
+  data.surveys=(data.surveys||[]).filter(x=>x.id!==id); renderAll(); persist();
+}
+function closeSurveyView(){ state.surveyView=null; renderSurveys(); window.scrollTo({top:0,behavior:"smooth"}); }
+
+/* ---- Take a survey ---- */
+function takeSurvey(id, preview){
+  const s=(data.surveys||[]).find(x=>x.id===id); if(!s) return;
+  state.surveyView={mode:"take", id};
+  const host=document.getElementById("surveysContainer");
+  const qs=(s.questions||[]).map(surveyQuestionInput).join("") || `<div class="cs-dim">This survey has no questions yet.</div>`;
+  host.innerHTML=`<div class="sv-take">
+    <button class="btn sm" onclick="closeSurveyView()">← Back to surveys</button>
+    <h3 class="sv-take-title">${esc(s.title||"Survey")}</h3>
+    ${s.intro?`<div class="sv-intro">${esc(s.intro)}</div>`:""}
+    ${preview?`<div class="sv-note">Preview — responses are not recorded.</div>`:""}
+    <form id="surveyForm" onsubmit="return false">${qs}</form>
+    <div class="sv-take-actions">
+      <button class="btn gold" onclick="submitSurvey('${s.id}',${preview?"true":"false"})">Submit response</button>
+      <span id="surveyMsg" class="sv-msg"></span>
+    </div>
+  </div>`;
+}
+function surveyQuestionInput(q,i){
+  const req=q.required?` <span class="sv-req" title="Required">*</span>`:"";
+  const name="q_"+q.id;
+  let input="";
+  if(q.type==="yesno"){
+    input=["Yes","No"].map(o=>`<label class="sv-opt"><input type="radio" name="${name}" value="${o}"> ${o}</label>`).join("");
+  } else if(q.type==="choice"){
+    input=(q.options||[]).map(o=>`<label class="sv-opt"><input type="radio" name="${name}" value="${esc(o)}"> ${esc(o)}</label>`).join("")
+      || `<span class="cs-dim">(no choices set)</span>`;
+  } else if(q.type==="checkbox"){
+    input=((q.options||[]).map(o=>`<label class="sv-opt"><input type="checkbox" name="${name}" value="${esc(o)}"> ${esc(o)}</label>`).join("")
+      || `<span class="cs-dim">(no choices set)</span>`) + `<div class="sv-multi-note">Select all that apply.</div>`;
+  } else if(q.type==="number"){
+    input=`<input class="sv-input" type="number" name="${name}">`;
+  } else {
+    input=`<textarea class="sv-input" name="${name}" rows="2"></textarea>`;
+  }
+  return `<div class="sv-q"><div class="sv-q-label">${i+1}. ${esc(q.label||"")}${req}</div><div class="sv-q-input">${input}</div></div>`;
+}
+async function submitSurvey(id, preview){
+  const s=(data.surveys||[]).find(x=>x.id===id); if(!s) return;
+  const answers={}; let missing=0;
+  (s.questions||[]).forEach(q=>{
+    let val="";
+    if(q.type==="yesno"||q.type==="choice"){
+      const sel=document.querySelector('input[name="q_'+q.id+'"]:checked'); val=sel?sel.value:"";
+    } else if(q.type==="checkbox"){
+      val=Array.from(document.querySelectorAll('input[name="q_'+q.id+'"]:checked')).map(x=>x.value);
+    } else {
+      const el=document.querySelector('[name="q_'+q.id+'"]'); val=el?String(el.value).trim():"";
+    }
+    const isEmpty = Array.isArray(val) ? val.length===0 : val==="";
+    if(q.required && isEmpty) missing++;
+    if(!isEmpty) answers[q.id]=val;
+  });
+  const msg=document.getElementById("surveyMsg");
+  const setMsg=(t,err)=>{ if(msg){ msg.textContent=t; msg.classList.toggle("err",!!err); } };
+  if(missing){ setMsg("Please answer the required (*) questions.", true); return; }
+  if(preview){ setMsg("Preview only — not submitted."); return; }
+  setMsg("Submitting…");
+  try{
+    const res=await fetch(API+"?action=survey_submit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({surveyId:id, answers})});
+    const j=await res.json().catch(()=>({}));
+    if(res.ok && j.ok){
+      document.getElementById("surveysContainer").innerHTML=`<div class="sv-thanks"><h3>Thank you!</h3><p>Your response has been recorded.</p><button class="btn sm" onclick="closeSurveyView()">← Back to surveys</button></div>`;
+    } else { setMsg((j&&j.error)||"Could not submit — please try again.", true); }
+  }catch(e){ setMsg("Network error — please try again.", true); }
+}
+
+/* ---- Results (editors only) ---- */
+async function viewResults(id){
+  const s=(data.surveys||[]).find(x=>x.id===id); if(!s) return;
+  state.surveyView={mode:"results", id};
+  const host=document.getElementById("surveysContainer");
+  host.innerHTML=`<div class="sv-results"><button class="btn sm" onclick="closeSurveyView()">← Back to surveys</button>
+    <h3>Results · ${esc(s.title||"Survey")}</h3><div id="svResultsBody"><div class="empty">Loading responses…</div></div></div>`;
+  try{
+    const res=await fetch(API+"?action=survey_results&survey="+encodeURIComponent(id),{headers:{"Accept":"application/json"}});
+    const j=await res.json().catch(()=>({}));
+    const el=document.getElementById("svResultsBody"); if(!el) return;
+    if(res.status===401){ el.innerHTML=`<div class="empty">Please log in to view results.</div>`; return; }
+    if(!res.ok || !j.ok){ el.innerHTML=`<div class="empty">Could not load results.</div>`; return; }
+    el.innerHTML=surveyResultsHtml(s, j.responses||[]);
+  }catch(e){ const el=document.getElementById("svResultsBody"); if(el) el.innerHTML=`<div class="empty">Network error loading results.</div>`; }
+}
+function surveyResultsHtml(s, responses){
+  const n=responses.length;
+  const head=`<div class="sv-rescount"><strong>${n}</strong> response${n===1?"":"s"} ${n?`<button class="btn ghost sm" onclick="clearSurveyResults('${s.id}')">Clear responses</button>`:""}</div>`;
+  const qs=(s.questions||[]).map((q,qi)=>{
+    const vals=responses.map(r=>r.answers?r.answers[q.id]:undefined).filter(v=>v!==undefined && v!=="");
+    let body="";
+    if(q.type==="yesno"||q.type==="choice"||q.type==="checkbox"){
+      const opts=q.type==="yesno"?["Yes","No"]:(q.options||[]);
+      const counts={}; opts.forEach(o=>counts[o]=0); let other=0; let respondents=0;
+      vals.forEach(v=>{
+        const arr=Array.isArray(v)?v:[v];
+        if(arr.length) respondents++;
+        arr.forEach(x=>{ if(x in counts) counts[x]++; else other++; });
+      });
+      const tot=respondents||1;
+      body=opts.map(o=>{ const c=counts[o]; const pct=Math.round(c/tot*100);
+        return `<div class="sv-bar-row"><div class="sv-bar-lbl">${esc(o)}</div><div class="sv-bar"><div class="sv-bar-fill" style="width:${pct}%"></div></div><div class="sv-bar-n">${c} · ${pct}%</div></div>`;
+      }).join("")
+        + (other?`<div class="cs-dim">+${other} other answer${other===1?"":"s"}</div>`:"")
+        + (q.type==="checkbox"?`<div class="cs-dim">${respondents} respondent${respondents===1?"":"s"} · percentages of respondents (multiple allowed)</div>`:"");
+    } else if(q.type==="number"){
+      const nums=vals.map(v=>parseFloat(v)).filter(x=>!isNaN(x));
+      const avg=nums.length?(nums.reduce((a,b)=>a+b,0)/nums.length):0;
+      body=`<div class="sv-numsum">${nums.length} numeric answer${nums.length===1?"":"s"} · average <strong>${nums.length?avg.toFixed(1):"—"}</strong></div>
+        <div class="sv-textlist">${vals.map(v=>`<span class="sv-chip">${esc(String(v))}</span>`).join("")}</div>`;
+    } else {
+      body=`<div class="sv-textlist">${vals.length?vals.map(v=>`<div class="sv-textans">${esc(String(v))}</div>`).join(""):'<span class="cs-dim">No answers yet.</span>'}</div>`;
+    }
+    return `<div class="sv-resq"><div class="sv-q-label">${qi+1}. ${esc(q.label||"")} <span class="cs-dim">(${surveyTypeLabel(q.type)})</span></div>${body}</div>`;
+  }).join("");
+  return head+qs;
+}
+function clearSurveyResults(id){
+  if(!confirm("Delete ALL stored responses for this survey? This cannot be undone.")) return;
+  fetch(API+"?action=survey_clear",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({surveyId:id})})
+    .then(r=>r.json()).then(()=>viewResults(id)).catch(()=>{});
+}
+
+/* ---- Survey builder (create / edit) ---- */
+let svEd=null;
+function createSurvey(){ openSurveyEditor(null); }
+function editSurvey(id){ openSurveyEditor(id); }
+function openSurveyEditor(id){
+  let title="",intro="",status="draft",questions=[];
+  if(id){ const s=(data.surveys||[]).find(x=>x.id===id); if(!s) return;
+    title=s.title||""; intro=s.intro||""; status=s.status||"draft";
+    questions=(s.questions||[]).map(q=>({id:q.id||uid(),type:q.type||"text",label:q.label||"",required:!!q.required,options:(q.options||[]).slice()}));
+  }
+  svEd={id:id||null, isAdd:!id, title, intro, status, questions};
+  renderSurveyEditor();
+}
+function svEdSync(){
+  if(!svEd) return;
+  const t=document.getElementById("svTitle"); if(t) svEd.title=t.value;
+  const n=document.getElementById("svIntro"); if(n) svEd.intro=n.value;
+  const st=document.getElementById("svStatus"); if(st) svEd.status=st.value;
+  document.querySelectorAll(".svq-label").forEach(inp=>{ const i=+inp.dataset.i; if(svEd.questions[i]) svEd.questions[i].label=inp.value; });
+  document.querySelectorAll(".svq-type").forEach(sel=>{ const i=+sel.dataset.i; if(svEd.questions[i]) svEd.questions[i].type=sel.value; });
+  document.querySelectorAll(".svq-req").forEach(c=>{ const i=+c.dataset.i; if(svEd.questions[i]) svEd.questions[i].required=c.checked; });
+  document.querySelectorAll(".svq-opts").forEach(ta=>{ const i=+ta.dataset.i; if(svEd.questions[i]) svEd.questions[i].options=ta.value.split("\n").map(x=>x.trim()).filter(Boolean); });
+}
+function svEdAddQ(){ svEdSync(); svEd.questions.push({id:uid(),type:"yesno",label:"",required:false,options:[]}); renderSurveyEditor(true); }
+function svEdDelQ(i){ svEdSync(); svEd.questions.splice(i,1); renderSurveyEditor(); }
+function svEdMoveQ(i,d){ svEdSync(); const j=i+d; if(j<0||j>=svEd.questions.length) return; const t=svEd.questions[i]; svEd.questions[i]=svEd.questions[j]; svEd.questions[j]=t; renderSurveyEditor(); }
+function svEdTypeChange(i,v){ svEdSync(); if(svEd.questions[i]) svEd.questions[i].type=v; renderSurveyEditor(); }
+function svEdSave(){
+  svEdSync();
+  const title=(svEd.title||"").trim();
+  if(!title){ flash("Give the survey a title."); const t=document.getElementById("svTitle"); if(t) t.focus(); return; }
+  const questions=svEd.questions.filter(q=>(q.label||"").trim()!=="").map(q=>({
+    id:q.id, type:q.type, label:q.label.trim(), required:!!q.required,
+    options: (q.type==="choice"||q.type==="checkbox") ? (q.options||[]).filter(Boolean) : []
+  }));
+  const survey={id: svEd.id||uid(), title, intro:(svEd.intro||"").trim(), status:svEd.status||"draft", questions};
+  data.surveys=data.surveys||[];
+  if(svEd.isAdd) data.surveys.push(survey);
+  else { const idx=data.surveys.findIndex(x=>x.id===svEd.id); if(idx>=0) data.surveys[idx]=survey; else data.surveys.push(survey); }
+  closeModal(); svEd=null; renderAll(); persist();
+}
+function renderSurveyEditor(focusLast){
+  document.getElementById("modalTitle").textContent = svEd.isAdd ? "Create survey" : "Edit survey";
+  const last=svEd.questions.length-1;
+  const rows=svEd.questions.map((q,i)=>{
+    const typeOpts=SURVEY_TYPES.map(o=>`<option value="${o.v}" ${o.v===q.type?"selected":""}>${o.t}</option>`).join("");
+    const optsField = (q.type==="choice"||q.type==="checkbox")
+      ? `<div class="svq-opts-wrap"><textarea class="svq-opts" data-i="${i}" rows="3" placeholder="One choice per line">${esc((q.options||[]).join("\n"))}</textarea></div>`
+      : "";
+    return `<div class="svq">
+      <div class="svq-top">
+        <span class="svq-num">${i+1}</span>
+        <input class="svq-label" data-i="${i}" value="${esc(q.label||"")}" placeholder="Question text">
+        <span class="svq-ctrls">
+          <button type="button" title="Move up" onclick="svEdMoveQ(${i},-1)" ${i===0?"disabled":""}>▲</button>
+          <button type="button" title="Move down" onclick="svEdMoveQ(${i},1)" ${i===last?"disabled":""}>▼</button>
+          <button type="button" title="Remove" onclick="svEdDelQ(${i})">✕</button>
+        </span>
+      </div>
+      <div class="svq-row2">
+        <select class="svq-type" data-i="${i}" onchange="svEdTypeChange(${i}, this.value)">${typeOpts}</select>
+        <label class="svq-reqlbl"><input type="checkbox" class="svq-req" data-i="${i}" ${q.required?"checked":""}> Required</label>
+      </div>
+      ${optsField}
+    </div>`;
+  }).join("");
+  document.getElementById("modalBody").innerHTML=`
+    <div class="field"><label>Survey title</label><input id="svTitle" value="${esc(svEd.title)}" placeholder="e.g. A second meeting each month?"></div>
+    <div class="field"><label>Intro / instructions (optional)</label><textarea id="svIntro">${esc(svEd.intro)}</textarea></div>
+    <div class="field"><label>Status</label><select id="svStatus">
+      <option value="draft" ${svEd.status==="draft"?"selected":""}>Draft — hidden from members</option>
+      <option value="open" ${svEd.status==="open"?"selected":""}>Open — accepting responses</option>
+      <option value="closed" ${svEd.status==="closed"?"selected":""}>Closed — hidden from members</option>
+    </select></div>
+    <div class="field"><label>Questions</label>
+      <div class="svq-list">${rows||'<div class="cs-dim" style="padding:6px 2px">No questions yet — click &ldquo;+ Add question&rdquo;.</div>'}</div>
+      <div style="margin-top:6px"><button type="button" class="btn sm" onclick="svEdAddQ()">+ Add question</button></div>
+    </div>`;
+  const b=document.getElementById("modalSave"); b.textContent="Save survey"; b.onclick=svEdSave;
+  document.getElementById("modalBg").classList.add("open");
+  if(focusLast){ const ins=document.querySelectorAll(".svq-label"); if(ins.length) ins[ins.length-1].focus(); }
+  else { const t=document.getElementById("svTitle"); if(t && !svEd.title) t.focus(); }
+}
+
+/* ============ Cases: intake, ZIP routing, auto-assignment ============ */
+function confrereName(id){ const c=(data.dispatch.confreres||[]).find(x=>x.id===id); return c?c.name:"(removed)"; }
+function sisterName(id){ const s=(data.dispatch.sisterConferences||[]).find(x=>x.id===id); return s?s.name:""; }
+/* Confreres marked active whose availability covers the given date. */
+function availableOn(dateISO){
+  const dsp=data.dispatch;
+  return (dsp.confreres||[]).filter(c=>c.active!==false &&
+    (dsp.availability||[]).some(av=>av.confrereId===c.id && (av.start||"")<=dateISO && dateISO<=(av.end||"")));
+}
+/* Decide whether a case is in-area or a referral, by ZIP. */
+function routeCase(cs){
+  const zip=(cs.zip||"").trim();
+  const dsp=data.dispatch;
+  if((dsp.serviceZips||[]).indexOf(zip)>=0){ cs.status = cs.pair&&cs.pair.length>=2?"assigned":"new"; cs.conferenceRef=""; return "in"; }
+  const sis=(dsp.sisterConferences||[]).find(s=>(s.zips||[]).indexOf(zip)>=0);
+  cs.status="referred"; cs.conferenceRef = sis?sis.id:"__none";
+  return "referral";
+}
+/* Assign the two least-loaded available confreres to a case. */
+function assignCasePair(cs){
+  const date = cs.visitDate || cs.created || todayISO();
+  const avail = availableOn(date);
+  const load = {};
+  (data.dispatch.cases||[]).forEach(k=>{ if(k.status!=="completed") (k.pair||[]).forEach(id=>load[id]=(load[id]||0)+1); });
+  avail.sort((a,b)=>(load[a.id]||0)-(load[b.id]||0) || (a.name||"").localeCompare(b.name||""));
+  cs.pair = avail.slice(0,2).map(c=>c.id);
+  if(cs.pair.length>=2) cs.status="assigned";
+  return cs.pair.length;
+}
+function addCase(){
+  openModal("New neighbor case", [
+    {key:"neighbor",label:"Neighbor name",value:"",ph:"Name"},
+    {key:"phone",label:"Phone",value:"",ph:"512-555-1234"},
+    {key:"address",label:"Address",value:""},
+    {key:"zip",label:"ZIP code",value:"",ph:"78751"},
+    {key:"need",label:"Type of need",value:"",ph:"Rent, utilities, food…"},
+    {key:"visitDate",label:"Target visit date (optional)",value:todayISO(),ph:"YYYY-MM-DD"},
+    {key:"notes",label:"Notes",type:"textarea",value:""}
+  ], o=>{
+    const cs={id:uid(), created:todayISO(), neighbor:o.neighbor, phone:o.phone, address:o.address,
+      zip:o.zip, need:o.need, visitDate:o.visitDate, notes:o.notes, status:"new", conferenceRef:"", pair:[]};
+    const route=routeCase(cs);
+    if(route==="in"){
+      const n=assignCasePair(cs);
+      flash(n>=2 ? "In-area — assigned "+cs.pair.map(confrereName).join(" & ") : (n===1?"In-area — only 1 confrere available; assign a partner.":"In-area — no confreres available for that date."), n<2);
+    } else {
+      const s=(data.dispatch.sisterConferences||[]).find(x=>(x.zips||[]).indexOf((cs.zip||"").trim())>=0);
+      flash(s? "Out of area — refer to "+s.name : "Out of area — no sister conference matches that ZIP.", !s);
+    }
+    (data.dispatch.cases=data.dispatch.cases||[]).push(cs);
+  });
+}
+function editCase(id){
+  const cs=(data.dispatch.cases||[]).find(x=>x.id===id); if(!cs) return;
+  openModal("Edit case", [
+    {key:"neighbor",label:"Neighbor name",value:cs.neighbor},
+    {key:"phone",label:"Phone",value:cs.phone},
+    {key:"address",label:"Address",value:cs.address},
+    {key:"zip",label:"ZIP code",value:cs.zip},
+    {key:"need",label:"Type of need",value:cs.need},
+    {key:"visitDate",label:"Target visit date",value:cs.visitDate||""},
+    {key:"notes",label:"Notes",type:"textarea",value:cs.notes}
+  ], o=>{ Object.assign(cs,o); });
+}
+function reassignCase(id){ const cs=(data.dispatch.cases||[]).find(x=>x.id===id); if(!cs) return;
+  const n=assignCasePair(cs); flash(n>=2?"Re-assigned "+cs.pair.map(confrereName).join(" & "):(n===1?"Only 1 confrere available.":"No confreres available for that date."), n<2); renderAll(); persist(); }
+function advanceCase(id){ const cs=(data.dispatch.cases||[]).find(x=>x.id===id); if(!cs) return;
+  const order=["new","assigned","visiting","completed"]; const i=order.indexOf(cs.status); cs.status=order[Math.min(order.length-1,(i<0?0:i)+1)]; renderAll(); persist(); }
+function deleteCase(id){ if(!confirm("Delete this case?")) return; data.dispatch.cases=data.dispatch.cases.filter(x=>x.id!==id); renderAll(); persist(); }
+
+/* Roster + availability */
+function addConfrere(){ openModal("Add confrere", [
+    {key:"name",label:"Name",value:""},{key:"contact",label:"Phone or email",value:""}
+  ], o=>{ if(!o.name) return false; (data.dispatch.confreres=data.dispatch.confreres||[]).push({id:uid(),name:o.name,contact:o.contact,active:true}); }); }
+function editConfrere(id){ const c=(data.dispatch.confreres||[]).find(x=>x.id===id); if(!c) return;
+  openModal("Edit confrere", [
+    {key:"name",label:"Name",value:c.name},{key:"contact",label:"Phone or email",value:c.contact},
+    {key:"active",label:"Active",type:"select",value:c.active===false?"no":"yes",options:[{v:"yes",t:"Active"},{v:"no",t:"Inactive"}]}
+  ], o=>{ c.name=o.name; c.contact=o.contact; c.active=(o.active!=="no"); }); }
+function deleteConfrere(id){ if(!confirm("Remove this confrere and their availability?")) return;
+  data.dispatch.confreres=data.dispatch.confreres.filter(x=>x.id!==id);
+  data.dispatch.availability=data.dispatch.availability.filter(a=>a.confrereId!==id); renderAll(); persist(); }
+function addAvailability(confrereId){ openModal("Add availability", [
+    {key:"start",label:"Available from (YYYY-MM-DD)",value:todayISO()},
+    {key:"end",label:"Available through (YYYY-MM-DD)",value:todayISO()}
+  ], o=>{ (data.dispatch.availability=data.dispatch.availability||[]).push({id:uid(),confrereId,start:o.start,end:o.end}); }); }
+function deleteAvailability(id){ data.dispatch.availability=data.dispatch.availability.filter(a=>a.id!==id); renderAll(); persist(); }
+
+/* Service area */
+function editServiceZips(){ openModal("Our service-area ZIP codes", [
+    {key:"zips",label:"ZIP codes (one per line or comma-separated)",type:"textarea",value:(data.dispatch.serviceZips||[]).join("\n")}
+  ], o=>{ data.dispatch.serviceZips=(o.zips||"").split(/[\s,]+/).map(s=>s.trim()).filter(Boolean); }); }
+function addSister(){ openModal("Add sister conference", [
+    {key:"name",label:"Conference name",value:""},
+    {key:"phone",label:"Phone",value:""},
+    {key:"zips",label:"ZIP codes it covers (comma/space separated)",value:""},
+    {key:"note",label:"Note",value:""}
+  ], o=>{ if(!o.name) return false; (data.dispatch.sisterConferences=data.dispatch.sisterConferences||[]).push({id:uid(),name:o.name,phone:o.phone,note:o.note,zips:(o.zips||"").split(/[\s,]+/).map(s=>s.trim()).filter(Boolean)}); }); }
+function editSister(id){ const s=(data.dispatch.sisterConferences||[]).find(x=>x.id===id); if(!s) return;
+  openModal("Edit sister conference", [
+    {key:"name",label:"Conference name",value:s.name},
+    {key:"phone",label:"Phone",value:s.phone},
+    {key:"zips",label:"ZIP codes it covers",value:(s.zips||[]).join(", ")},
+    {key:"note",label:"Note",value:s.note}
+  ], o=>{ s.name=o.name; s.phone=o.phone; s.note=o.note; s.zips=(o.zips||"").split(/[\s,]+/).map(x=>x.trim()).filter(Boolean); }); }
+function deleteSister(id){ if(!confirm("Remove this sister conference?")) return; data.dispatch.sisterConferences=data.dispatch.sisterConferences.filter(x=>x.id!==id); renderAll(); persist(); }
+
+function caseStatusBadge(s){
+  const map={new:["New","cs-navy"],referred:["Referred","cs-gold"],assigned:["Assigned","cs-good"],visiting:["Visiting","cs-navy"],completed:["Completed","cs-muted"]};
+  const v=map[s]||["—","cs-muted"]; return `<span class="cs-badge ${v[1]}">${v[0]}</span>`;
+}
+function renderCases(){
+  const el=document.getElementById("casesBody"); if(!el) return;
+  const dsp=data.dispatch||{};
+  const today=todayISO();
+  const availToday=availableOn(today).length;
+
+  // Intake + summary
+  let html=`<div class="card"><div class="catbar">
+      <h3>New case</h3>
+      <button class="btn gold" onclick="addCase()">+ New case</button>
+    </div>
+    <div class="cat-desc">Enter a caller's details and the site routes by ZIP and auto-assigns an available pair. ${dsp.confreres.length} confrere(s), ${availToday} available today.</div>
+  </div>`;
+
+  // Cases list
+  const cases=(dsp.cases||[]).slice().sort((a,b)=>(b.created||"").localeCompare(a.created||""));
+  const rows=cases.length? cases.map(cs=>{
+    let assignedHtml;
+    if(cs.status==="referred"){
+      const s=(dsp.sisterConferences||[]).find(x=>x.id===cs.conferenceRef);
+      assignedHtml = s? `→ ${esc(s.name)}${s.phone?" · "+esc(s.phone):""}` : `→ <span class="cs-warn">no matching conference</span>`;
+    } else {
+      assignedHtml = (cs.pair&&cs.pair.length) ? cs.pair.map(confrereName).map(esc).join(" & ") : `<span class="cs-warn">unassigned</span>`;
+    }
+    return `<div class="case-row">
+      <div class="case-main">
+        <div class="case-top">${caseStatusBadge(cs.status)} <b>${esc(cs.neighbor||"(no name)")}</b> <span class="cs-dim">· ${esc(cs.zip||"?")}${cs.need?" · "+esc(cs.need):""}</span></div>
+        <div class="cs-dim">${esc(cs.phone||"")}${cs.address?" · "+esc(cs.address):""}</div>
+        <div class="case-assign">${assignedHtml}${cs.visitDate?` <span class="cs-dim">· visit ${esc(fmtReviewed(cs.visitDate))}</span>`:""}</div>
+        ${cs.notes?`<div class="cs-dim">${esc(cs.notes)}</div>`:""}
+      </div>
+      <div class="row-actions">
+        ${cs.status!=="referred"?`<button class="btn ghost sm" title="Auto-assign a pair" onclick="reassignCase('${cs.id}')">⟳ Assign</button>`:""}
+        ${(cs.status!=="referred"&&cs.status!=="completed")?`<button class="btn ghost sm" title="Advance status" onclick="advanceCase('${cs.id}')">▸ Advance</button>`:""}
+        <button class="btn ghost sm" onclick="editCase('${cs.id}')">Edit</button>
+        <button class="btn ghost sm" onclick="deleteCase('${cs.id}')">✕</button>
+      </div>
+    </div>`;
+  }).join("") : `<div class="empty">No cases yet. Click “+ New case” when a neighbor calls.</div>`;
+  html += `<div class="card"><h3>Cases</h3>${rows}</div>`;
+
+  // Roster + availability
+  const roster = dsp.confreres.length ? dsp.confreres.map(c=>{
+    const avs=(dsp.availability||[]).filter(a=>a.confrereId===c.id).sort((x,y)=>(x.start||"").localeCompare(y.start||""));
+    const isAvail = avs.some(a=>(a.start||"")<=today && today<=(a.end||""));
+    const avHtml = avs.length? avs.map(a=>`<span class="av-chip">${esc(fmtReviewed(a.start))}–${esc(fmtReviewed(a.end))}<button class="av-x" title="Remove" onclick="deleteAvailability('${a.id}')">×</button></span>`).join("") : `<span class="cs-dim">no availability set</span>`;
+    return `<div class="conf-row">
+      <div class="conf-main">
+        <div><b>${esc(c.name)}</b> ${c.active===false?`<span class="cs-badge cs-muted">inactive</span>`:(isAvail?`<span class="cs-badge cs-good">available today</span>`:"")}</div>
+        <div class="cs-dim">${esc(c.contact||"")}</div>
+        <div class="av-row">${avHtml}</div>
+      </div>
+      <div class="row-actions">
+        <button class="btn ghost sm" onclick="addAvailability('${c.id}')">+ Availability</button>
+        <button class="btn ghost sm" onclick="editConfrere('${c.id}')">Edit</button>
+        <button class="btn ghost sm" onclick="deleteConfrere('${c.id}')">✕</button>
+      </div>
+    </div>`;
+  }).join("") : `<div class="empty">No confreres yet. Add your team so cases can be auto-assigned.</div>`;
+  html += `<div class="card"><div class="catbar"><h3>Confreres &amp; availability</h3><button class="btn sm" onclick="addConfrere()">+ Add confrere</button></div>${roster}</div>`;
+
+  // Service area
+  const zipChips=(dsp.serviceZips||[]).map(z=>`<span class="av-chip">${esc(z)}</span>`).join("") || `<span class="cs-dim">none set</span>`;
+  const sisters = dsp.sisterConferences.length ? dsp.sisterConferences.map(s=>`
+      <div class="conf-row">
+        <div class="conf-main"><div><b>${esc(s.name)}</b> ${s.phone?`<span class="cs-dim">· ${esc(s.phone)}</span>`:""}</div>
+          <div class="cs-dim">ZIPs: ${esc((s.zips||[]).join(", ")||"—")}${s.note?" · "+esc(s.note):""}</div></div>
+        <div class="row-actions"><button class="btn ghost sm" onclick="editSister('${s.id}')">Edit</button><button class="btn ghost sm" onclick="deleteSister('${s.id}')">✕</button></div>
+      </div>`).join("") : `<div class="empty">No sister conferences yet. Add them so out-of-area callers can be referred.</div>`;
+  html += `<div class="card">
+      <div class="catbar"><h3>Service area</h3><button class="btn sm" onclick="editServiceZips()">Edit our ZIPs</button></div>
+      <div class="av-row" style="margin:.2em 0 1em">${zipChips}</div>
+      <div class="catbar"><h4 style="margin:0">Sister conferences (out-of-area referrals)</h4><button class="btn sm" onclick="addSister()">+ Add</button></div>
+      ${sisters}
+    </div>`;
+
+  el.innerHTML = html;
+}
+
+/* Format a "last reviewed" value: "2026-07" -> "Jul 2026", full date -> "Jul 2026". */
+function fmtReviewed(v){
+  if(!v) return "";
+  const md = /^(\d{4})-(\d{2})-(\d{2})/.exec(v);
+  if(md){ const mo = MONTHS[parseInt(md[2],10)-1] || ""; return (mo?mo+" ":"")+parseInt(md[3],10)+", "+md[1]; }
+  const m = /^(\d{4})-(\d{2})/.exec(v);
+  if(m){ const mo = MONTHS[parseInt(m[2],10)-1] || ""; return (mo?mo+" ":"")+m[1]; }
+  return v;
+}
+/* Today's date as YYYY-MM-DD, used as the default "last reviewed" value. */
+function todayISO(){
+  const d = new Date();
+  return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+}
+
+/* ServWare quick-link */
+function renderServware(){
+  const wrap = document.getElementById("servwareWrap");
+  const btn = document.getElementById("servwareBtn");
+  if(!wrap || !btn) return;
+  const u = (data.servwareUrl||"").trim();
+  if(u){ btn.href = u; wrap.style.display = "flex"; }
+  else { wrap.style.display = "none"; }
+}
+function editServware(){
+  openModal("ServWare link", [
+    {key:"url", label:"ServWare login URL", value:data.servwareUrl||"", ph:"https://…"}
+  ], o=>{ data.servwareUrl = o.url; });
+}
+/* Replace ONLY the resource categories with the curated set (limits, meetings,
+   documents, and events are left untouched). */
+function loadCuratedResources(){
+  if(!confirm("Replace the current Home Visit resource categories with the latest curated set?\n\nThis updates ONLY the resource lists on this page — your assistance limits, meetings, documents, and events are not changed. (Export a backup first if you want to keep the current categories.)")) return;
+  data.categories = structuredClone(CURATED_CATEGORIES);
+  renderAll(); persist();
+  flash("Loaded the latest resource set.");
+}
+
+/* ============ Meetings ============ */
+const MTYPE_LABEL = { conference:"St. Austin Conference Meeting", other:"Other" };
+/* Outline letter: 1->a, 2->b, ... 27->aa */
+function agendaLetter(n){
+  let s=""; while(n>0){ n--; s=String.fromCharCode(97+(n%26))+s; n=Math.floor(n/26); } return s||"a";
+}
+/* Parse an agenda item's continuation lines. Indentation steps (2 spaces OR
+   one tab each) decide the bullet: 0 = plain line (no bullet), 1 = ●, 2 = ○,
+   3+ = –. */
+function agendaSubLevels(text){
+  const items = [];
+  (text||"").split("\n").forEach(line=>{
+    if(!line.trim()) return;
+    const lead = (line.match(/^[ \t]*/)||[""])[0];
+    const tabs = (lead.match(/\t/g)||[]).length;
+    const spaces = lead.replace(/\t/g,"").length;
+    items.push({ steps: tabs + Math.floor(spaces/2), text: line.trim() });
+  });
+  return items;
+}
+/* Marker + indent for one continuation line, from its indentation steps.
+   step 0 -> plain (no marker); 1 -> ●; 2 -> ○; 3+ -> –. */
+function agendaSubMark(steps){
+  if(steps <= 0) return { mk:"", plain:true, indent:0 };
+  return { mk: notesMarker(Math.min(steps-1, 2)), plain:false, indent: steps*18 };
+}
+/* Split an agenda item's text into its first line (the item itself) and any
+   following lines, parsed as plain continuations / ●/○/– sub-bullets. */
+function agendaSplit(text){
+  const all = (text||"").split("\n");
+  let i = 0; while(i < all.length && !all[i].trim()) i++;
+  return { first: (all[i]||"").trim(), subs: agendaSubLevels(all.slice(i+1).join("\n")) };
+}
+/* Render a meeting's agenda as a nested outline:
+   level 0 = "1.", level 1 = "a)", level 2 = "–", level 3 = "○".
+   Each level is indented under its parent; counters reset when moving up.
+   Within an item, indented lines render as ●/○/– sub-bullets. */
+function agendaHtml(m){
+  if(!m.agenda || !m.agenda.length) return `<div class="empty">No agenda items yet.</div>`;
+  const c = [0,0,0,0];
+  const nItems = m.agenda.length;
+  const rows = m.agenda.map((a,ai)=>{
+    let d = a.level||0; if(d<0) d=0; if(d>3) d=3;
+    c[d]++; for(let k=d+1;k<4;k++) c[k]=0;
+    let marker;
+    if(d===0) marker = c[0]+".";
+    else if(d===1) marker = agendaLetter(c[1])+")";
+    else if(d===2) marker = "–";
+    else marker = "○";
+    const parts = agendaSplit(a.text);
+    const txt = a.url
+      ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(parts.first)}</a>`
+      : esc(parts.first);
+    // Plain (no-bullet) continuation lines hang-indent under the text of the
+    // bullet they follow, so a shift+return inside a bullet reads as part of it.
+    let contIndent = 0; const AG_MARK_W = 20;
+    const subHtml = parts.subs.length
+      ? `<div class="ag-subs">` + parts.subs.map(it=>{
+          const sm = agendaSubMark(it.steps);
+          if(sm.plain){
+            return `<div class="ag-subrow plain" style="margin-left:${contIndent}px"><span>${esc(it.text)}</span></div>`;
+          }
+          contIndent = sm.indent + AG_MARK_W;
+          return `<div class="ag-subrow" style="margin-left:${sm.indent}px"><span class="ag-submk${isRound(sm.mk)?" rnd":""}">${sm.mk}</span><span>${esc(it.text)}</span></div>`;
+        }).join("") + `</div>`
+      : "";
+    return `<div class="ag-item${d>0?" sub":""}" style="margin-left:${d*26}px">
+        <span class="ag-marker${isRound(marker)?" rnd":""}">${marker}</span>
+        <span class="ag-body"><span class="ag-txt">${txt}</span>${subHtml}</span>
+        <span class="row-actions edit-only">
+          <button class="btn ghost sm" title="Move up" onclick="moveAgendaItem('${m.id}','${a.id}',-1)" ${ai===0?"disabled":""}>▲</button>
+          <button class="btn ghost sm" title="Move down" onclick="moveAgendaItem('${m.id}','${a.id}',1)" ${ai===nItems-1?"disabled":""}>▼</button>
+          <button class="btn ghost sm" onclick="editAgendaItem('${m.id}','${a.id}')">Edit</button>
+          <button class="btn ghost sm" onclick="deleteAgendaItem('${m.id}','${a.id}')">✕</button>
+        </span>
+      </div>`;
+  }).join("");
+  return `<div class="agenda2">${rows}</div>`;
+}
+function indentAgenda(mid,aid,delta){
+  const m = data.meetings.find(x=>x.id===mid); if(!m) return;
+  const a = m.agenda.find(x=>x.id===aid); if(!a) return;
+  a.level = Math.max(0, Math.min(3, (a.level||0)+delta));
+  renderAll(); persist();
+}
+function moveAgendaItem(mid,aid,dir){
+  const m = data.meetings.find(x=>x.id===mid); if(!m) return;
+  const i = m.agenda.findIndex(x=>x.id===aid); if(i<0) return;
+  const j = i + dir; if(j<0 || j>=m.agenda.length) return;
+  const t = m.agenda[i]; m.agenda[i] = m.agenda[j]; m.agenda[j] = t;
+  renderAll(); persist();
+}
+/* Parse notes into leveled bullet items. Indentation sets the level:
+   one tab OR two spaces = one level deeper, up to 3 levels. */
+function notesLevels(notes){
+  const items = [];
+  (notes||"").split("\n").forEach(line=>{
+    if(!line.trim()) return;
+    const lead = (line.match(/^[ \t]*/)||[""])[0];
+    const tabs = (lead.match(/\t/g)||[]).length;
+    const spaces = lead.replace(/\t/g,"").length;
+    let level = tabs + Math.floor(spaces/2);
+    if(level > 2) level = 2;
+    items.push({level:level, text:line.trim()});
+  });
+  return items;
+}
+/* Marker for each level: ● solid round, ○ hollow round, – en-dash. */
+function notesMarker(level){ return level===0 ? "●" : level===1 ? "○" : "–"; }
+/* True for the round bullet glyphs (which render large and get shrunk via .rnd). */
+function isRound(mk){ return mk==="●" || mk==="○"; }
+/* Render meeting notes as indented bullets (3 levels). Bullets only — the
+   "Notes" heading and edit control live in notesSection(). */
+function notesHtml(notes){
+  const items = notesLevels(notes);
+  if(!items.length) return "";
+  return `<div class="mnotes-tree">`
+    + items.map(it=>{ const mk=notesMarker(it.level); return `<div class="mnote-row lvl${it.level}"><span class="mnote-mk${isRound(mk)?" rnd":""}">${mk}</span><span>${esc(it.text)}</span></div>`; }).join("")
+    + `</div>`;
+}
+/* Notes section for a meeting card: heading + inline Edit button + the bullets. */
+function notesSection(m){
+  const body = notesHtml(m.notes) || `<div class="empty">No notes yet.</div>`;
+  return `<div class="subhead">Notes <button class="btn ghost sm edit-only" onclick="editNotes('${m.id}')">Edit notes</button></div>${body}`;
+}
+function editNotes(mid){
+  const m = data.meetings.find(x=>x.id===mid); if(!m) return;
+  openModal("Edit notes", [
+    {key:"notes",label:"Notes (one per line; indent 2 spaces → ○, 4 → –)",type:"textarea",value:m.notes||""}
+  ], o=>{ m.notes = o.notes; });
+}
+
+/* ============ Dispatcher report analysis ============ */
+function dnum(s){ const m = /-?\d+(\.\d+)?/.exec((s||"").replace(/,/g,"")); return m ? parseFloat(m[0]) : null; }
+/* Turn the raw table grid from a .docx report into structured metrics. */
+function dispatchAnalysis(rows){
+  if(!rows || !rows.length) return null;
+  const headers = rows[0].map(x=>(x||"").trim());
+  const totalCol = headers.findIndex(h=>/total/i.test(h));
+  const sectionKey = s=>{ s=(s||"").trim().toLowerCase();
+    if(s.startsWith("cases assigned")) return "assigned";
+    if(s.startsWith("cases")) return "cases";
+    if(s.startsWith("calls")) return "calls";
+    if(s.startsWith("zip codes")) return "zips";
+    return null; };
+  const periodCols = [];
+  headers.forEach((h,i)=>{ if(i===0 || i===totalCol) return; periodCols.push(i); });
+  let cur = null;
+  const out = {calls:[], cases:[], assigned:[], zips:[], periods:periodCols.map(i=>headers[i]||("Col "+i))};
+  rows.forEach((r,ri)=>{
+    if(ri===0) return;
+    const label = (r[0]||"").trim();
+    if(!label) return;
+    const sk = sectionKey(label);
+    if(sk){ cur = sk; return; }
+    if(!cur) return;
+    const series = periodCols.map(i=>({header:headers[i]||"", value:dnum(r[i])}));
+    const withV = series.filter(s=>s.value!==null);
+    const latest = withV.length ? withV[withV.length-1].value : null;
+    const total = totalCol>=0 ? dnum(r[totalCol]) : null;
+    if(latest===null && total===null) return;
+    out[cur].push({label, latest, total, series});
+  });
+  return out;
+}
+function dHbarRows(items){
+  const max = Math.max(1, ...items.map(i=>i.value||0));
+  return items.map(i=>`<tr><td>${esc(i.label)}</td><td class="barcell"><div class="hbar" style="width:${Math.round((i.value||0)/max*100)}%"></div></td><td class="num">${i.value==null?"–":i.value}</td></tr>`).join("");
+}
+function dispatchAnalysisHtml(a){
+  if(!a) return `<div class="empty">Couldn't read a table from this report.</div>`;
+  let html = a.periods.length ? `<p class="scope-note">Report columns: ${a.periods.map(esc).join(" · ")}</p>` : "";
+  if(a.calls.length){
+    html += `<h3>Calls dispatched / assigned</h3>`;
+    a.calls.forEach(c=>{
+      html += `<div class="dstat"><span class="dstat-num">${c.latest==null?"–":c.latest}</span><span class="dstat-lbl">latest (${esc(c.label)})${c.total!=null?` · ${c.total} total`:""}</span></div>`;
+      const wv = c.series.filter(s=>s.value!=null);
+      if(wv.length>1){
+        const mx = Math.max(1, ...wv.map(s=>s.value));
+        html += `<div class="barchart" style="height:90px">`+wv.map(s=>`<div class="bar" title="${esc(s.header)}: ${s.value}"><div class="bar-fill" style="height:${Math.round(s.value/mx*100)}%"></div></div>`).join("")+`</div>`;
+        html += `<div class="barchart-x">`+wv.map(s=>`<span>${esc(s.header)}</span>`).join("")+`</div>`;
+      }
+    });
+  }
+  if(a.cases.length){
+    const items = a.cases.map(c=>({label:c.label, value:c.latest}));
+    const tot = items.reduce((s,i)=>s+(i.value||0),0);
+    html += `<h3 style="margin-top:1.2em">Case outcomes${tot?` (total ${tot})`:""}</h3><table class="acttab"><tbody>${dHbarRows(items)}</tbody></table>`;
+  }
+  if(a.assigned.length){
+    const items = a.assigned.map(c=>({label:c.label, value:c.latest}));
+    html += `<h3 style="margin-top:1.2em">Cases assigned</h3><table class="acttab"><tbody>${dHbarRows(items)}</tbody></table>`;
+  }
+  if(a.zips.length){
+    const items = a.zips.map(c=>({label:c.label, value:c.latest})).sort((x,y)=>(y.value||0)-(x.value||0));
+    html += `<h3 style="margin-top:1.2em">Zip codes served</h3><table class="acttab"><tbody>${dHbarRows(items)}</tbody></table>`;
+  }
+  if(!a.calls.length && !a.cases.length && !a.assigned.length && !a.zips.length){
+    html += `<div class="empty">The report's table didn't match the expected dispatcher layout (CALLS / CASES / CASES ASSIGNED / ZIP CODES SERVED).</div>`;
+  }
+  return `<div class="dispatch-analysis">${html}</div>`;
+}
+/* ============ Dispatching: monthly report uploads + trends ============ */
+/* "2026-07" -> "Jul 2026"; anything else returned as-is. */
+function fmtMonthLabel(ym){
+  const m = /^(\d{4})-(\d{2})/.exec(ym||"");
+  if(m){ const mo = MONTHS[parseInt(m[2],10)-1] || ""; return (mo?mo+" ":"")+m[1]; }
+  return ym || "(unlabeled)";
+}
+function thisMonthYM(){
+  const d = new Date();
+  return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0");
+}
+/* Upload one month's dispatcher report and record it on the Dispatching page. */
+function uploadDispatchReport(){
+  if(!state.canEdit){ openLogin(); return; }
+  const inp = document.createElement("input");
+  inp.type = "file"; inp.accept = ".docx";
+  inp.onchange = ()=>{
+    const file = inp.files[0]; if(!file) return;
+    if(file.size > MAX_UPLOAD){ alert("That file is over the "+MAX_UPLOAD_MB+" MB limit."); return; }
+    openModal("Upload dispatcher report", [
+      {key:"month", label:"Report month (YYYY-MM)", value:thisMonthYM(), ph:"2026-07"},
+      {key:"info",  label:"File", type:"static", value:file.name+"  ("+(file.size/1024/1024).toFixed(1)+" MB)"}
+    ], async (o)=>{
+      flash("Uploading…");
+      let r;
+      try{ r = await apiUpload(file); }
+      catch(e){ flash("Upload failed — server unreachable.", true); return false; }
+      if(r.status===401){ state.canEdit=false; applyAuthUI(); flash("Please log in to upload.", true); openLogin(); return; }
+      if(r.status!==200 || !r.body.ok){ flash("Upload failed: "+((r.body&&r.body.error)||r.status), true); return false; }
+      (data.dispatchReports = data.dispatchReports||[]).push({id:uid(), month:o.month||thisMonthYM(), url:r.body.url, filename:r.body.filename||file.name});
+      renderAll(); persist(); flash("Report uploaded.");
+      loadDispatching();
+    }, {persist:false, saveLabel:"Upload"});
+  };
+  inp.click();
+}
+function editDispatchMonth(id){
+  const rep = (data.dispatchReports||[]).find(x=>x.id===id); if(!rep) return;
+  openModal("Report month", [
+    {key:"month", label:"Report month (YYYY-MM)", value:rep.month||"", ph:"2026-07"}
+  ], o=>{ rep.month = o.month; loadDispatching(); });
+}
+function removeDispatchReport(id){
+  const rep = (data.dispatchReports||[]).find(x=>x.id===id); if(!rep) return;
+  if(!confirm('Remove the dispatcher report "'+(rep.filename||"")+'" ('+fmtMonthLabel(rep.month)+') from Dispatching? (The uploaded file itself stays on the server.)')) return;
+  data.dispatchReports = data.dispatchReports.filter(x=>x.id!==id);
+  renderAll(); persist(); loadDispatching();
+}
+function dispatchManageHtml(list){
+  const rows = list.length
+    ? list.slice().sort((a,b)=>(a.month||"").localeCompare(b.month||"")).map(rep=>`
+        <tr>
+          <td><b>${esc(fmtMonthLabel(rep.month))}</b></td>
+          <td class="ip"><a href="${esc(rep.url)}" target="_blank" rel="noopener">${esc(rep.filename||"report.docx")}</a></td>
+          <td class="row-actions edit-only"><button class="btn ghost sm" onclick="editDispatchMonth('${rep.id}')">Month</button><button class="btn ghost sm" onclick="removeDispatchReport('${rep.id}')">✕</button></td>
+        </tr>`).join("")
+    : `<tr><td colspan="3" class="empty">No reports uploaded yet.</td></tr>`;
+  return `<div class="card">
+    <div class="catbar"><h3>Monthly reports</h3>
+      <button class="btn gold sm edit-only" onclick="uploadDispatchReport()">⬆ Upload dispatcher report (.docx)</button></div>
+    <table class="acttab"><tbody>${rows}</tbody></table>
+  </div>`;
+}
+function normCase(l){ l=(l||"").toLowerCase();
+  if(l.indexOf("cancel")===0) return "canceled";
+  if(l.indexOf("complete")===0) return "completed";
+  if(l.indexOf("open")===0) return "open";
+  if(l.indexOf("den")===0) return "denied";
+  return l; }
+function normAssign(l){ l=(l||"").toLowerCase();
+  if(l.indexOf("pair")>=0) return "pairs";
+  if(l.indexOf("individ")>=0) return "individual";
+  if(l.indexOf("cancel")===0) return "canceled";
+  return l; }
+/* A column chart with a label under each bar (one bar per report). */
+function labeledBars(labels, values, color){
+  const max = Math.max(1, ...values.map(v=>v||0));
+  const cols = labels.map((lab,i)=>`<div class="stackcol">
+      <div class="stackbar"><div class="seg" style="height:${Math.round((values[i]||0)/max*100)}%;background:${color}" title="${esc(lab)}: ${values[i]==null?'–':values[i]}"></div></div>
+      <div class="stacklab">${esc(lab)}<br><b>${values[i]==null?'–':values[i]}</b></div>
+    </div>`).join("");
+  return `<div class="stackchart">${cols}</div>`;
+}
+/* A stacked column chart; series = [{name,color,values:[perReport]}]. */
+function stackedChart(labels, series){
+  const totals = labels.map((_,i)=>series.reduce((s,ser)=>s+(ser.values[i]||0),0));
+  const max = Math.max(1, ...totals);
+  const cols = labels.map((lab,i)=>{
+    const segs = series.map(ser=>{
+      const v = ser.values[i]||0; if(!v) return "";
+      return `<div class="seg" style="height:${(v/max)*100}%;background:${ser.color}" title="${esc(ser.name)}: ${v}"></div>`;
+    }).join("");
+    return `<div class="stackcol"><div class="stackbar">${segs}</div><div class="stacklab">${esc(lab)}<br><b>${totals[i]}</b></div></div>`;
+  }).join("");
+  const legend = series.map(ser=>`<span class="leg"><i style="background:${ser.color}"></i>${esc(ser.name)}</span>`).join("");
+  return `<div class="stackchart">${cols}</div><div class="chart-legend">${legend}</div>`;
+}
+function zipMatrix(labels, reports){
+  const zips = [];
+  reports.forEach(r=>r.a.zips.forEach(z=>{ if(zips.indexOf(z.label)<0) zips.push(z.label); }));
+  zips.sort();
+  if(!zips.length) return `<div class="empty">No zip-code data in these reports.</div>`;
+  const head = `<tr><th>Zip</th>${labels.map(l=>`<th class="num">${esc(l)}</th>`).join("")}</tr>`;
+  const body = zips.map(z=>{
+    const cells = reports.map(r=>{ const f=r.a.zips.find(x=>x.label===z); return `<td class="num">${f&&f.latest!=null?f.latest:"–"}</td>`; }).join("");
+    return `<tr><td class="ip">${esc(z)}</td>${cells}</tr>`;
+  }).join("");
+  return `<div style="overflow-x:auto"><table class="acttab matrix"><thead>${head}</thead><tbody>${body}</tbody></table></div>`;
+}
+function crossChartsHtml(reports){
+  if(!reports.length) return `<div class="empty">Upload a monthly report above to see the trends.</div>`;
+  const labels = reports.map(r=>r.label);
+  const calls = reports.map(r=> r.a.calls.length ? r.a.calls[0].latest : null);
+  const caseVal = (r,key)=>{ const f=r.a.cases.find(c=>normCase(c.label)===key); return f?(f.latest||0):0; };
+  const outSeries = [
+    {name:"Completed", color:"var(--good)",  values:reports.map(r=>caseVal(r,"completed"))},
+    {name:"Open",      color:"var(--navy)",  values:reports.map(r=>caseVal(r,"open"))},
+    {name:"Denied",    color:"var(--warn)",  values:reports.map(r=>caseVal(r,"denied"))},
+    {name:"Canceled",  color:"var(--gold)",  values:reports.map(r=>caseVal(r,"canceled"))}
+  ];
+  const asgVal = (r,key)=>{ const f=r.a.assigned.find(c=>normAssign(c.label)===key); return f?(f.latest||0):0; };
+  const asgSeries = [
+    {name:"In Pairs",   color:"var(--navy)", values:reports.map(r=>asgVal(r,"pairs"))},
+    {name:"Individual", color:"var(--gold)", values:reports.map(r=>asgVal(r,"individual"))}
+  ];
+  return `
+    <p class="scope-note">${reports.length} report${reports.length>1?"s":""} · ${esc(labels[0])} – ${esc(labels[labels.length-1])}. Each column is one month's report (its latest figures).</p>
+    <div class="card"><h3>Calls dispatched / assigned</h3>${labeledBars(labels, calls, "var(--navy)")}</div>
+    <div class="card"><h3>Case outcomes</h3>${stackedChart(labels, outSeries)}</div>
+    <div class="card"><h3>Cases assigned</h3>${stackedChart(labels, asgSeries)}</div>
+    <div class="card"><h3>Zip codes served</h3>${zipMatrix(labels, reports)}</div>`;
+}
+async function loadDispatching(){
+  const el = document.getElementById("dispatchingBody");
+  if(!el) return;
+  const list = (data.dispatchReports||[]).slice().sort((a,b)=>(a.month||"").localeCompare(b.month||""));
+  const manage = dispatchManageHtml(list);
+  if(!list.length){ el.innerHTML = manage; return; }
+  el.innerHTML = manage + `<div class="empty">Reading ${list.length} report${list.length>1?"s":""}…</div>`;
+  const reports = [];
+  await Promise.all(list.map(async rep=>{
+    try{
+      const res = await fetch(API+"?action=parse_dispatch",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({file:rep.url})});
+      if(res.status===401){ return; }
+      const j = await res.json();
+      if(res.ok && j.ok){
+        const a = dispatchAnalysis(j.rows);
+        if(a && (a.calls.length||a.cases.length||a.assigned.length||a.zips.length)){
+          reports.push({label:fmtMonthLabel(rep.month), month:rep.month||"", a});
+        }
+      }
+    }catch(e){}
+  }));
+  reports.sort((x,y)=>(x.month<y.month?-1:1));
+  const charts = reports.length
+    ? crossChartsHtml(reports)
+    : `<div class="empty">Couldn't read any of the uploaded files as a dispatcher report (expected CALLS / CASES / CASES ASSIGNED / ZIP CODES SERVED).</div>`;
+  el.innerHTML = manage + charts;
+}
+/* ---- Run of Show: one scrollable page combining a meeting's agenda + linked content ---- */
+function isVideoUrl(url){
+  const u=(url||"").toLowerCase();
+  if(/\.(mp4|mov|m4v|webm|avi|mkv)(\?|#|$)/.test(u)) return true;
+  return /(youtube\.com|youtu\.be|vimeo\.com|dailymotion\.com|loom\.com|wistia\.|twitch\.tv|facebook\.com\/watch|\.zoom\.us\/rec|drive\.google\.com\/file)/.test(u);
+}
+/* Decide how one linked item should appear in the Run of Show.
+   file      -> an uploaded document we render to page images inline
+   inlinedoc -> a built-in HTML document (Home Visit Kit etc.)
+   video     -> a video link (can't embed arbitrary video; show as a link)
+   link      -> an external web page (opens in a tab)                      */
+function rosClassify(url){
+  if(!url) return {kind:"none"};
+  if(url.indexOf("#doc-")===0){
+    const d=(data.documents||[]).find(x=>x.id===url.slice(1));
+    if(!d) return {kind:"missing"};
+    if(d.kind==="file") return rosClassify(d.url);
+    return {kind:"inlinedoc", html:d.html||""};
+  }
+  if(isVideoUrl(url)) return {kind:"video", url:url};
+  const clean=url.split("#")[0].split("?")[0];
+  const ext=(clean.split(".").pop()||"").toLowerCase();
+  const renderable=["pdf","doc","docx","odt","rtf","ppt","pptx","odp","xls","xlsx","ods","png","jpg","jpeg","gif","webp","svg"];
+  if(/^(\.\/)?uploads\//.test(url) && renderable.indexOf(ext)>=0) return {kind:"file", url:url};
+  return {kind:"link", url:url};
+}
+function rosAgendaOutline(m){
+  if(!m.agenda||!m.agenda.length) return `<p class="ros-note">(No agenda items.)</p>`;
+  const c=[0,0,0,0];
+  return `<div class="ros-ag">`+ m.agenda.map(a=>{
+    let d=a.level||0; if(d<0)d=0; if(d>3)d=3;
+    c[d]++; for(let k=d+1;k<4;k++)c[k]=0;
+    const mk=d===0?c[0]+".":d===1?agendaLetter(c[1])+")":d===2?"–":"○";
+    const parts=agendaSplit(a.text);
+    const txt=(a.url && a.url.indexOf("tel:")!==0)
+      ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(parts.first)}</a>`
+      : esc(parts.first);
+    let contI=0;   // plain continuation lines hang-indent under the last bullet's text
+    const subHtml=parts.subs.map(it=>{
+      const sm=agendaSubMark(it.steps);
+      if(sm.plain){
+        return `<div class="ros-agrow ros-agsub" style="margin-left:${(d*22)+22+contI}px"><span class="ros-mk"></span><span>${esc(it.text)}</span></div>`;
+      }
+      contI=sm.indent;
+      return `<div class="ros-agrow ros-agsub" style="margin-left:${(d*22)+22+sm.indent}px"><span class="ros-mk${isRound(sm.mk)?" rnd":""}">${sm.mk}</span><span>${esc(it.text)}</span></div>`;
+    }).join("");
+    return `<div class="ros-agrow" style="margin-left:${d*22}px"><span class="ros-mk${isRound(mk)?" rnd":""}">${mk}</span><span>${txt}</span></div>`+subHtml;
+  }).join("")+`</div>`;
+}
+function runOfShow(mid){
+  const m=data.meetings.find(x=>x.id===mid); if(!m) return;
+  const w=window.open("","_blank");
+  if(!w){ alert("Please allow pop-ups to open the Run of Show."); return; }
+  const html=buildRunOfShowDoc(m);
+  try{ w.document.open(); w.document.write(html); w.document.close(); w.focus(); }catch(e){}
+}
+/* One continuous, scrollable presentation. The agenda is the home section;
+   each linked document, report, or deck is rendered inline as page images
+   (converted on the server) so the coordinator scrolls straight through
+   without ever switching tabs. Previews fill in progressively after the
+   page opens, one item at a time. */
+function buildRunOfShowDoc(m){
+  const apiAbs = new URL(API, location.href).href;
+  const baseAbs = new URL(".", location.href).href;
+  const stops=[];
+  const used={};
+  const pushMaterial=(x)=>{
+    if(!x.url || used[x.id]) return;
+    const c=rosClassify(x.url);
+    if(c.kind!=="none" && c.kind!=="missing"){ stops.push(Object.assign({label:(x.title||x.url)}, c)); used[x.id]=true; }
+  };
+  // Walk the agenda in order. For each item: its own link (if any), then any
+  // materials attached to it — so Run of Show mirrors the agenda order.
+  (m.agenda||[]).forEach(a=>{
+    if(a.url && a.url.indexOf("tel:")!==0){
+      const c=rosClassify(a.url);
+      if(c.kind!=="none" && c.kind!=="missing") stops.push(Object.assign({label:agendaSplit(a.text).first||"(agenda item)"}, c));
+    }
+    (m.materials||[]).forEach(x=>{ if(x.agendaRef===a.id) pushMaterial(x); });
+  });
+  // Any materials not tied to an agenda item follow, in their listed order.
+  (m.materials||[]).forEach(x=>{ if(!x.agendaRef) pushMaterial(x); });
+  const f=fmtDate(m.date);
+  const when=[ validDate(m.date)?`${f.mo} ${f.dy}, ${f.yr}`:"", m.time||"", m.location||"" ].filter(Boolean).map(esc).join(" · ");
+  const nav=`<a href="#ros-home">🏠 Agenda</a>` + stops.map((s,i)=>`<a href="#ros-${i}">${esc((s.label||"").slice(0,42))}</a>`).join("");
+  const notes=m.notes ? `<h3>Notes</h3><div class="ros-notes">${notesLevels(m.notes).map(it=>{ const mk=notesMarker(it.level); return `<div class="ros-noterow" style="margin-left:${it.level*22}px"><span class="ros-notemk${isRound(mk)?" rnd":""}">${mk}</span><span>${esc(it.text)}</span></div>`; }).join("")}</div>` : "";
+  const sections=stops.map((s,i)=>`<section class="ros-sec" id="ros-${i}"><h2>${esc(s.label)}</h2><div class="ros-body" data-i="${i}"><div class="ros-status">Preparing preview…</div></div></section>`).join("");
+  const payload = JSON.stringify({apiAbs:apiAbs, baseAbs:baseAbs, stops:stops}).replace(/<\//g,"<\\/");
+  const css=`
+    :root{--navy:#004797;--gold:#c8a24a;--ink:#25303b;--line:#e2ddd2;--muted:#697585}
+    *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.5;background:#f6f4ef}
+    .ros-nav{position:sticky;top:0;background:var(--navy);display:flex;gap:4px;overflow-x:auto;padding:8px 12px;z-index:10;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+    .ros-nav a{color:#fff;text-decoration:none;white-space:nowrap;padding:6px 10px;border-radius:6px;font-size:.85rem;font-weight:600}
+    .ros-nav a:hover{background:rgba(255,255,255,.16)}
+    main{max-width:1000px;margin:0 auto;padding:0 18px 60px}
+    .ros-sec{padding:24px 0;border-top:1px solid var(--line);scroll-margin-top:56px}
+    .ros-sec:first-child{border-top:none}
+    h1{color:#003670;margin:.2em 0} h2{color:var(--navy);margin:.2em 0 .6em}
+    .ros-when{color:var(--muted);margin-bottom:14px}
+    .ros-ag .ros-agrow{padding:5px 0;border-top:1px dashed var(--line);display:flex;gap:8px}
+    .ros-ag .ros-agrow:first-child{border-top:none}
+    .ros-ag .ros-agsub{border-top:none;padding:2px 0;font-size:.97rem}
+    .ros-mk{font-weight:700;color:var(--navy);min-width:22px;text-align:right}
+    .ros-notes{margin:.2em 0}
+    .ros-noterow{display:flex;gap:8px;padding:2px 0;align-items:baseline}
+    .ros-notemk{color:var(--navy);min-width:14px;text-align:center;flex:0 0 auto}
+    .rnd{font-size:.6em}
+    .ros-pages{display:flex;flex-direction:column;gap:14px}
+    .ros-page{width:100%;height:auto;border:1px solid var(--line);border-radius:6px;box-shadow:0 1px 5px rgba(0,0,0,.09);background:#fff;display:block}
+    .ros-img{max-width:100%;border:1px solid var(--line);border-radius:8px}
+    .ros-doc{border:1px solid var(--line);border-radius:8px;padding:20px 24px;background:#fff}
+    .ros-doc table{border-collapse:collapse;width:100%;margin:1em 0} .ros-doc th,.ros-doc td{border:1px solid #ccc;padding:6px 9px;text-align:left;vertical-align:top} .ros-doc th{background:#f3f0e8}
+    .ros-doc .prayer{background:#f4f1ea;border-left:4px solid var(--gold);padding:12px 16px;font-style:italic;color:#4a4230;margin:12px 0;border-radius:0 8px 8px 0}
+    .ros-status{color:var(--muted);padding:14px 16px;background:#fff;border:1px dashed var(--line);border-radius:8px;display:flex;align-items:center;gap:10px}
+    .ros-status.err{color:#9a3b2f;border-color:#e0b4ab;background:#fdf3f1}
+    .ros-spin{width:15px;height:15px;border:2px solid var(--line);border-top-color:var(--navy);border-radius:50%;animation:rosspin .8s linear infinite;flex:0 0 auto}
+    @keyframes rosspin{to{transform:rotate(360deg)}}
+    .ros-orig{margin-top:8px} .ros-orig a{color:var(--muted);font-size:.84rem;text-decoration:none} .ros-orig a:hover{text-decoration:underline}
+    .ros-linkcard{border:1px dashed var(--line);border-radius:8px;padding:16px;background:#fff} .ros-linkcard a{color:var(--navy);font-weight:700;text-decoration:none} .ros-linkcard a:hover{text-decoration:underline}
+    .ros-video{border:1px solid var(--line);border-radius:8px;padding:18px 20px;background:#fff}
+    .ros-video a{color:var(--navy);font-weight:700;font-size:1.05rem;text-decoration:none}
+    .ros-video a:hover{text-decoration:underline}
+    .ros-timer{position:fixed;top:52px;left:12px;z-index:15;background:var(--navy);color:#fff;border-radius:10px;padding:8px 10px;box-shadow:0 2px 12px rgba(0,0,0,.28);text-align:center;min-width:96px;opacity:.96}
+    .ros-elapsed{font-size:1.55rem;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.05;letter-spacing:.5px}
+    .ros-timerbtns{display:flex;gap:4px;margin:5px 0 3px;justify-content:center}
+    .ros-timerbtns button{font-family:inherit;font-size:.72rem;padding:3px 8px;border:0;border-radius:5px;background:rgba(255,255,255,.22);color:#fff;cursor:pointer}
+    .ros-timerbtns button:hover{background:rgba(255,255,255,.36)}
+    .ros-clocklbl{font-size:.72rem;opacity:.85;font-variant-numeric:tabular-nums}
+    @media print{.ros-timer{display:none}}`;
+  const runner=`
+    (function(){
+      var D=__PAYLOAD__;
+      function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+      function linkCard(url,label){return '<div class="ros-linkcard"><a href="'+esc(url)+'" target="_blank" rel="noopener">Open \\u201C'+esc(label||url)+'\\u201D \\u2197</a></div>';}
+      function origLink(url){return '<div class="ros-orig"><a href="'+esc(url)+'" target="_blank" rel="noopener">Open original file \\u2197</a></div>';}
+      function body(i){return document.querySelector('.ros-body[data-i="'+i+'"]');}
+      function after(i){ if(i+1<D.stops.length){ render(i+1); } }
+      function render(i){
+        var s=D.stops[i]; if(!s) return; var b=body(i); if(!b) return;
+        if(s.kind==="inlinedoc"){ b.innerHTML='<div class="ros-doc">'+(s.html||"")+'</div>'; return after(i); }
+        if(s.kind==="video"){ b.innerHTML='<div class="ros-video"><a href="'+esc(s.url)+'" target="_blank" rel="noopener">\\u25B6 Play video \\u2197</a></div>'; return after(i); }
+        if(s.kind==="link"){ b.innerHTML=linkCard(s.url,s.label); return after(i); }
+        b.innerHTML='<div class="ros-status"><span class="ros-spin"></span>Preparing preview\\u2026</div>';
+        fetch(D.apiAbs+"?action=render_doc",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({file:s.url})})
+          .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};},function(){return {ok:false,j:null};});})
+          .then(function(res){
+            var orig=D.baseAbs+s.url;
+            if(res.ok && res.j && res.j.ok && res.j.pages && res.j.pages.length){
+              var imgs=res.j.pages.map(function(p){return '<img class="ros-page" loading="lazy" src="'+D.baseAbs+p+'" alt="">';}).join("");
+              b.innerHTML='<div class="ros-pages">'+imgs+'</div>'+origLink(orig);
+            } else {
+              var msg=(res.j&&res.j.error)?res.j.error:"This item couldn't be converted for inline viewing.";
+              b.innerHTML='<div class="ros-status err">'+esc(msg)+'</div>'+linkCard(orig,s.label);
+            }
+          })
+          .catch(function(){ b.innerHTML='<div class="ros-status err">Preview failed to load.</div>'+linkCard(D.baseAbs+s.url,s.label); })
+          .then(function(){ after(i); });
+      }
+      // --- wall clock + elapsed meeting timer (fixed top-left) ---
+      var tEl=document.getElementById("rosElapsed"), tClock=document.getElementById("rosClock"), tBtn=document.getElementById("rosToggle");
+      var running=true, accumMs=0, lastTick=Date.now();
+      function pad(n){ return (n<10?"0":"")+n; }
+      function fmtDur(ms){ var s=Math.floor(ms/1000), h=Math.floor(s/3600); s-=h*3600; var m=Math.floor(s/60); s-=m*60; return (h>0?h+":":"")+pad(m)+":"+pad(s); }
+      function tick(){
+        var now=Date.now(); if(running){ accumMs+=now-lastTick; } lastTick=now;
+        if(tEl){ tEl.textContent=fmtDur(accumMs); }
+        if(tClock){ var d=new Date(); tClock.textContent=pad(d.getHours())+":"+pad(d.getMinutes())+":"+pad(d.getSeconds()); }
+      }
+      window.rosTimerToggle=function(){ running=!running; if(tBtn){ tBtn.textContent=running?"Pause":"Resume"; } };
+      window.rosTimerReset=function(){ accumMs=0; running=true; if(tBtn){ tBtn.textContent="Pause"; } tick(); };
+      setInterval(tick,250); tick();
+      if(D.stops.length){ render(0); }
+    })();`;
+  const script=runner.replace("__PAYLOAD__", payload);
+  return `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Run of Show — ${esc(m.title||"Meeting")}</title><style>${css}</style></head><body>
+    <nav class="ros-nav">${nav}</nav>
+    <div class="ros-timer" title="Meeting timer — Pause/Reset; clock shows current time">
+      <div class="ros-elapsed" id="rosElapsed">00:00</div>
+      <div class="ros-timerbtns"><button type="button" id="rosToggle" onclick="rosTimerToggle()">Pause</button><button type="button" onclick="rosTimerReset()">Reset</button></div>
+      <div class="ros-clocklbl">🕐 <span id="rosClock">--:--:--</span></div>
+    </div>
+    <main>
+      <section class="ros-sec" id="ros-home"><h1>${esc(m.title||"Meeting")}</h1><div class="ros-when">${when}</div>${rosAgendaOutline(m)}${notes}</section>
+      ${sections}
+    </main>
+    <script>${script}<\/script></body></html>`;
+}
+function toggleMeeting(id){
+  meetingCollapsed[id] = !meetingCollapsed[id];
+  renderMeetings();
+}
+function setAllMeetings(collapsed){
+  (data.meetings||[]).forEach(m=>{ meetingCollapsed[m.id] = collapsed; });
+  renderMeetings();
+}
+function renderMeetings(){
+  const c = document.getElementById("meetingsContainer");
+  const list = (data.meetings||[]).slice().sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+  if(list.length===0){
+    c.innerHTML = `<div class="empty">No meetings yet.${state.canEdit?' Turn on Edit mode and click &ldquo;+ Add meeting&rdquo;.':''}</div>`;
+    return;
+  }
+  c.innerHTML = list.map((m,i)=>{
+    const collapsed = (m.id in meetingCollapsed) ? meetingCollapsed[m.id] : (i!==0);
+    meetingCollapsed[m.id] = collapsed;
+    const badge = m.type==="conference"
+      ? `<span class="mtype conf">St. Austin Conference Meeting</span>`
+      : `<span class="mtype other">Other</span>`;
+    const f = fmtDate(m.date);
+    const dateOk = !isNaN(new Date((m.date||"")+"T00:00:00"));
+    const when = [ dateOk?`${f.mo} ${f.dy}, ${f.yr}`:"Date TBD", esc(m.time||""), esc(m.location||"") ].filter(Boolean).join(" · ");
+    const isPast = validDate(m.date) && (m.date < todayISO());
+    const virtual = m.virtualUrl
+      ? (isPast
+          ? `<div class="mvirtual past"><span title="This meeting has passed">🔗 Join this meeting virtually</span> <span class="cs-dim">(past)</span><button class="btn ghost sm edit-only" onclick="editVirtual('${m.id}')">Edit</button></div>`
+          : `<div class="mvirtual"><a href="${esc(m.virtualUrl)}" target="_blank" rel="noopener">🔗 Join this meeting virtually</a><button class="btn ghost sm edit-only" onclick="editVirtual('${m.id}')">Edit</button></div>`)
+      : `<div class="mvirtual edit-only"><button class="btn ghost sm" onclick="editVirtual('${m.id}')">＋ Add virtual meeting link</button></div>`;
+    const agenda = agendaHtml(m);
+    const mats = (m.materials&&m.materials.length)
+      ? `<ul class="mat">` + m.materials.map((x,xi)=>{
+          const icon = x.kind==="file" ? "📎" : "🔗";
+          const label = x.url
+            ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title||x.url)}</a>`
+            : esc(x.title||"");
+          return `<li>
+            <div class="lk-main"><div class="lk-title">${icon} ${label}</div>${x.note?`<div class="lk-note">${esc(x.note)}</div>`:""}</div>
+            <span class="row-actions edit-only"><button class="btn ghost sm" title="Move up" onclick="moveMaterial('${m.id}','${x.id}',-1)" ${xi===0?"disabled":""}>▲</button><button class="btn ghost sm" title="Move down" onclick="moveMaterial('${m.id}','${x.id}',1)" ${xi===m.materials.length-1?"disabled":""}>▼</button><button class="btn ghost sm" onclick="editMaterial('${m.id}','${x.id}')">Edit</button><button class="btn ghost sm" onclick="deleteMaterial('${m.id}','${x.id}')">✕</button></span>
+          </li>`;
+        }).join("") + `</ul>`
+      : `<div class="empty">No reports or materials posted yet.</div>`;
+    const draftBadge = m.draft ? `<span class="mtype draft">Draft</span>` : "";
+    return `<div class="mtg${collapsed?" collapsed":""}${m.draft?" draft":""}">
+      <div class="mtop">
+        <div class="mtop-left">
+          <button class="mtg-toggle" onclick="toggleMeeting('${m.id}')" title="${collapsed?"Expand":"Collapse"}" aria-label="Expand or collapse">${collapsed?"▸":"▾"}</button>
+          <div>${badge}${draftBadge}<h3 onclick="toggleMeeting('${m.id}')" style="cursor:pointer">${esc(m.title||"Untitled meeting")}</h3><div class="mmeta">${when}</div>${virtual}</div>
+        </div>
+        <div class="row-actions edit-only">
+          <button class="btn sm" onclick="cloneMeeting('${m.id}')" title="Create a new Draft agenda from this one">⎘ Clone as draft</button>
+          <button class="btn ghost sm" onclick="toggleDraft('${m.id}')">${m.draft?"✓ Mark final":"Mark as draft"}</button>
+          <button class="btn sm" onclick="runOfShow('${m.id}')" title="Open a single-page presentation of this meeting">▶ Run of show</button>
+          <button class="btn sm" onclick="editMeeting('${m.id}')">Edit</button>
+          <button class="btn ghost sm" onclick="deleteMeeting('${m.id}')">Delete</button>
+        </div>
+      </div>
+      <div class="mtg-body">
+        <div class="subhead">Agenda</div>
+        <div class="row-actions edit-only" style="margin:.2em 0 .5em"><button class="btn sm" onclick="addAgendaItem('${m.id}')">+ Agenda item</button></div>
+        ${agenda}
+        ${notesSection(m)}
+        <div class="subhead">Reports &amp; Materials</div>
+        ${mats}
+        <div class="row-actions edit-only" style="margin-top:8px">
+          <button class="btn sm" onclick="addMaterialLink('${m.id}')">+ Post a link</button>
+          <button class="btn sm" onclick="uploadMaterial('${m.id}')">⬆ Upload a report</button>
+        </div>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+/* ============ Status + flash ============ */
+function updateStatus(){
+  const el = document.getElementById("statusLine");
+  let s = "";
+  if(state.updatedAt){
+    const d = new Date(state.updatedAt);
+    s = "Last updated " + (isNaN(d)? state.updatedAt : d.toLocaleString()) + " · v" + state.version;
+  } else {
+    s = "No shared edits saved yet — showing default content.";
+  }
+  if(state.canEdit) s += " · you can edit";
+  el.textContent = s;
+}
+let flashTimer = null;
+function flash(msg, isErr){
+  const f = document.getElementById("saveFlash");
+  f.textContent = msg;
+  f.classList.toggle("err", !!isErr);
+  f.classList.add("show");
+  clearTimeout(flashTimer);
+  flashTimer = setTimeout(()=>f.classList.remove("show"), 2600);
+}
+
+/* ============ Edit mode + auth ============ */
+function applyEditUI(){
+  document.body.classList.toggle("editing", editing);
+  const t = document.getElementById("editToggle");
+  t.textContent = "✎ Edit: " + (editing?"On":"Off");
+  t.classList.toggle("gold", editing);
+  renderAll();
+  // Keep the editor-only tabs (Site Analytics, Dispatching) in sync with edit mode.
+  // Site Analytics and Dispatch (cases) are editor-only — leave them when logging out.
+  ["activity","cases"].forEach(id=>{
+    const v = document.getElementById("view-"+id);
+    if(v && v.classList.contains("active")){
+      if(editing){ if(id==="activity") loadActivity(); }
+      else showTab("resources");
+    }
+  });
+  // Dispatching is public; re-render so upload controls appear/disappear with edit mode.
+  const dv = document.getElementById("view-dispatching");
+  if(dv && dv.classList.contains("active")) loadDispatching();
+}
+function applyAuthUI(){
+  document.getElementById("logoutBtn").style.display = state.canEdit ? "inline-flex" : "none";
+}
+function toggleEdit(){
+  if(!state.canEdit){ openLogin(); return; }
+  editing = !editing;
+  applyEditUI();
+}
+function openLogin(){
+  openModal("Enter password", [
+    {key:"password", label:"Password", type:"password", value:""}
+  ], async (out)=>{
+    const ok = await apiLogin(out.password);
+    if(ok){
+      state.canEdit = true; editing = true;
+      applyAuthUI(); applyEditUI();
+      flash("Logged in — you can now edit.");
+      return true;
+    }
+    alert("Incorrect password.");
+    return false;
+  }, {persist:false, saveLabel:"Log in"});
+}
+async function logout(){
+  await apiLogout();
+  state.canEdit = false; editing = false;
+  applyAuthUI(); applyEditUI();
+  flash("Logged out.");
+}
+
+/* ============ Modal ============ */
+function openModal(title, fields, onSave, opts){
+  opts = opts || {};
+  document.getElementById("modalTitle").textContent = title;
+  const body = document.getElementById("modalBody");
+  body.innerHTML = fields.map(f=>{
+    const val = esc(f.value||"");
+    if(f.type==="static") return `<div class="field"><label>${f.label}</label><div class="static-val">${f.raw ? (f.value||"") : val}</div></div>`;
+    if(f.type==="textarea") return `<div class="field"><label>${f.label}</label><textarea id="mf_${f.key}">${val}</textarea></div>`;
+    if(f.type==="password") return `<div class="field"><label>${f.label}</label><input type="password" autocomplete="current-password" id="mf_${f.key}" value="${val}"></div>`;
+    if(f.type==="select"){
+      const opt = f.options.map(o=>`<option value="${o.v}" ${o.v===f.value?"selected":""}>${o.t}</option>`).join("");
+      return `<div class="field"><label>${f.label}</label><select id="mf_${f.key}">${opt}</select></div>`;
+    }
+    if(f.type==="checklist"){
+      const rows = (f.options||[]).map(o=>`<label class="chk"><input type="checkbox" name="mf_${f.key}" value="${esc(o.v)}" ${o.checked?"checked":""}> <span>${esc(o.t)}</span></label>`).join("");
+      return `<div class="field"><label>${f.label}</label><div class="checklist">${rows||'<div class="cs-dim">None available yet.</div>'}</div></div>`;
+    }
+    if(f.type==="color"){
+      let v=(f.value||"").trim();
+      if(/^#[0-9a-fA-F]{3}$/.test(v)) v="#"+v.slice(1).split("").map(c=>c+c).join("");
+      if(!/^#[0-9a-fA-F]{6}$/.test(v)) v="#888888";
+      return `<div class="field"><label>${f.label}</label><div class="colorrow"><input type="color" class="colorpick" id="mf_${f.key}" value="${v}" oninput="this.nextElementSibling.textContent=this.value"><span class="colorhex">${v}</span></div></div>`;
+    }
+    return `<div class="field"><label>${f.label}</label><input id="mf_${f.key}" value="${val}" placeholder="${esc(f.ph||"")}"></div>`;
+  }).join("");
+  const saveBtn = document.getElementById("modalSave");
+  saveBtn.textContent = opts.saveLabel || "Save";
+  saveBtn.onclick = async ()=>{
+    const out = {};
+    fields.forEach(f=>{
+      if(f.type==="checklist"){
+        out[f.key] = Array.from(document.querySelectorAll('input[name="mf_'+f.key+'"]:checked')).map(i=>i.value);
+        return;
+      }
+      const el = document.getElementById("mf_"+f.key); out[f.key] = el ? el.value.trim() : (f.value||"");
+    });
+    const r = await onSave(out);
+    if(r === false) return;           // keep modal open
+    closeModal();
+    if(opts.persist !== false){ renderAll(); persist(); }
+  };
+  document.getElementById("modalBg").classList.add("open");
+  const first = body.querySelector("input,textarea,select");
+  if(first) first.focus();
+}
+function closeModal(){ document.getElementById("modalBg").classList.remove("open"); }
+document.getElementById("modalBg").addEventListener("click",e=>{ if(e.target.id==="modalBg") closeModal(); });
+
+/* ============ CRUD ============ */
+function editLimit(id){
+  const l = data.limits.find(x=>x.id===id); if(!l) return;
+  openModal("Edit limit", [
+    {key:"label",label:"Label",value:l.label},
+    {key:"amount",label:"Amount",value:l.amount,ph:"$500"},
+    {key:"meta",label:"Note (subtext)",type:"textarea",value:l.meta},
+    {key:"bullets",label:"Bulleted list (one item per line, optional)",type:"textarea",value:l.bullets||""},
+    {key:"reviewed",label:"Last reviewed",value:todayISO(),ph:"YYYY-MM-DD"}
+  ], o=>{ Object.assign(l,o); });
+}
+function addCategory(){
+  openModal("Add category", [
+    {key:"icon",label:"Icon (emoji, optional)",value:"📁"},
+    {key:"name",label:"Category name",value:"",ph:"e.g. Medical & Prescription Help"},
+    {key:"desc",label:"Short description",type:"textarea",value:""}
+  ], o=>{ data.categories.push({id:uid(),icon:o.icon,name:o.name||"Untitled",desc:o.desc,links:[]}); });
+}
+function editCategory(id){
+  const cat = data.categories.find(c=>c.id===id); if(!cat) return;
+  openModal("Edit category", [
+    {key:"icon",label:"Icon (emoji)",value:cat.icon},
+    {key:"name",label:"Category name",value:cat.name},
+    {key:"desc",label:"Short description",type:"textarea",value:cat.desc}
+  ], o=>{ Object.assign(cat,o); });
+}
+function deleteCategory(id){
+  if(!confirm("Delete this whole category and its links?")) return;
+  data.categories = data.categories.filter(c=>c.id!==id); renderAll(); persist();
+}
+/* Options for the "link to a document" picker in the link forms. */
+function docLinkOptions(){
+  const docs = data.documents || [];
+  return [{v:"",t:"— none (use the URL above) —"}]
+    .concat(docs.map(d=>({v:d.id, t:(d.kind==="file"?"📎 ":"📄 ")+d.title})));
+}
+/* If a document was picked, point the link at it: uploaded files link straight
+   to the file; typed/standard docs deep-link to the Documents tab. */
+function applyDocRef(o){
+  if(o.docref){
+    const d = (data.documents||[]).find(x=>x.id===o.docref);
+    if(d){
+      o.url = (d.kind==="file") ? d.url : "#doc-"+d.id;
+      o.tag = "doc";
+      if(!o.title) o.title = d.title;
+    }
+  }
+  delete o.docref;
+  return o;
+}
+function addLink(catId){
+  const cat = data.categories.find(c=>c.id===catId); if(!cat) return;
+  openModal("Add link", [
+    {key:"title",label:"Title",value:"",ph:"e.g. Central Texas Food Bank"},
+    {key:"url",label:"URL or phone (optional)",value:"",ph:"https://…  or  tel:5125551234"},
+    {key:"docref",label:"…or link to a document",type:"select",value:"",options:docLinkOptions()},
+    {key:"note",label:"Note",type:"textarea",value:""},
+    {key:"reviewed",label:"Last reviewed",value:todayISO(),ph:"YYYY-MM-DD"},
+    {key:"tag",label:"Type",type:"select",value:"link",options:[{v:"link",t:"Link"},{v:"phone",t:"Phone"},{v:"doc",t:"Document"}]}
+  ], o=>{ cat.links.push({id:uid(),...applyDocRef(o)}); });
+}
+function editLink(catId,id){
+  const cat = data.categories.find(c=>c.id===catId); if(!cat) return;
+  const l = cat.links.find(x=>x.id===id); if(!l) return;
+  openModal("Edit link", [
+    {key:"title",label:"Title",value:l.title},
+    {key:"url",label:"URL or phone",value:l.url},
+    {key:"docref",label:"…or link to a document (overrides URL)",type:"select",value:"",options:docLinkOptions()},
+    {key:"note",label:"Note",type:"textarea",value:l.note},
+    {key:"reviewed",label:"Last reviewed",value:todayISO(),ph:"YYYY-MM-DD"},
+    {key:"tag",label:"Type",type:"select",value:l.tag,options:[{v:"link",t:"Link"},{v:"phone",t:"Phone"},{v:"doc",t:"Document"}]}
+  ], o=>{ Object.assign(l,applyDocRef(o)); });
+}
+function deleteLink(catId,id){
+  const cat = data.categories.find(c=>c.id===catId); if(!cat) return;
+  cat.links = cat.links.filter(x=>x.id!==id); renderAll(); persist();
+}
+function addEvent(scope){
+  openModal("Add event", [
+    {key:"date",label:"Start date (YYYY-MM-DD)",value:"",ph:"2026-09-12"},
+    {key:"end",label:"Finish date (optional, YYYY-MM-DD)",value:"",ph:"2026-09-14"},
+    {key:"title",label:"Title",value:""},
+    {key:"url",label:"Link URL (optional)",value:"",ph:"https://…"},
+    {key:"meta",label:"Details / location",value:""},
+    {key:"reviewed",label:"Last reviewed",value:todayISO(),ph:"YYYY-MM-DD"}
+  ], o=>{ (data.events[scope]=data.events[scope]||[]).push({id:uid(),...o}); });
+}
+function editEvent(scope,id){
+  const e = data.events[scope].find(x=>x.id===id); if(!e) return;
+  openModal("Edit event", [
+    {key:"date",label:"Start date (YYYY-MM-DD)",value:e.date},
+    {key:"end",label:"Finish date (optional, YYYY-MM-DD)",value:e.end},
+    {key:"title",label:"Title",value:e.title},
+    {key:"url",label:"Link URL (optional)",value:e.url},
+    {key:"meta",label:"Details / location",value:e.meta},
+    {key:"reviewed",label:"Last reviewed",value:todayISO(),ph:"YYYY-MM-DD"}
+  ], o=>{ Object.assign(e,o); });
+}
+function deleteEvent(scope,id){ data.events[scope]=data.events[scope].filter(x=>x.id!==id); renderAll(); persist(); }
+function addCal(scope){
+  openModal("Add calendar link", [
+    {key:"title",label:"Title",value:""},
+    {key:"url",label:"URL",value:"",ph:"https://…"},
+    {key:"note",label:"Note",value:""},
+    {key:"reviewed",label:"Last reviewed",value:todayISO(),ph:"YYYY-MM-DD"}
+  ], o=>{ (data.calendars[scope]=data.calendars[scope]||[]).push({id:uid(),...o}); });
+}
+function editCal(scope,id){
+  const c = data.calendars[scope].find(x=>x.id===id); if(!c) return;
+  openModal("Edit calendar link", [
+    {key:"title",label:"Title",value:c.title},
+    {key:"url",label:"URL",value:c.url},
+    {key:"note",label:"Note",value:c.note},
+    {key:"reviewed",label:"Last reviewed",value:todayISO(),ph:"YYYY-MM-DD"}
+  ], o=>{ Object.assign(c,o); });
+}
+function deleteCal(scope,id){ data.calendars[scope]=data.calendars[scope].filter(x=>x.id!==id); renderAll(); persist(); }
+
+/* ============ Meetings CRUD ============ */
+const MTYPE_OPTS = [{v:"conference",t:"St. Austin Conference Meeting"},{v:"other",t:"Other"}];
+function addMeeting(){
+  openModal("Add meeting", [
+    {key:"type",label:"Meeting type",type:"select",value:"conference",options:MTYPE_OPTS},
+    {key:"title",label:"Title",value:"",ph:"e.g. Monthly Conference Meeting"},
+    {key:"date",label:"Date (YYYY-MM-DD)",value:"",ph:"2026-08-05"},
+    {key:"time",label:"Time (optional)",value:"",ph:"7:00 PM"},
+    {key:"location",label:"Location (optional)",value:"",ph:"St. Austin Parish Hall"},
+    {key:"virtualUrl",label:"Virtual meeting link (optional)",value:"",ph:"https://zoom.us/…"},
+    {key:"notes",label:"Notes (one per line; indent 2 spaces for ○, 4 for –)",type:"textarea",value:""}
+  ], o=>{ data.meetings.push({id:uid(),type:o.type||"other",title:o.title,date:o.date,time:o.time,location:o.location,virtualUrl:o.virtualUrl,notes:o.notes,agenda:[],materials:[]}); });
+}
+function editMeeting(id){
+  const m = data.meetings.find(x=>x.id===id); if(!m) return;
+  openModal("Edit meeting", [
+    {key:"type",label:"Meeting type",type:"select",value:m.type,options:MTYPE_OPTS},
+    {key:"title",label:"Title",value:m.title},
+    {key:"date",label:"Date (YYYY-MM-DD)",value:m.date},
+    {key:"time",label:"Time",value:m.time},
+    {key:"location",label:"Location",value:m.location},
+    {key:"virtualUrl",label:"Virtual meeting link (optional)",value:m.virtualUrl,ph:"https://zoom.us/…"},
+    {key:"status",label:"Status",type:"select",value:m.draft?"draft":"final",options:[{v:"final",t:"Final"},{v:"draft",t:"Draft"}]}
+  ], o=>{ const isDraft = (o.status==="draft"); delete o.status; Object.assign(m,o); m.draft = isDraft; });
+}
+/* Clone a meeting into a new, editable Draft agenda (new ids; reports left empty). */
+function cloneMeeting(id){
+  const m = data.meetings.find(x=>x.id===id); if(!m) return;
+  const copy = {
+    id: uid(), draft: true,
+    type: m.type, title: m.title, time: m.time, location: m.location,
+    virtualUrl: m.virtualUrl, notes: m.notes, date: todayISO(),
+    agenda: (m.agenda||[]).map(a=>({id:uid(), text:a.text, level:a.level||0, url:a.url||""})),
+    materials: []
+  };
+  data.meetings.push(copy);
+  meetingCollapsed[copy.id] = false;   // show the new draft expanded
+  renderAll(); persist();
+  showTab("meetings", {push:false});
+  flash("Draft agenda created from “"+(m.title||"meeting")+"” — edit it and set its date.");
+}
+function toggleDraft(id){
+  const m = data.meetings.find(x=>x.id===id); if(!m) return;
+  m.draft = !m.draft; renderAll(); persist();
+  flash(m.draft ? "Marked as draft." : "Marked as final.");
+}
+function editVirtual(mid){
+  const m = data.meetings.find(x=>x.id===mid); if(!m) return;
+  openModal("Virtual meeting link", [
+    {key:"virtualUrl",label:"Link to attend this meeting virtually",value:m.virtualUrl||"",ph:"https://zoom.us/…"}
+  ], o=>{ m.virtualUrl = o.virtualUrl; });
+}
+function deleteMeeting(id){
+  if(!confirm("Delete this meeting, its agenda, and its material links? (Any uploaded files stay on the server.)")) return;
+  data.meetings = data.meetings.filter(x=>x.id!==id); renderAll(); persist();
+}
+/* Where to insert a new agenda item. */
+function agendaPositionOptions(m){
+  const opts = [{v:"0", t:"At the top"}];
+  (m.agenda||[]).forEach((a,i)=>{
+    const first = agendaSplit(a.text).first || "(item)";
+    opts.push({v:String(i+1), t:"After "+(i+1)+". "+(first.length>46?first.slice(0,46)+"…":first)});
+  });
+  return opts;
+}
+/* Checklist of this meeting's materials, pre-checked for those already tied to itemId. */
+function materialChecklistOptions(m, itemId){
+  return (m.materials||[]).map(x=>({
+    v:x.id,
+    t:((x.kind==="file")?"📎 ":"🔗 ")+(x.title||x.url||"untitled"),
+    checked: !!itemId && x.agendaRef===itemId
+  }));
+}
+/* Tie exactly the chosen materials to itemId; untie any this item no longer owns. */
+function applyLinkedDocs(m, itemId, ids){
+  const set = {}; (ids||[]).forEach(id=>set[id]=1);
+  (m.materials||[]).forEach(x=>{
+    if(set[x.id]) x.agendaRef = itemId;
+    else if(x.agendaRef===itemId) x.agendaRef = "";
+  });
+}
+const AG_DOCS_LABEL = "Attach documents (shown under this item in the Run of Show)";
+/* ---- Structured agenda-item editor (its own dialog) ----
+   Top-level numbered item in one box; sub-items below, each with indent/outdent
+   (plain → ● → ○ → –) and up/down controls. Sub-items are stored back into the
+   item's text as indentation (0/2/4/6 spaces), matching how the card renders. */
+let agEd = null;
+function agEdMarker(steps){ return steps<=0 ? "¶" : steps===1 ? "●" : steps===2 ? "○" : "–"; }
+function addAgendaItem(mid){ openAgendaEditor(mid, null); }
+function editAgendaItem(mid,aid){ openAgendaEditor(mid, aid); }
+function openAgendaEditor(mid, aid){
+  const m = data.meetings.find(x=>x.id===mid); if(!m) return;
+  let title="", url="", subs=[], docs={};
+  if(aid){
+    const a = m.agenda.find(x=>x.id===aid); if(!a) return;
+    const sp = agendaSplit(a.text);
+    title = sp.first; url = a.url||"";
+    subs = sp.subs.map(s=>({text:s.text, steps:Math.max(0,Math.min(3, s.steps||0))}));
+    (m.materials||[]).forEach(x=>{ if(x.agendaRef===aid) docs[x.id]=1; });
+  }
+  agEd = { mid, aid:aid||null, isAdd:!aid, title, url, subs, docs, position:String((m.agenda||[]).length) };
+  renderAgendaEditor();
+}
+function agEdSync(){
+  if(!agEd) return;
+  const t=document.getElementById("agEdTitle"); if(t) agEd.title=t.value;
+  const u=document.getElementById("agEdUrl"); if(u) agEd.url=u.value;
+  const p=document.getElementById("agEdPos"); if(p) agEd.position=p.value;
+  document.querySelectorAll(".ag-ed-text").forEach(inp=>{ const i=+inp.dataset.i; if(agEd.subs[i]) agEd.subs[i].text=inp.value; });
+  const docs={}; document.querySelectorAll(".ag-ed-doc").forEach(c=>{ if(c.checked) docs[c.value]=1; }); agEd.docs=docs;
+}
+function agEdAdd(){ agEdSync(); agEd.subs.push({text:"",steps:1}); renderAgendaEditor(true); }
+function agEdDel(i){ agEdSync(); agEd.subs.splice(i,1); renderAgendaEditor(); }
+function agEdIndent(i,d){ agEdSync(); const s=agEd.subs[i]; if(s) s.steps=Math.max(0,Math.min(3,(s.steps||0)+d)); renderAgendaEditor(); }
+function agEdMove(i,d){ agEdSync(); const j=i+d; if(j<0||j>=agEd.subs.length) return; const t=agEd.subs[i]; agEd.subs[i]=agEd.subs[j]; agEd.subs[j]=t; renderAgendaEditor(); }
+function agEdSave(){
+  agEdSync();
+  const m = data.meetings.find(x=>x.id===agEd.mid); if(!m){ closeModal(); return; }
+  const title=(agEd.title||"").trim();
+  if(!title){ flash("Enter the agenda item text first."); const t=document.getElementById("agEdTitle"); if(t) t.focus(); return; }
+  const subLines = agEd.subs.filter(s=>(s.text||"").trim()!=="").map(s=>" ".repeat((s.steps||0)*2)+s.text.trim());
+  const text=[title].concat(subLines).join("\n");
+  let item;
+  if(agEd.isAdd){
+    item={id:uid(), text, url:(agEd.url||"").trim(), level:0};
+    m.agenda=m.agenda||[];
+    let idx=parseInt(agEd.position,10); if(isNaN(idx)||idx<0) idx=m.agenda.length;
+    m.agenda.splice(Math.min(idx,m.agenda.length),0,item);
+  } else {
+    item=m.agenda.find(x=>x.id===agEd.aid); if(!item){ closeModal(); return; }
+    item.text=text; item.url=(agEd.url||"").trim();
+  }
+  applyLinkedDocs(m, item.id, Object.keys(agEd.docs||{}));
+  closeModal(); agEd=null; renderAll(); persist();
+}
+function renderAgendaEditor(focusLast){
+  const m = data.meetings.find(x=>x.id===agEd.mid); if(!m) return;
+  document.getElementById("modalTitle").textContent = agEd.isAdd ? "Add agenda item" : "Edit agenda item";
+  const last = agEd.subs.length-1;
+  const rows = agEd.subs.map((s,i)=>{
+    const steps=Math.max(0,Math.min(3,s.steps||0)); const mk=agEdMarker(steps);
+    return `<div class="ag-ed-row" style="margin-left:${steps*16}px">
+      <span class="ag-ed-mk${steps<=0?" dim":""}${isRound(mk)?" rnd":""}">${mk}</span>
+      <input class="ag-ed-text" data-i="${i}" value="${esc(s.text)}" placeholder="sub-item text">
+      <span class="ag-ed-ctrls">
+        <button type="button" title="Outdent" onclick="agEdIndent(${i},-1)" ${steps<=0?"disabled":""}>◂</button>
+        <button type="button" title="Indent" onclick="agEdIndent(${i},1)" ${steps>=3?"disabled":""}>▸</button>
+        <button type="button" title="Move up" onclick="agEdMove(${i},-1)" ${i===0?"disabled":""}>▲</button>
+        <button type="button" title="Move down" onclick="agEdMove(${i},1)" ${i===last?"disabled":""}>▼</button>
+        <button type="button" title="Remove" onclick="agEdDel(${i})">✕</button>
+      </span></div>`;
+  }).join("");
+  const posField = agEd.isAdd
+    ? `<div class="field"><label>Place this item</label><select id="agEdPos">${agendaPositionOptions(m).map(o=>`<option value="${o.v}" ${o.v===agEd.position?"selected":""}>${esc(o.t)}</option>`).join("")}</select></div>`
+    : "";
+  const docsField = (m.materials||[]).length
+    ? `<div class="field"><label>${AG_DOCS_LABEL}</label><div class="checklist">${(m.materials||[]).map(x=>`<label class="chk"><input type="checkbox" class="ag-ed-doc" value="${esc(x.id)}" ${agEd.docs[x.id]?"checked":""}> <span>${esc(((x.kind==="file")?"📎 ":"🔗 ")+(x.title||x.url||"untitled"))}</span></label>`).join("")}</div></div>`
+    : "";
+  document.getElementById("modalBody").innerHTML = `
+    <div class="field"><label>Agenda item (numbered, top level)</label><input id="agEdTitle" value="${esc(agEd.title)}" placeholder="e.g. Treasurer's report"></div>
+    <div class="field"><label>Link the item text to a URL (optional)</label><input id="agEdUrl" value="${esc(agEd.url)}" placeholder="https://…"></div>
+    ${posField}
+    <div class="field"><label>Sub-items &nbsp;<span class="cs-dim" style="font-weight:400;text-transform:none;letter-spacing:0">(◂ ▸ set ¶ plain → ● → ○ → – · ▲ ▼ reorder)</span></label>
+      <div class="ag-ed-list">${rows||'<div class="cs-dim" style="padding:6px 2px">No sub-items yet.</div>'}</div>
+      <div style="margin-top:6px"><button type="button" class="btn sm" onclick="agEdAdd()">+ Add sub-item</button></div>
+    </div>
+    ${docsField}`;
+  const saveBtn=document.getElementById("modalSave"); saveBtn.textContent="Save"; saveBtn.onclick=agEdSave;
+  document.getElementById("modalBg").classList.add("open");
+  if(focusLast){ const ins=document.querySelectorAll(".ag-ed-text"); if(ins.length) ins[ins.length-1].focus(); }
+  else { const tI=document.getElementById("agEdTitle"); if(tI && !agEd.title) tI.focus(); }
+}
+function deleteAgendaItem(mid,aid){
+  const m = data.meetings.find(x=>x.id===mid); if(!m) return;
+  m.agenda = m.agenda.filter(x=>x.id!==aid); renderAll(); persist();
+}
+/* Dropdown options for tying a material to an agenda item. */
+function agendaOptions(m){
+  const opts = [{v:"", t:"— Not tied to an agenda item —"}];
+  (m.agenda||[]).forEach((a,i)=>{
+    const first = agendaSplit(a.text).first || "(item)";
+    opts.push({v:a.id, t:(i+1)+". "+(first.length>60?first.slice(0,60)+"…":first)});
+  });
+  return opts;
+}
+function addMaterialLink(mid){
+  const m = data.meetings.find(x=>x.id===mid); if(!m) return;
+  openModal("Post a link to materials", [
+    {key:"title",label:"Title",value:"",ph:"e.g. Treasurer's report (Google Doc)"},
+    {key:"url",label:"URL",value:"",ph:"https://…"},
+    {key:"note",label:"Note (optional)",value:""},
+    {key:"agendaRef",label:"Show under agenda item (optional)",type:"select",value:"",options:agendaOptions(m)}
+  ], o=>{ if(!o.url && !o.title) return false; (m.materials=m.materials||[]).push({id:uid(),kind:"link",title:o.title||o.url,url:o.url,note:o.note,agendaRef:o.agendaRef||""}); });
+}
+function editMaterial(mid,xid,justUploaded){
+  const m = data.meetings.find(x=>x.id===mid); if(!m) return;
+  const x = (m.materials||[]).find(y=>y.id===xid); if(!x) return;
+  const fields = [ {key:"title",label:"Title",value:x.title||""} ];
+  if(x.kind==="link") fields.push({key:"url",label:"URL",value:x.url||"",ph:"https://…"});
+  fields.push({key:"note",label:"Note (optional)",value:x.note||""});
+  fields.push({key:"agendaRef",label:"Show under agenda item (optional)",type:"select",value:x.agendaRef||"",options:agendaOptions(m)});
+  openModal(justUploaded?"Attach upload to an agenda item":"Edit material", fields,
+    o=>{ if(o.title) x.title=o.title; if(x.kind==="link" && typeof o.url==="string") x.url=o.url; x.note=o.note; x.agendaRef=o.agendaRef||""; });
+}
+function deleteMaterial(mid,xid){
+  const m = data.meetings.find(x=>x.id===mid); if(!m) return;
+  m.materials = m.materials.filter(x=>x.id!==xid); renderAll(); persist();
+}
+function moveMaterial(mid,xid,dir){
+  const m = data.meetings.find(x=>x.id===mid); if(!m || !m.materials) return;
+  const i = m.materials.findIndex(x=>x.id===xid); if(i<0) return;
+  const j = i + dir; if(j<0 || j>=m.materials.length) return;
+  const t = m.materials[i]; m.materials[i] = m.materials[j]; m.materials[j] = t;
+  renderAll(); persist();
+}
+/* Build a meeting object (matching the standard meeting template) from the
+   paragraphs of an uploaded Word agenda. */
+const MONTH_NAMES = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+function agendaFromParagraphs(paras){
+  const clean = (paras||[]).map(p=>({ text:(p.text||"").trim(), list:!!p.list, level:(typeof p.level==="number"?p.level:-1) }));
+  const idxAgenda = clean.findIndex(p=>/^agenda$/i.test(p.text));
+  const idxNotes  = clean.findIndex(p=>/^notes\b/i.test(p.text));
+  const headerEnd = idxAgenda>=0 ? idxAgenda : clean.length;
+  const agendaEnd = idxNotes>=0 ? idxNotes : clean.length;
+
+  // Agenda items: everything between "AGENDA" and "NOTES" (fallback: list paragraphs).
+  // level 0=numbered, 1=lettered, 2=en-dash, 3=circular bullet.
+  const lvlOf = p => (p.level>=0 && p.level<=3) ? p.level : 0;
+  let agenda;
+  if(idxAgenda>=0){
+    agenda = clean.slice(idxAgenda+1, agendaEnd).filter(p=>p.text!=="").map(p=>({id:uid(), text:p.text, level:lvlOf(p)}));
+  } else {
+    agenda = clean.filter(p=>p.list && p.text!=="").map(p=>({id:uid(), text:p.text, level:lvlOf(p)}));
+  }
+
+  // Notes: from the "NOTES" paragraph to the end, minus the "NOTES:" label
+  let notes = "";
+  if(idxNotes>=0){
+    const arr = clean.slice(idxNotes).map(p=>p.text).filter(Boolean);
+    if(arr.length){ arr[0] = arr[0].replace(/^notes:?\s*/i, ""); notes = arr.filter(Boolean).join("\n"); }
+  }
+
+  // Date: first "Month D, YYYY" anywhere in the header
+  let date = "";
+  for(const p of clean){
+    const m = /([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})/.exec(p.text);
+    if(m){
+      const mi = MONTH_NAMES.findIndex(n=>n.toLowerCase()===m[1].toLowerCase());
+      if(mi>=0){ date = m[3]+"-"+String(mi+1).padStart(2,"0")+"-"+String(parseInt(m[2],10)).padStart(2,"0"); break; }
+    }
+  }
+
+  // Location & time from the header lines (before AGENDA)
+  let location = "", time = "";
+  for(let i=0;i<headerEnd;i++){
+    const t = clean[i].text;
+    if(!location && /(hall|ministry center|hecker|parish)/i.test(t)) location = t;
+    if(!time){ const tm = /(\d{1,2}):(\d{2})/.exec(t); if(tm) time = tm[1]+":"+tm[2]+" PM"; }
+  }
+
+  let title = "Conference Meeting";
+  if(date){ const dt = new Date(date+"T00:00:00"); if(!isNaN(dt)) title = MONTH_NAMES[dt.getMonth()]+" "+dt.getFullYear()+" Conference Meeting"; }
+
+  return { id:uid(), type:"conference", title, date, time, location, notes, agenda, materials:[] };
+}
+/* Upload a Word .docx agenda, parse it on the server, and create a meeting. */
+function importAgendaDoc(){
+  if(!state.canEdit){ openLogin(); return; }
+  const inp = document.createElement("input");
+  inp.type = "file";
+  inp.accept = ".docx";
+  inp.onchange = async ()=>{
+    const file = inp.files[0]; if(!file) return;
+    if(file.size > MAX_UPLOAD){ alert("That file is over the "+MAX_UPLOAD_MB+" MB limit."); return; }
+    flash("Reading agenda…");
+    const fd = new FormData(); fd.append("file", file);
+    let res, j;
+    try{ res = await fetch(API+"?action=parse_docx",{method:"POST", body:fd}); j = await res.json().catch(()=>({})); }
+    catch(e){ flash("Couldn't reach the server.", true); return; }
+    if(res.status===401){ state.canEdit=false; applyAuthUI(); flash("Please log in first.", true); openLogin(); return; }
+    if(res.status!==200 || !j.ok){ flash("Import failed: "+((j&&j.error)||res.status), true); return; }
+
+    const mtg = agendaFromParagraphs(j.paragraphs);
+    if(mtg.agenda.length===0){ flash("No agenda items found — is there an \"AGENDA\" heading in the document?", true); return; }
+
+    openModal("Create meeting from agenda", [
+      {key:"title", label:"Meeting title", value:mtg.title},
+      {key:"date",  label:"Date (YYYY-MM-DD)", value:mtg.date},
+      {key:"summary", label:"Parsed from document", type:"static",
+        value: mtg.agenda.length+" agenda item"+(mtg.agenda.length===1?"":"s")+" · "
+             + (mtg.location?("location: "+mtg.location):"no location") + " · "
+             + (mtg.notes?"notes included":"no notes")}
+    ], (o)=>{
+      mtg.title = o.title || mtg.title;
+      mtg.date  = o.date  || mtg.date;
+      data.meetings.push(mtg);
+      showTab("meetings", {push:false});
+      flash("Meeting created from agenda.");
+    }, {saveLabel:"Create meeting"});
+  };
+  inp.click();
+}
+/* Upload a report file to the server, then attach it to the meeting. */
+function uploadMaterial(mid){
+  const m = data.meetings.find(x=>x.id===mid); if(!m) return;
+  pickAndUpload(".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt,.csv,.png,.jpg,.jpeg,.gif", (r)=>{
+    const newId = uid();
+    (m.materials=m.materials||[]).push({id:newId, kind:"file", title:r.filename||"file", url:r.url, note:"", agendaRef:""});
+    renderAll(); persist();
+    if((m.agenda||[]).length) editMaterial(mid, newId, true);   // offer to attach it to an agenda item
+  });
+}
+
+/* ============ Export / import / reset ============ */
+function exportData(){
+  const blob = new Blob([JSON.stringify(data,null,2)],{type:"application/json"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "svdp-resource-center-"+new Date().toISOString().slice(0,10)+".json";
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+function importData(ev){
+  const file = ev.target.files[0]; if(!file) return;
+  const r = new FileReader();
+  r.onload = ()=>{
+    try{
+      const parsed = JSON.parse(r.result);
+      if(!parsed.categories||!parsed.limits) throw new Error("bad file");
+      if(!confirm("Replace the shared content with this backup file and save it to the server?")) return;
+      data = parsed; normalizeData(); renderAll(); persist();
+    }catch(e){ alert("Sorry, that file couldn't be read as a Resource Center export."); }
+  };
+  r.readAsText(file);
+  ev.target.value = "";
+}
+function resetData(){
+  if(!confirm("Reset all content back to the original defaults and save to the server? Export a backup first if you want to keep the current content.")) return;
+  data = structuredClone(DEFAULT_DATA); renderAll(); persist();
+}
+
+/* ============ Boot ============ */
+buildTabs();
+normalizeData();
+renderAll();
+const initialRoute = parseHash();
+setActiveTab(initialRoute.tab);
+history.replaceState(initialRoute, "", location.hash || "#"+initialRoute.tab);
+loadFromServer().then(()=>{
+  if(initialRoute.doc) scrollToDoc(initialRoute.doc);
+  logUsage("visit");
+  logUsage(initialRoute.tab);
+  if(initialRoute.tab==="activity") loadActivity();
+  if(initialRoute.tab==="dispatching") loadDispatching();
+});
+</script>
+</body>
+</html>

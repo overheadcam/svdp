@@ -1,0 +1,24 @@
+# Uploaded files live here. They must be served as static downloads ONLY —
+# never executed. NOTE: only directives allowed in .htaccess are used here
+# (php_admin_* is NOT allowed in .htaccess and causes a 500 error).
+
+# Refuse to serve any script-like file (defense in depth; the upload endpoint
+# also restricts uploads to a safe extension allowlist).
+<FilesMatch "\.(php|phtml|phar|php[0-9]|pl|py|cgi|sh|htaccess)$">
+    Require all denied
+</FilesMatch>
+
+# Turn off the PHP engine in this folder. php_flag IS allowed in .htaccess
+# (unlike php_admin_flag). Wrapped so it's skipped if mod_php isn't loaded.
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+Options -ExecCGI -Indexes

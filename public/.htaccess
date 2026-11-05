@@ -1,0 +1,24 @@
+# Vincentian Resource Center — public folder hardening
+# Requires: AllowOverride All on this directory in the Apache vhost.
+
+# Default document
+DirectoryIndex index.html
+
+# --- Security headers ---
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    # A conservative CSP; the app is self-contained (no external scripts).
+    Header always set Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self'"
+</IfModule>
+
+# --- Block access to hidden/dotfiles (e.g. .htaccess, .git) ---
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# --- Never serve raw config or PHP source from odd locations ---
+<FilesMatch "\.(sql|md|example|log)$">
+    Require all denied
+</FilesMatch>
